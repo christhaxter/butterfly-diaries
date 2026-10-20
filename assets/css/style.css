@@ -513,3 +513,44 @@ a:hover {
 .site-nav a {
   font-weight: 600;
 }
+
+/* Featured encounters on the homepage */
+.featured-encounters {
+  margin: 36px 0 48px;
+}
+
+.featured-photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.featured-photo {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.featured-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.featured-photo:hover img {
+  transform: scale(1.025);
+}
+
+@media (max-width: 600px) {
+  .featured-photos {
+    gap: 10px;
+  }
+}
+
