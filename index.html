@@ -1,65 +1,61 @@
 ---
 layout: default
-title: Journal
-description: Butterfly field trips, wildlife encounters and photography.
+title: Home
+description: Butterfly field trips, natural history observations and photography from Butterfly Diaries.
 ---
 
-<section class="journal-home">
-  <h1 class="page-title">Field notes</h1>
-  <p class="page-intro">
-    Butterfly trips, encounters and photographs from the field.
+<section class="home-intro">
+  <h1>Butterfly Diaries</h1>
+  <p class="home-lead">Field notes, photographs and encounters</p>
+
+  <p>
+    Welcome to Butterfly Diaries — a record of butterfly-watching
+    trips, wildlife encounters and photography, from local outings
+    to adventures further afield.
   </p>
 
-  {% for post in site.posts %}
-    <article class="journal-entry">
+  <p>
+    Explore the journal for trip reports, browse species and places,
+    or visit the gallery to discover some of the butterflies
+    encountered along the way.
+  </p>
 
-      <a href="{{ post.url | relative_url }}"
-         aria-label="Read {{ post.title | escape }}">
-        {% if post.image %}
-          <img
-            class="journal-entry-image"
-            src="{{ post.image | relative_url }}"
-            alt="{{ post.image_alt | default: post.title | escape }}"
-            loading="lazy">
-        {% else %}
-          <div class="journal-entry-image"
-               role="img"
-               aria-label="Photograph to be added"></div>
-        {% endif %}
-      </a>
+  <p class="home-links">
+    <a href="{{ '/journal/' | relative_url }}">Explore the Journal →</a>
+    &nbsp; · &nbsp;
+    <a href="{{ '/species/' | relative_url }}">Browse Species →</a>
+    &nbsp; · &nbsp;
+    <a href="{{ '/gallery/' | relative_url }}">View the Gallery →</a>
+  </p>
+</section>
+
+<section class="home-latest">
+  <h2>Latest field trips</h2>
+
+  {% for post in site.posts limit:3 %}
+    <article class="journal-entry">
+      {% if post.image %}
+        <a href="{{ post.url | relative_url }}" class="journal-entry-image">
+          <img src="{{ post.image | relative_url }}"
+               alt="{{ post.image_alt | default: post.title | escape }}">
+        </a>
+      {% endif %}
 
       <div class="journal-entry-text">
         <p class="journal-entry-date">
           {{ post.date | date: "%-d %B %Y" }}
-          {% if post.location %}
-            · {{ post.location }}
-          {% endif %}
+          {% if post.location %} · {{ post.location }}{% endif %}
         </p>
-
-        <h2 class="journal-entry-title">
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h2>
-
+        <h3 class="journal-entry-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
         <p class="journal-entry-excerpt">
-          {% if post.excerpt_text %}
-            {{ post.excerpt_text | strip_html | truncate: 240 }}
-          {% else %}
-            {{ post.excerpt | strip_html | normalize_whitespace | truncate: 240 }}
-          {% endif %}
+          {{ post.excerpt_text | default: post.excerpt | strip_html | truncate: 180 }}
         </p>
-
-        <a class="read-more"
-           href="{{ post.url | relative_url }}">
-          Read field notes →
-        </a>
+        <a class="read-more" href="{{ post.url | relative_url }}">Read report →</a>
       </div>
-
     </article>
   {% endfor %}
 
-  {% unless site.posts.size > 0 %}
-    <p>Your field notes will appear here once the first trip report is added.</p>
-  {% endunless %}
+  <p><a href="{{ '/journal/' | relative_url }}">All field trips →</a></p>
 </section>
