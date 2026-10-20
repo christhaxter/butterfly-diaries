@@ -466,3 +466,19 @@ a:hover {
     margin-bottom: 12px;
   }
 }
+
+/* Site-wide photographic banner */
+
+.site-banner {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.site-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 50%;
+}
