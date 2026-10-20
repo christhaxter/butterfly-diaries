@@ -482,3 +482,13 @@ a:hover {
   object-fit: cover;
   object-position: center 50%;
 }
+
+/* Site footer */
+
+.site-footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 24px 20px;
+  text-align: center;
+  color: #686868;
+  font-size: 0.85rem;
+}
