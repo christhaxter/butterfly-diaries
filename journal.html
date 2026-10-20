@@ -1,0 +1,60 @@
+---
+layout: default
+title: Journal
+description: Browse butterfly field trips and wildlife encounters, newest first.
+permalink: /journal/
+---
+
+<div class="journal-layout">
+  <aside class="journal-sidebar">
+    <h2>Explore</h2>
+    <ul>
+      <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      <li><a href="{{ '/kit/' | relative_url }}">My kit</a></li>
+      <li><a href="{{ '/plans/' | relative_url }}">Plans for 2027</a></li>
+    </ul>
+
+    <h3>Browse by year</h3>
+    <ul>
+      {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+      {% for year in years %}
+        <li>
+          <a href="{{ '/journal/' | relative_url }}{{ year.name }}/">{{ year.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <section class="journal-list">
+    <h1 class="page-title">Journal</h1>
+    <p class="page-intro">Field trips, butterfly sightings and encounters, newest first.</p>
+
+    {% for post in site.posts %}
+      <article class="journal-entry">
+        {% if post.image %}
+          <a href="{{ post.url | relative_url }}" class="journal-entry-image">
+            <img src="{{ post.image | relative_url }}"
+                 alt="{{ post.image_alt | default: post.title | escape }}">
+          </a>
+        {% endif %}
+
+        <div class="journal-entry-text">
+          <p class="journal-entry-date">
+            {{ post.date | date: "%-d %B %Y" }}
+            {% if post.location %} · {{ post.location }}{% endif %}
+          </p>
+          <h2 class="journal-entry-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          <p class="journal-entry-excerpt">
+            {{ post.excerpt_text | default: post.excerpt | strip_html | truncate: 180 }}
+          </p>
+          <a class="read-more" href="{{ post.url | relative_url }}">Read report →</a>
+        </div>
+      </article>
+    {% else %}
+      <p>No field trips have been published yet.</p>
+    {% endfor %}
+  </section>
+</div>
