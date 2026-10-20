@@ -7,6 +7,7 @@ permalink: /journal/2026/
 ---
 
 <div class="journal-layout">
+
   <aside class="journal-sidebar">
     <h2>Explore</h2>
     <ul>
@@ -14,47 +15,63 @@ permalink: /journal/2026/
       <li><a href="{{ '/journal/' | relative_url }}">All field trips</a></li>
       <li><a href="{{ '/about/' | relative_url }}">About</a></li>
       <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      <li><a href="{{ '/kit/' | relative_url }}">My kit</a></li>
+      <li><a href="{{ '/plans/' | relative_url }}">Plans for 2027</a></li>
     </ul>
 
     <h3>Browse by year</h3>
     <ul>
       {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
       {% for year in years %}
-        <li><a href="{{ '/journal/' | relative_url }}{{ year.name }}/">{{ year.name }}</a></li>
+        <li>
+          <a href="{{ '/journal/' | relative_url }}{{ year.name }}/">{{ year.name }}</a>
+        </li>
       {% endfor %}
     </ul>
   </aside>
 
   <section class="journal-list">
     <h1 class="page-title">Field trips in 2026</h1>
-    <p class="page-intro">Butterfly encounters and field notes from the year, newest first.</p>
+    <p class="page-intro">
+      Butterfly encounters, field notes and photographs from 2026, newest first.
+    </p>
 
-    {% assign year_posts = site.posts | where_exp: "post", "post.date contains page.archive_year" %}
-    {% for post in year_posts %}
-      <article class="journal-entry">
-        {% if post.image %}
-          <a href="{{ post.url | relative_url }}" class="journal-entry-image">
-            <img src="{{ post.image | relative_url }}"
-                 alt="{{ post.image_alt | default: post.title | escape }}">
-          </a>
-        {% endif %}
+    {% assign archive_year = "2026" %}
 
-        <div class="journal-entry-text">
-          <p class="journal-entry-date">
-            {{ post.date | date: "%-d %B %Y" }}
-            {% if post.location %} · {{ post.location }}{% endif %}
-          </p>
-          <h2 class="journal-entry-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h2>
-          <p class="journal-entry-excerpt">
-            {{ post.excerpt_text | default: post.excerpt | strip_html | truncate: 180 }}
-          </p>
-          <a class="read-more" href="{{ post.url | relative_url }}">Read report →</a>
-        </div>
-      </article>
-    {% else %}
-      <p>No field trips have been published for this year yet.</p>
+    {% for post in site.posts %}
+      {% assign post_year = post.date | date: "%Y" %}
+      {% if post_year == archive_year %}
+
+        <article class="journal-entry">
+          {% if post.image %}
+            <a href="{{ post.url | relative_url }}" class="journal-entry-image">
+              <img
+                src="{{ post.image | relative_url }}"
+                alt="{{ post.image_alt | default: post.title | escape }}">
+            </a>
+          {% endif %}
+
+          <div class="journal-entry-text">
+            <p class="journal-entry-date">
+              {{ post.date | date: "%-d %B %Y" }}
+              {% if post.location %} · {{ post.location }}{% endif %}
+            </p>
+
+            <h2 class="journal-entry-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+
+            <p class="journal-entry-excerpt">
+              {{ post.excerpt_text | default: post.excerpt | strip_html | truncate: 180 }}
+            </p>
+
+            <a class="read-more" href="{{ post.url | relative_url }}">Read report →</a>
+          </div>
+        </article>
+
+      {% endif %}
     {% endfor %}
+
   </section>
+
 </div>
