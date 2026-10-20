@@ -9,7 +9,7 @@ excerpt_text: "A sample field report demonstrating the new Butterfly Diaries lay
 ---
 
 <p class="post-date">
-  20 October 2026 · Cambridgeshire, England
+  12 September 2026 · Essex, UK
 </p>
 
 <div class="post-content">
