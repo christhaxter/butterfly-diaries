@@ -389,3 +389,80 @@ a:hover {
     margin-bottom: 12px;
   }
 }
+
+/* Keep the overall page comfortably centred */
+
+.site-main {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+
+/* Give the Home page its own tidy content area */
+
+.home-intro,
+.home-latest {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Keep the Home page's latest-trip photos compact */
+
+.home-latest .journal-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.home-latest .journal-entry-image {
+  display: block;
+  flex: 0 0 180px;
+  width: 180px;
+  max-width: 180px;
+}
+
+.home-latest .journal-entry-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.home-latest .journal-entry-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Give the Home page some breathing room on phones */
+
+@media (max-width: 600px) {
+  .site-main {
+    padding: 24px 16px;
+  }
+
+  .home-latest .journal-entry {
+    gap: 14px;
+  }
+
+  .home-latest .journal-entry-image {
+    flex-basis: 120px;
+    width: 120px;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-latest .journal-entry {
+    display: block;
+  }
+
+  .home-latest .journal-entry-image {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+}
