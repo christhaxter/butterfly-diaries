@@ -395,7 +395,7 @@ a:hover {
 .site-main {
   box-sizing: border-box;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 36px 40px;
 }
@@ -404,7 +404,7 @@ a:hover {
 
 .home-intro,
 .home-latest {
-  max-width: 900px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
