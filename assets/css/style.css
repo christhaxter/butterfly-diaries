@@ -492,3 +492,18 @@ a:hover {
   color: #686868;
   font-size: 0.85rem;
 }
+
+/* Soft sage navigation strip */
+
+.site-header {
+  background: #E8EDE4;
+  border-bottom: 1px solid #D7DFD1;
+}
+
+.site-nav a {
+  color: #344234;
+}
+
+.site-nav a:hover {
+  color: #64795B;
+}
