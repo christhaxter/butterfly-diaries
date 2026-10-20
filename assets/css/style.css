@@ -507,3 +507,9 @@ a:hover {
 .site-nav a:hover {
   color: #64795B;
 }
+
+/* Give navigation links a little more presence */
+
+.site-nav a {
+  font-weight: 600;
+}
