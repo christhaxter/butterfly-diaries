@@ -395,9 +395,9 @@ a:hover {
 .site-main {
   box-sizing: border-box;
   width: 100%;
-  max-width: 1250px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 36px 24px;
+  padding: 36px 40px;
 }
 
 /* Give the Home page its own tidy content area */
