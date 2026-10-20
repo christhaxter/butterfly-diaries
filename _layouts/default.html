@@ -59,5 +59,52 @@
   </div>
 </div>
 
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightbox-image');
+  const lightboxSpecies = document.getElementById('lightbox-species');
+  const lightboxDetails = document.getElementById('lightbox-details');
+  const featuredPhotos = document.querySelectorAll('.featured-photo');
+  const closeButton = document.querySelector('.lightbox-close');
+
+  function openLightbox(photo) {
+    lightboxImage.src = photo.dataset.image;
+    lightboxImage.alt = photo.dataset.species;
+    lightboxSpecies.textContent = photo.dataset.species;
+    lightboxDetails.textContent =
+      photo.dataset.location + ' · ' + photo.dataset.date;
+
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    closeButton.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage.src = '';
+  }
+
+  featuredPhotos.forEach(function (photo) {
+    photo.addEventListener('click', function () {
+      openLightbox(photo);
+    });
+  });
+
+  closeButton.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', function (event) {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+      closeLightbox();
+    }
+  });
+</script>
+
 </body>
 </html>
