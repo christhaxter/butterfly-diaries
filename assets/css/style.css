@@ -5,7 +5,7 @@
   --muted: #686868;
   --line: #e5e5e5;
   --background: #ffffff;
-  --content-width: 900px;
+  --content-width: 1200px;
 }
 
 * {
@@ -554,3 +554,75 @@ a:hover {
   }
 }
 
+
+/* Featured butterfly photo lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.88);
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox-content {
+  position: relative;
+  width: min(100%, 1100px);
+  max-height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.lightbox-content img {
+  display: block;
+  max-width: 100%;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  margin-top: 16px;
+}
+
+.lightbox-caption h2 {
+  margin: 0 0 6px;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.lightbox-caption p {
+  margin: 0;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -32px;
+  right: 0;
+  border: 0;
+  background: transparent;
+  color: #ffffff;
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .lightbox {
+    padding: 20px;
+  }
+
+  .lightbox-content img {
+    max-height: 70vh;
+  }
+}
