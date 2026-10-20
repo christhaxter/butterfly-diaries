@@ -1,0 +1,232 @@
+
+/* Butterfly Diaries — site styling */
+
+:root {
+  --text: #252525;
+  --muted: #686868;
+  --line: #e5e5e5;
+  --background: #ffffff;
+  --content-width: 900px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.site-header-inner,
+.site-main,
+.site-footer {
+  width: min(100% - 40px, var(--content-width));
+  margin-inline: auto;
+}
+
+.site-header-inner {
+  padding: 32px 0 0;
+}
+
+.site-title {
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}
+
+.site-tagline {
+  margin: 8px 0 24px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+  padding: 0 0 18px;
+}
+
+.site-nav a {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.site-main {
+  min-height: 65vh;
+  padding-top: 42px;
+  padding-bottom: 64px;
+}
+
+.page-title {
+  margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+.page-intro {
+  margin: 0 0 36px;
+  color: var(--muted);
+}
+
+.journal-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 28px;
+  align-items: start;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.journal-entry:first-child {
+  padding-top: 0;
+}
+
+.journal-entry-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #f2f2f2;
+}
+
+.journal-entry-date {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.journal-entry-title {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.journal-entry-excerpt {
+  margin: 0;
+  color: #484848;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.post-date {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.post-content {
+  max-width: 760px;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-content h2,
+.post-content h3 {
+  margin-top: 2em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.pagination a,
+.pagination span {
+  padding: 5px 10px;
+}
+
+.pagination .current {
+  font-weight: 700;
+  border-bottom: 2px solid var(--text);
+}
+
+.site-footer {
+  padding: 24px 0 32px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 620px) {
+  .site-header-inner,
+  .site-main,
+  .site-footer {
+    width: min(100% - 28px, var(--content-width));
+  }
+
+  .site-header-inner {
+    padding-top: 24px;
+  }
+
+  .site-title {
+    font-size: 1.9rem;
+  }
+
+  .site-nav {
+    gap: 8px 18px;
+  }
+
+  .site-main {
+    padding-top: 30px;
+  }
+
+  .journal-entry {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px 0;
+  }
+
+  .journal-entry-title {
+    font-size: 1.45rem;
+  }
+}
