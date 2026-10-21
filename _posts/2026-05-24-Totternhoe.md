@@ -3,6 +3,7 @@ layout: default
 title: "Two skippers, a Duke and a Blue"
 date: 2026-05-24
 location: "Totternhoe NNR and Quarry, Bedfordshire"
+featured_image: "/assets/images/Totternhoe/Small_blue.JPG"
 ---
 
 <p class="post-date">
@@ -170,13 +171,13 @@ overlooked the quarry. This was steeper and deeper than I expected and the views
 top were quite spectacular.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/totternhoe/View_top_1.jpg"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/View_top_1.jpg"
        alt="First photograph">
 
-  <img src="/butterfly-diaries/assets/images/totternhoe/View_top_2.jpg"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/View_top_2.jpg"
        alt="Second photograph">
 
-  <img src="/butterfly-diaries/assets/images/totternhoe/View_top_3.jpg"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/View_top_3.jpg"
        alt="Third photograph">
 
   <figcaption>Views from around the top of Totternhoe Quarry</figcaption>
@@ -286,7 +287,7 @@ dimension of memory reflection and nostalgia to the day.
   <img src="/butterfly-diaries/assets/images/Totternhoe/Dunstable_tables.jpg"
        alt="First photograph">
 
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Dunstable_buildings.jpg"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Dunstable_building.jpg"
        alt="Second photograph">
 
   <figcaption>Dunstable Downs, National Trust</figcaption>
@@ -300,7 +301,7 @@ to come.
   <img src="/butterfly-diaries/assets/images/Totternhoe/Man_with_kite.jpg"
        alt="Human kites">
 
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Red_kite_poor.jpg"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Red_kite_poor.JPG"
        alt="Red kites">
 
   <figcaption>Kites of both the bird and human variety at Dunstable Downs</figcaption>
@@ -329,11 +330,11 @@ burnet companion (1)
 
 **End time:** 11:00
 
-Share this
+### Share this
 
 Bluesky | X | Facebook
 
-1st Aug 2026
+*Updated: 21 Oct 2026*
 
 2026, dingy skipper, Duke of Burgundy, grizzled skipper, Small blue, Totternhoe
 
