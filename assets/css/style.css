@@ -627,3 +627,92 @@ a:hover {
     max-height: 70vh;
   }
 }
+
+
+
+
+
+
+
+/* Single photograph with caption */
+.report-figure {
+  margin: 24px 0 28px;
+}
+
+.report-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.report-figure figcaption {
+  margin-top: 4px;
+  color: #777;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Two photographs with one shared caption */
+.report-photo-pair {
+  margin: 24px 0 28px;
+}
+
+.report-photo-pair-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.report-photo-pair-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+/* Stack paired photographs on small screens */
+@media (max-width: 600px) {
+  .report-photo-pair-images {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+
+/* Stacked photographs with one shared caption */
+.report-photo-stack {
+  margin: 24px 0 28px;
+}
+
+.report-photo-stack img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+
+.report-photo-stack img:last-of-type {
+  margin-bottom: 0;
+}
+
+.report-photo-stack figcaption {
+  margin-top: 4px;
+  color: #777;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Short, centred divider */
+.report-divider {
+  width: 60%;
+  max-width: 500px;
+  margin: 32px auto;
+  border: 0;
+  border-top: 1px solid #D7DFD1;
+}
+
+
