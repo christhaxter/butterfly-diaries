@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "A Duke, Two Skippers and a Blue"
+title: "Two skippers, a Duke and a Blue"
 date: 2026-05-24
 location: "Totternhoe NNR and Quarry, Bedfordshire"
 ---
@@ -10,6 +10,9 @@ location: "Totternhoe NNR and Quarry, Bedfordshire"
 </p>
 
 <div class="post-content" markdown="1">
+
+## Two skippers, a Duke and a Blue
+### Totternhoe NNR and Quarry, Bedfordshire
 
 It had been a hot spell of weather in mid May, and the first heatwave of 2026. 
 This had come after a very cool and unsettled start to the month. Such a change in weather 
@@ -280,10 +283,10 @@ Dunstable Downs since I was a kid, where I flew kites with my parents. This adde
 dimension of memory reflection and nostalgia to the day.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/totternhoe/Dunstable_tables.jpg"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Dunstable_tables.jpg"
        alt="First photograph">
 
-  <img src="/butterfly-diaries/assets/images/totternhoe/Dunstable_buildings.jpg"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Dunstable_buildings.jpg"
        alt="Second photograph">
 
   <figcaption>Dunstable Downs, National Trust</figcaption>
@@ -294,10 +297,10 @@ variety), we headed off, with our appetite fully whetted for other butterfly adv
 to come.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/totternhoe/Man_with_kite.jpg"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Man_with_kite.jpg"
        alt="Human kites">
 
-  <img src="/butterfly-diaries/assets/images/totternhoe/Red_kite_poor.jpg"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Red_kite_poor.jpg"
        alt="Red kites">
 
   <figcaption>Kites of both the bird and human variety at Dunstable Downs</figcaption>
