@@ -4,6 +4,8 @@ title: "Two skippers, a Duke and a Blue"
 date: 2026-05-24
 location: "Totternhoe NNR and Quarry, Bedfordshire"
 featured_image: "/assets/images/Totternhoe/Small_blue.JPG"
+image_alt: "Small blue"
+excerpt_text: "A first jaunt out to a chalk quarry to track down some unique and specialised species."
 ---
 
 <p class="post-date">

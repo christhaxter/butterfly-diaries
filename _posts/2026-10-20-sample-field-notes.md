@@ -3,7 +3,7 @@ layout: default
 title: "A day among the butterflies"
 date: 2026-10-20
 location: "Cambridgeshire, England"
-image: /assets/images/Queen_of_Spain_Essex_1.JPG
+featured_image: /assets/images/Queen_of_Spain_Essex_1.JPG
 image_alt: "Queen of Spain Fritillary"
 excerpt_text: "A sample field report demonstrating the new Butterfly Diaries layout, with space for the highlights, observations and photographs from a day in the field."
 ---
