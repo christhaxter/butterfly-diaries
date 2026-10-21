@@ -43,10 +43,10 @@ permalink: /journal/2026/
       {% if post_year == archive_year %}
 
         <article class="journal-entry">
-          {% if post.featured_image %}
+          {% if post.image %}
             <a href="{{ post.url | relative_url }}" class="journal-entry-image">
               <img
-                src="{{ post.featured_image | relative_url }}"
+                src="{{ post.image | relative_url }}"
                 alt="{{ post.image_alt | default: post.title | escape }}">
             </a>
           {% endif %}
