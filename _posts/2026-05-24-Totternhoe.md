@@ -20,7 +20,6 @@ excerpt_text: "A first jaunt out to a chalk quarry to track down some unique and
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Totternhoe/Small_blue.JPG"
        alt="Entrance sign to Toternhoe">
-  <figcaption>Small blue along the entrance path</figcaption>
 </figure>
 
 It had been a hot spell of weather in mid May, and the first heatwave of 2026. 
