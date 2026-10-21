@@ -9,7 +9,7 @@ location: "Totternhoe NNR and Quarry, Bedfordshire"
   24 May 2026 · Ely, UK
 </p>
 
-<div class="post-content">
+<div class="post-content" markdown="1">
 
 It had been a hot spell of weather in mid May, and the first heatwave of 2026. 
 This had come after a very cool and unsettled start to the month. Such a change in weather 
@@ -43,7 +43,7 @@ We headed in the main entrance from the car park up some steps that took us up a
 track beside a large field to our right-hand side.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Intro_path.JPG"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Intro_path.jpg"
        alt="First path at Totternhoe">
   <figcaption>The first path leading up to Totternhoe</figcaption>
 </figure>
@@ -55,7 +55,7 @@ other species like lesser whitethroats and chiffchaffs. This was right alongside
 and in full view.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Corn_bunting.JPG"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Corn_bunting.jpg"
        alt="Corn bunting">
   <figcaption>Corn bunting in full song</figcaption>
 </figure>
@@ -71,16 +71,16 @@ addictive. This was also species number 31 on my lifetime list.
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Totternhoe/Small_blue.JPG"
        alt="Entrance sign to Toternhoe">
-  <figcaption>Entrance sign to Toternhoe</figcaption>
+  <figcaption>Small blue along the entrance path</figcaption>
 </figure>
 
 We reached the main reserve entrance after a right turn at the top of the field, where 
 there was a board up welcoming us, always a good sign.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Totternhoe_intro_sign.JPG"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Totternhoe_intro_sign.jpg"
        alt="Small blue">
-  <figcaption>Small blue along the entrance path</figcaption>
+  <figcaption>Entrance sign to Toternhoe</figcaption>
 </figure>
 
 The opening area, once into the reserve, was quite sandy underfoot on the chalk, and 
@@ -105,7 +105,7 @@ and we needed to stop frequently for shade and water. Taking a left turn into th
 inviting bushier paths, we scanned the edge habitats.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/One_of_many_paths.JPG"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/One_of_many_paths.jpg"
        alt="One of many paths">
   <figcaption>One of the many paths at Totternhoe</figcaption>
 </figure>
@@ -131,7 +131,7 @@ red admiral, and common blue. Familiar faces in unfamiliar places.
 </figure>
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Common blue.JPG"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Common_blue.JPG"
        alt="Common blue">
   <figcaption>Common blue</figcaption>
 </figure>
@@ -141,7 +141,7 @@ and so forth. It was clear some plants had already gone over, and perhaps signs 
 running early this season.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Vetch.JPG"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Vetch.jpg"
        alt="Horseshoe vetch">
   <figcaption>Horseshoe vetch (I think, rather than bird’s foot trefoil)</figcaption>
 </figure>
@@ -151,7 +151,7 @@ good, and boy was I right as just over a small hummock was a grizzled skipper ne
 horseshoe vetch! I was stunned, and it was a very obliging photo subject, species 33.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Grizzled skipper.JPG"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Grizzled_skipper.JPG"
        alt="Grizzled skipper on horseshoe vetch">
   <figcaption>Grizzled skipper on horseshoe vetch</figcaption>
 </figure>
@@ -167,13 +167,13 @@ overlooked the quarry. This was steeper and deeper than I expected and the views
 top were quite spectacular.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/totternhoe/View_top_1.JPG"
+  <img src="/butterfly-diaries/assets/images/totternhoe/View_top_1.jpg"
        alt="First photograph">
 
-  <img src="/butterfly-diaries/assets/images/totternhoe/View_top_2.JPG"
+  <img src="/butterfly-diaries/assets/images/totternhoe/View_top_2.jpg"
        alt="Second photograph">
 
-  <img src="/butterfly-diaries/assets/images/totternhoe/View_top_3.JPG"
+  <img src="/butterfly-diaries/assets/images/totternhoe/View_top_3.jpg"
        alt="Third photograph">
 
   <figcaption>Views from around the top of Totternhoe Quarry</figcaption>
@@ -185,7 +185,7 @@ different directions around the compass. They were built in 2021 in collaboratio
 the University of Cambridge, with butterfly conservation in mind to help the species here.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/E_banks.JPG"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/E_banks.jpg"
        alt="The E-banks">
   <figcaption>Information board for the butterfly E banks</figcaption>
 </figure>
@@ -195,7 +195,7 @@ along the side of the quarry heading down into shade into the scrubby thickets.
 The search was on though for our final target, the Duke of Burgundy.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Path_after_top.JPG"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Path_after_top.jpg"
        alt="Down to the quarry">
   <figcaption>Heading downwards around the quarry</figcaption>
 </figure>
@@ -280,10 +280,10 @@ Dunstable Downs since I was a kid, where I flew kites with my parents. This adde
 dimension of memory reflection and nostalgia to the day.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/totternhoe/Dunstable_tables.JPG"
+  <img src="/butterfly-diaries/assets/images/totternhoe/Dunstable_tables.jpg"
        alt="First photograph">
 
-  <img src="/butterfly-diaries/assets/images/totternhoe/Dunstable_buildings.JPG"
+  <img src="/butterfly-diaries/assets/images/totternhoe/Dunstable_buildings.jpg"
        alt="Second photograph">
 
   <figcaption>Dunstable Downs, National Trust</figcaption>
@@ -294,10 +294,10 @@ variety), we headed off, with our appetite fully whetted for other butterfly adv
 to come.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/totternhoe/Man_with_kite.JPG"
+  <img src="/butterfly-diaries/assets/images/totternhoe/Man_with_kite.jpg"
        alt="Human kites">
 
-  <img src="/butterfly-diaries/assets/images/totternhoe/Red_kite_poor.JPG"
+  <img src="/butterfly-diaries/assets/images/totternhoe/Red_kite_poor.jpg"
        alt="Red kites">
 
   <figcaption>Kites of both the bird and human variety at Dunstable Downs</figcaption>
@@ -307,7 +307,7 @@ After some digging around, and old picture of me turned up from back in the day 
 Dunstable when I was a kid, in true natural sepia tones on old film!
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Me.JPG"
+  <img src="/butterfly-diaries/assets/images/Totternhoe/Me.jpg"
        alt="Fond memories">
   <figcaption>Fond memories</figcaption>
 </figure>
