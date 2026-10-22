@@ -715,4 +715,43 @@ a:hover {
   border-top: 1px solid #D7DFD1;
 }
 
+/* post sharing formatting */
+.post-sharing {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 24px 0;
+  border-top: 1px solid #D7DFD1;
+  text-align: center;
+}
 
+.post-sharing h2 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+}
+
+.post-sharing p {
+  color: #686868;
+  margin: 0 0 18px;
+}
+
+.share-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.share-links a {
+  display: inline-block;
+  padding: 9px 18px;
+  border: 1px solid #D7DFD1;
+  border-radius: 5px;
+  color: #344234;
+  background: #E8EDE4;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.share-links a:hover {
+  background: #D7DFD1;
+}
