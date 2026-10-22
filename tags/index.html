@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Browse by tag
@@ -37,9 +38,13 @@ description: Browse Butterfly Diaries field trips by butterfly species and locat
   )].sort((a, b) => a.localeCompare(b));
 
   function showPosts(tag) {
-    const matchingPosts = posts.filter(post =>
-      (post.tags || []).includes(tag)
-    );
+    const matchingPosts = posts
+      .filter(post => (post.tags || []).includes(tag))
+      .sort((a, b) => {
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+        return dateB - dateA;
+      });
 
     tagResults.innerHTML = '';
 
@@ -48,9 +53,9 @@ description: Browse Butterfly Diaries field trips by butterfly species and locat
     tagResults.appendChild(heading);
 
     if (matchingPosts.length === 0) {
-      tagResults.appendChild(
-        document.createTextNode('No field trips found for this tag.')
-      );
+      const message = document.createElement('p');
+      message.textContent = 'No field trips found for this tag.';
+      tagResults.appendChild(message);
       return;
     }
 
@@ -67,6 +72,7 @@ description: Browse Butterfly Diaries field trips by butterfly species and locat
       item.appendChild(
         document.createTextNode(' — ' + post.date)
       );
+
       list.appendChild(item);
     });
 
@@ -76,25 +82,21 @@ description: Browse Butterfly Diaries field trips by butterfly species and locat
   const selectedTag = new URLSearchParams(
     window.location.search
   ).get('tag');
-  
+
   if (selectedTag && allTags.includes(selectedTag)) {
+    tagList.style.display = 'none';
     showPosts(selectedTag);
   } else {
+    tagResults.style.display = 'none';
+
     allTags.forEach(tag => {
       const link = document.createElement('a');
+
       link.href = '?tag=' + encodeURIComponent(tag);
       link.textContent = tag;
       link.className = 'tag-button';
-  
+
       tagList.appendChild(link);
     });
-  }
-
-  const selectedTag = new URLSearchParams(
-    window.location.search
-  ).get('tag');
-
-  if (selectedTag && allTags.includes(selectedTag)) {
-    showPosts(selectedTag);
   }
 </script>
