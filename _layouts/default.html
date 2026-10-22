@@ -48,7 +48,7 @@
       <ul class="tag-list">
         {% for tag in page.tags %}
           <li>
-            <a href="{{ '/tags/' | relative_url }}{{ tag | slugify }}/">
+            <a href="{{ '/tags/' | relative_url }}?tag={{ tag | uri_escape }}">
               {{ tag }}
             </a>
           </li>

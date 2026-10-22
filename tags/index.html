@@ -1,0 +1,97 @@
+---
+layout: default
+title: Browse by tag
+description: Browse Butterfly Diaries field trips by butterfly species and location.
+---
+
+<h1>Browse by tag</h1>
+
+<p>Explore field trips by butterfly species or location.</p>
+
+<div id="tag-list"></div>
+<div id="tag-results"></div>
+
+<script id="posts-data" type="application/json">
+[
+  {% for post in site.posts %}
+    {
+      "title": {{ post.title | jsonify }},
+      "url": {{ post.url | relative_url | jsonify }},
+      "date": {{ post.date | date: "%d %B %Y" | jsonify }},
+      "tags": {{ post.tags | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+</script>
+
+<script>
+  const posts = JSON.parse(
+    document.getElementById('posts-data').textContent
+  );
+
+  const tagList = document.getElementById('tag-list');
+  const tagResults = document.getElementById('tag-results');
+
+  const allTags = [...new Set(
+    posts.flatMap(post => post.tags || [])
+  )].sort((a, b) => a.localeCompare(b));
+
+  function showPosts(tag) {
+    const matchingPosts = posts.filter(post =>
+      (post.tags || []).includes(tag)
+    );
+
+    tagResults.innerHTML = '';
+
+    const heading = document.createElement('h2');
+    heading.textContent = tag;
+    tagResults.appendChild(heading);
+
+    if (matchingPosts.length === 0) {
+      tagResults.appendChild(
+        document.createTextNode('No field trips found for this tag.')
+      );
+      return;
+    }
+
+    const list = document.createElement('ul');
+
+    matchingPosts.forEach(post => {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+
+      link.href = post.url;
+      link.textContent = post.title;
+
+      item.appendChild(link);
+      item.appendChild(
+        document.createTextNode(' — ' + post.date)
+      );
+      list.appendChild(item);
+    });
+
+    tagResults.appendChild(list);
+  }
+
+  allTags.forEach(tag => {
+    const link = document.createElement('a');
+    link.href = '#';
+    link.textContent = tag;
+    link.className = 'tag-button';
+
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      showPosts(tag);
+    });
+
+    tagList.appendChild(link);
+  });
+
+  const selectedTag = new URLSearchParams(
+    window.location.search
+  ).get('tag');
+
+  if (selectedTag && allTags.includes(selectedTag)) {
+    showPosts(selectedTag);
+  }
+</script>
