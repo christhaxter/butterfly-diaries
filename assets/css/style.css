@@ -755,3 +755,22 @@ a:hover {
 .share-links a:hover {
   background: #D7DFD1;
 }
+
+
+.share-links .copy-link-button {
+  display: inline-block;
+  padding: 9px 18px;
+  border: 1px solid #D7DFD1;
+  border-radius: 5px;
+  color: #344234;
+  background: #E8EDE4;
+  font-weight: 600;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.share-links .copy-link-button:hover {
+  background: #D7DFD1;
+}
+
