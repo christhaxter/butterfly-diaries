@@ -6,6 +6,13 @@ location: "Totternhoe NNR and Quarry, Bedfordshire"
 image: "/assets/images/Totternhoe/Small_blue.JPG"
 image_alt: "Small blue"
 excerpt_text: "A first jaunt out to a chalk quarry to track down some unique and specialised species."
+tags:
+  - Duke of Burgundy
+  - Dingy Skipper
+  - Grizzled Skipper
+  - Small Blue
+  - Totternhoe
+  - Field trips
 ---
 
 <p class="post-date">
