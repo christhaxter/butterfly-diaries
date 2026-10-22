@@ -73,19 +73,22 @@ description: Browse Butterfly Diaries field trips by butterfly species and locat
     tagResults.appendChild(list);
   }
 
-  allTags.forEach(tag => {
-    const link = document.createElement('a');
-    link.href = '#';
-    link.textContent = tag;
-    link.className = 'tag-button';
-
-    link.addEventListener('click', event => {
-      event.preventDefault();
-      showPosts(tag);
+  const selectedTag = new URLSearchParams(
+    window.location.search
+  ).get('tag');
+  
+  if (selectedTag && allTags.includes(selectedTag)) {
+    showPosts(selectedTag);
+  } else {
+    allTags.forEach(tag => {
+      const link = document.createElement('a');
+      link.href = '?tag=' + encodeURIComponent(tag);
+      link.textContent = tag;
+      link.className = 'tag-button';
+  
+      tagList.appendChild(link);
     });
-
-    tagList.appendChild(link);
-  });
+  }
 
   const selectedTag = new URLSearchParams(
     window.location.search
