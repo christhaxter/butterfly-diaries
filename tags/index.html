@@ -90,11 +90,4 @@ description: Browse Butterfly Diaries field trips by butterfly species and locat
     });
   }
 
-  const selectedTag = new URLSearchParams(
-    window.location.search
-  ).get('tag');
-
-  if (selectedTag && allTags.includes(selectedTag)) {
-    showPosts(selectedTag);
-  }
 </script>
