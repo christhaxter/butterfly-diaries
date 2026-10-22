@@ -50,13 +50,13 @@
       <p>Share this report:</p>
 
       <nav class="share-links" aria-label="Share this report">
-        <a href="https://bsky.app/intent/compose?text={{ share_text | strip | uri_escape }}"
+        <a href="https://bsky.app/intent/compose?text={{ share_text | strip | url_encode }}"
            target="_blank" rel="noopener noreferrer">Bluesky</a>
 
-        <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url | uri_escape }}"
+        <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url | url_encode }}"
            target="_blank" rel="noopener noreferrer">X</a>
 
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | uri_escape }}"
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
            target="_blank" rel="noopener noreferrer">Facebook</a>
       </nav>
     </section>
