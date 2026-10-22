@@ -59,6 +59,14 @@
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
            target="_blank" rel="noopener noreferrer">Facebook</a>
       </nav>
+      
+      <button
+        type="button"
+        class="copy-link-button"
+        data-share-url="{{ page.url | absolute_url }}">
+        Copy link
+      </button>
+      
     </section>
   {% endif %}
 
