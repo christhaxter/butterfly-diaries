@@ -344,14 +344,4 @@ burnet companion (1)
 
 **End time:** 11:00
 
-### Share this
-
-Bluesky | X | Facebook
-
-*Updated: 21 Oct 2026*
-
-2026, dingy skipper, Duke of Burgundy, grizzled skipper, Small blue, Totternhoe
-
-Field trips
-
 </div>
