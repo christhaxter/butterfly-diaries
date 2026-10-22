@@ -132,6 +132,22 @@
       closeLightbox();
     }
   });
+
+  const copyLinkButton = document.querySelector('.copy-link-button');
+
+  if (copyLinkButton) {
+    copyLinkButton.addEventListener('click', async function () {
+      const shareUrl = copyLinkButton.dataset.shareUrl;
+
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        copyLinkButton.textContent = 'Link copied!';
+      } catch (error) {
+        copyLinkButton.textContent = 'Copy failed — try the address bar';
+      }
+    });
+  }
+
 </script>
 
 </body>
