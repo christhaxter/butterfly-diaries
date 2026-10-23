@@ -672,6 +672,14 @@ a:hover {
   border-radius: 3px;
 }
 
+.report-photo-pair figcaption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #686868;
+  font-style: italic;
+}
+
 /* Stack paired photographs on small screens */
 @media (max-width: 600px) {
   .report-photo-pair-images {
