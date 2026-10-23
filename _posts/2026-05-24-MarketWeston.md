@@ -173,10 +173,10 @@ not be able to pick out an Adonis from among them.
 
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
-    <img src="{{ '/assets/images/Totternhoe/Common_blue_1.JPG' | relative_url }}"
-         alt="Common blue butterfly">
-    <img src="{{ '/assets/images/Totternhoe/Common_blue_2.JPG' | relative_url }}"
-         alt="Common blue butterfly">
+    <img src="/butterfly-diaries/assets/images/MarketWeston_DevilsDyke/Common_blue_1.JPG"
+       alt="Common blue">
+    <img src="/butterfly-diaries/assets/images/MarketWeston_DevilsDyke/Common_blue_2.JPG"
+       alt="Common blue">
   </div>
   <figcaption>Selection of common blues</figcaption>
 </figure>
@@ -188,7 +188,7 @@ here on the slopes it was alive with common blues
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/MarketWeston_DevilsDyke/Common_blue_3.JPG"
-       alt=Another common blue out of the wind">
+       alt="Another common blue out of the wind">
   <figcaption>Another common blue out of the wind</figcaption>
 </figure>
 
@@ -197,7 +197,7 @@ small blue!
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/MarketWeston_DevilsDyke/Brown_argus.JPG"
-       alt=Tiny brown argus">
+       alt="Tiny brown argus">
   <figcaption>Tiny brown argus</figcaption>
 </figure>
 
@@ -207,7 +207,7 @@ two from two for those at the sites today.
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/MarketWeston_DevilsDyke/Burnet_companion_2.JPG"
-       alt=Burnet companion">
+       alt="Burnet companion">
   <figcaption>Burnet companion</figcaption>
 </figure>
 
@@ -216,7 +216,7 @@ was not going to be my day – a case of the blues. A small heath lifted my spir
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/MarketWeston_DevilsDyke/Small_heath_2.JPG"
-       alt=Small heath">
+       alt="Small heath">
   <figcaption>Small heath</figcaption>
 </figure>
 
@@ -230,7 +230,7 @@ angle facing me and still out of the wind but on the windier side.
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/MarketWeston_DevilsDyke/Adonis_blue_1.jpg"
-       alt=First view of the blue">
+       alt="First view of the blue">
   <figcaption>First view of the blue</figcaption>
 </figure>
 
