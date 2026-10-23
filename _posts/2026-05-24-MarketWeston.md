@@ -245,9 +245,9 @@ and it was like nothing I had seen before, electric. Indeed this WAS Adonis blue
 had all the hallmarks.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Adonis_blue_2.JPG"
+  <img src="/butterfly-diaries/assets/images/MarketWeston_DevilsDyke/Adonis_blue_2.JPG"
        alt="Adonis blue">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Adonis_blue_3.JPG"
+  <img src="/butterfly-diaries/assets/images/MarketWeston_DevilsDyke/Adonis_blue_3.JPG"
        alt="Adonis blue">
   <figcaption>Adonis blue for sure</figcaption>
 </figure>
