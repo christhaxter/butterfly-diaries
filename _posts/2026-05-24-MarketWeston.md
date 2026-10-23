@@ -171,11 +171,13 @@ Also, there were loads of marbled whites, small heaths and meadow browns.
 There were a lot of common blues too, which started to raise an eyebrow that I might 
 not be able to pick out an Adonis from among them.
 
-<figure class="report-photo-pair-images">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Common_blue_1.JPG"
-       alt="First photograph">
-  <img src="/butterfly-diaries/assets/images/Totternhoe/Common_blue_2.JPG"
-       alt="Second photograph">
+<figure class="report-photo-pair">
+  <div class="report-photo-pair-images">
+    <img src="{{ '/assets/images/Totternhoe/Common_blue_1.JPG' | relative_url }}"
+         alt="Common blue butterfly">
+    <img src="{{ '/assets/images/Totternhoe/Common_blue_2.JPG' | relative_url }}"
+         alt="Common blue butterfly">
+  </div>
   <figcaption>Selection of common blues</figcaption>
 </figure>
 
