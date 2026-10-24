@@ -871,3 +871,68 @@ a:hover {
   }
 }
 
+
+/* Places page */
+
+.places-intro {
+  max-width: 750px;
+  margin-bottom: 32px;
+}
+
+.places-list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin: 28px 0;
+}
+
+.place-card {
+  margin: 0;
+}
+
+.place-landscape {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.place-details {
+  padding: 16px 0 0;
+}
+
+.place-details h2 {
+  margin: 0 0 8px;
+}
+
+.place-type {
+  margin: 0 0 12px;
+  color: #686868;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+}
+
+.place-details p {
+  max-width: 800px;
+}
+
+.place-details a {
+  color: #344234;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.place-details a:hover {
+  color: #64795B;
+}
+
+@media (max-width: 600px) {
+  .places-list {
+    gap: 28px;
+  }
+
+  .place-landscape {
+    aspect-ratio: 4 / 3;
+  }
+}
