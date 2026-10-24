@@ -875,7 +875,7 @@ a:hover {
 /* Places page */
 
 .places-intro {
-  max-width: 750px;
+  max-width: none;
   margin-bottom: 32px;
 }
 
@@ -936,3 +936,24 @@ a:hover {
     aspect-ratio: 4 / 3;
   }
 }
+
+
+/* Links on the Places page */
+
+.place-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 16px;
+}
+
+.place-links a {
+  color: #344234;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.place-links a:hover {
+  color: #64795B;
+}
+
