@@ -1053,11 +1053,13 @@ a:hover {
     display: block;
   }
 
-  /* Put nested year links underneath Plans or Results */
+  /* Keep nested year links within the screen */
   .nav-dropdown-menu > .nav-dropdown > .nav-dropdown-menu {
     position: static;
+    width: 100%;
     min-width: 0;
-    margin-left: 14px;
+    box-sizing: border-box;
+    margin-left: 0;
     padding: 0;
     border: none;
     border-radius: 0;
@@ -1067,6 +1069,7 @@ a:hover {
 
   .nav-dropdown-menu > .nav-dropdown > .nav-dropdown-menu a {
     padding-left: 24px;
+    white-space: normal;
   }
 }
 
