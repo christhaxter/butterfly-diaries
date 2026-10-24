@@ -879,19 +879,20 @@ a:hover {
   color: #686868;
 }
 
-/* Two columns on tablets */
+/* Three columns on tablets */
 
 @media (max-width: 800px) {
   .gallery-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-/* One column on small screens */
+/* Two column on small screens */
 
 @media (max-width: 500px) {
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
 }
 
