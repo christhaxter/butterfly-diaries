@@ -1023,3 +1023,31 @@ a:hover {
 .nav-dropdown:focus-within .nav-dropdown-menu {
   display: block;
 }
+
+
+/* Motivation page photograph */
+
+.motivation-photo {
+  max-width: 680px;
+  margin: 32px auto 40px;
+}
+
+.motivation-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.motivation-photo img:hover {
+  opacity: 0.88;
+}
+
+.motivation-photo figcaption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #686868;
+}
