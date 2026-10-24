@@ -1051,3 +1051,10 @@ a:hover {
   font-size: 0.9rem;
   color: #686868;
 }
+
+/* Keep About dropdown open when tapped on mobile */
+.nav-dropdown.is-open .nav-dropdown-menu {
+  display: block;
+}
+
+
