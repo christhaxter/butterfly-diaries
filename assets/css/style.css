@@ -983,7 +983,7 @@ a:hover {
 }
 
 
-/* About navigation dropdown */
+/* Navigation dropdowns */
 
 .nav-dropdown {
   position: relative;
@@ -1019,11 +1019,56 @@ a:hover {
   background: #D7DFD1;
 }
 
-.nav-dropdown:hover .nav-dropdown-menu,
-.nav-dropdown:focus-within .nav-dropdown-menu {
-  display: block;
+/* Nested dropdown layout */
+
+.nav-dropdown-menu > .nav-dropdown {
+  display: flex;
+  width: 100%;
 }
 
+.nav-dropdown-menu > .nav-dropdown > .nav-dropdown-toggle {
+  display: block;
+  width: 100%;
+  padding: 9px 14px;
+}
+
+.nav-dropdown-menu > .nav-dropdown > .nav-dropdown-menu {
+  top: 0;
+  left: 100%;
+}
+
+/* Desktop: reveal only the immediate submenu */
+
+@media (min-width: 801px) {
+  .nav-dropdown:hover > .nav-dropdown-menu,
+  .nav-dropdown:focus-within > .nav-dropdown-menu {
+    display: block;
+  }
+}
+
+/* Mobile: expand only the dropdown that was tapped */
+
+@media (max-width: 800px) {
+  .nav-dropdown.is-open > .nav-dropdown-menu {
+    display: block;
+  }
+
+  /* Put nested year links underneath Plans or Results */
+  .nav-dropdown-menu > .nav-dropdown > .nav-dropdown-menu {
+    position: static;
+    min-width: 0;
+    margin-left: 14px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .nav-dropdown-menu > .nav-dropdown > .nav-dropdown-menu a {
+    padding-left: 24px;
+  }
+}
 
 /* Motivation page photograph */
 
@@ -1052,9 +1097,5 @@ a:hover {
   color: #686868;
 }
 
-/* Keep About dropdown open when tapped on mobile */
-.nav-dropdown.is-open .nav-dropdown-menu {
-  display: block;
-}
 
 
