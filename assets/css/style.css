@@ -1056,17 +1056,20 @@ a:hover {
   /* Keep nested year links within the screen */
   .nav-dropdown-menu > .nav-dropdown > .nav-dropdown-menu {
     position: static;
+    display: none;
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
-    margin-left: 0;
+    margin: 0;
     padding: 0;
     border: none;
     border-radius: 0;
     box-shadow: none;
     background: transparent;
   }
-
+  .nav-dropdown-menu > .nav-dropdown.is-open > .nav-dropdown-menu {
+    display: block;
+  }
   .nav-dropdown-menu > .nav-dropdown > .nav-dropdown-menu a {
     padding-left: 24px;
     white-space: normal;
