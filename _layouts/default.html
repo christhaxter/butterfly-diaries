@@ -30,7 +30,16 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/journal/' | relative_url }}">Journal</a>
-        <a href="{{ '/species/' | relative_url }}">Species</a>
+        <div class="nav-dropdown">
+          <a href="{{ '/species/' | relative_url }}" class="nav-dropdown-toggle" aria-haspopup="true">
+            Species <span aria-hidden="true">▾</span>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="{{ '/species/' | relative_url }}">Species directory</a>
+            <a href="{{ '/species/my-journey/' | relative_url }}">My butterfly journey</a>
+            <a href="{{ '/species/2027-plans/' | relative_url }}">Plans for 2027</a>
+          </div>
+        </div>
         <a href="{{ '/places/' | relative_url }}">Places</a>
         <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
         <a href="{{ '/map/' | relative_url }}">Map</a>
