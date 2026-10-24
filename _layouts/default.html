@@ -30,22 +30,65 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/journal/' | relative_url }}">Journal</a>
+
         <div class="nav-dropdown">
-          <a href="{{ '/species/' | relative_url }}" class="nav-dropdown-toggle" aria-haspopup="true">
+          <a href="{{ '/species/' | relative_url }}"
+             class="nav-dropdown-toggle"
+             aria-haspopup="true">
             Species <span aria-hidden="true">▾</span>
           </a>
           <div class="nav-dropdown-menu">
             <a href="{{ '/species/' | relative_url }}">Species directory</a>
-            <a href="{{ '/species/my-journey/' | relative_url }}">My butterfly journey</a>
-            <a href="{{ '/species/2027-plans/' | relative_url }}">Plans for 2027</a>
           </div>
         </div>
+
+        <div class="nav-dropdown">
+          <a href="{{ '/journey/' | relative_url }}"
+             class="nav-dropdown-toggle"
+             aria-haspopup="true">
+            Journey <span aria-hidden="true">▾</span>
+          </a>
+
+          <div class="nav-dropdown-menu">
+
+            <div class="nav-dropdown">
+              <a href="{{ '/journey/plans/' | relative_url }}"
+                 class="nav-dropdown-toggle"
+                 aria-haspopup="true">
+                Plans <span aria-hidden="true">▾</span>
+              </a>
+              <div class="nav-dropdown-menu">
+                <a href="{{ '/journey/plans/2026/' | relative_url }}">2026</a>
+                <a href="{{ '/journey/plans/2027/' | relative_url }}">2027</a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown">
+              <a href="{{ '/journey/results/' | relative_url }}"
+                 class="nav-dropdown-toggle"
+                 aria-haspopup="true">
+                Results <span aria-hidden="true">▾</span>
+              </a>
+              <div class="nav-dropdown-menu">
+                <a href="{{ '/journey/results/2026/' | relative_url }}">2026</a>
+                <a href="{{ '/journey/results/2027/' | relative_url }}">2027</a>
+              </div>
+            </div>
+
+            <a href="{{ '/species/my-journey/' | relative_url }}">
+              My butterfly journey
+            </a>
+          </div>
+        </div>
+
         <a href="{{ '/places/' | relative_url }}">Places</a>
         <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
         <a href="{{ '/map/' | relative_url }}">Map</a>
-      
+
         <div class="nav-dropdown">
-          <a href="{{ '/about/' | relative_url }}" class="nav-dropdown-toggle" aria-haspopup="true">
+          <a href="{{ '/about/' | relative_url }}"
+             class="nav-dropdown-toggle"
+             aria-haspopup="true">
             About <span aria-hidden="true">▾</span>
           </a>
           <div class="nav-dropdown-menu">
@@ -94,129 +137,138 @@
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
            target="_blank" rel="noopener noreferrer">Facebook</a>
       </nav>
-      
+
       <button
         type="button"
         class="copy-link-button"
         data-share-url="{{ page.url | absolute_url }}">
         Copy link
       </button>
-      
     </section>
   {% endif %}
 
   <footer class="site-footer">
     <p>Butterfly Diaries · © Chris Thaxter 2026 · All rights reserved</p>
   </footer>
-  
+
   <div id="lightbox" class="lightbox" aria-hidden="true">
-  <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Featured butterfly photograph">
-    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <div class="lightbox-content"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Featured butterfly photograph">
+      <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
 
-    <img id="lightbox-image" src="" alt="">
+      <img id="lightbox-image" src="" alt="">
 
-    <div class="lightbox-caption">
-      <h2 id="lightbox-species"></h2>
-      <p id="lightbox-details"></p>
+      <div class="lightbox-caption">
+        <h2 id="lightbox-species"></h2>
+        <p id="lightbox-details"></p>
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImage = document.getElementById('lightbox-image');
-  const lightboxSpecies = document.getElementById('lightbox-species');
-  const lightboxDetails = document.getElementById('lightbox-details');
-  const featuredPhotos = document.querySelectorAll('.featured-photo');
-  const closeButton = document.querySelector('.lightbox-close');
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxSpecies = document.getElementById('lightbox-species');
+    const lightboxDetails = document.getElementById('lightbox-details');
+    const featuredPhotos = document.querySelectorAll('.featured-photo');
+    const closeButton = document.querySelector('.lightbox-close');
 
-  function openLightbox(photo) {
-    lightboxImage.src = photo.dataset.image;
-    lightboxImage.alt = photo.dataset.species;
-    lightboxSpecies.textContent = photo.dataset.species;
-    lightboxDetails.textContent =
-      photo.dataset.location + ' · ' + photo.dataset.date;
+    function openLightbox(photo) {
+      lightboxImage.src = photo.dataset.image;
+      lightboxImage.alt = photo.dataset.species;
+      lightboxSpecies.textContent = photo.dataset.species;
+      lightboxDetails.textContent =
+        photo.dataset.location + ' · ' + photo.dataset.date;
 
-    lightbox.classList.add('is-open');
-    lightbox.setAttribute('aria-hidden', 'false');
-    closeButton.focus();
-  }
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      closeButton.focus();
+    }
 
-  function closeLightbox() {
-    lightbox.classList.remove('is-open');
-    lightbox.setAttribute('aria-hidden', 'true');
-    lightboxImage.src = '';
-  }
+    function closeLightbox() {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImage.src = '';
+    }
 
-  featuredPhotos.forEach(function (photo) {
-    photo.addEventListener('click', function () {
-      openLightbox(photo);
+    featuredPhotos.forEach(function (photo) {
+      photo.addEventListener('click', function () {
+        openLightbox(photo);
+      });
     });
-  });
 
-  closeButton.addEventListener('click', closeLightbox);
+    closeButton.addEventListener('click', closeLightbox);
 
-  lightbox.addEventListener('click', function (event) {
-    if (event.target === lightbox) {
-      closeLightbox();
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
-      closeLightbox();
-    }
-  });
-
-  const copyLinkButton = document.querySelector('.copy-link-button');
-
-  if (copyLinkButton) {
-    copyLinkButton.addEventListener('click', async function () {
-      const shareUrl = copyLinkButton.dataset.shareUrl;
-
-      try {
-        await navigator.clipboard.writeText(shareUrl);
-        copyLinkButton.textContent = 'Link copied!';
-      } catch (error) {
-        copyLinkButton.textContent = 'Copy failed — try the address bar';
+    lightbox.addEventListener('click', function (event) {
+      if (event.target === lightbox) {
+        closeLightbox();
       }
     });
-  }
 
-  const dropdowns = document.querySelectorAll('.nav-dropdown');
-  
-  dropdowns.forEach(function (dropdown) {
-    const dropdownToggle = dropdown.querySelector('.nav-dropdown-toggle');
-  
-    dropdownToggle.addEventListener('click', function (event) {
-      if (window.matchMedia('(max-width: 800px)').matches) {
-        event.preventDefault();
-  
-        // Close any other open dropdown
-        dropdowns.forEach(function (otherDropdown) {
-          if (otherDropdown !== dropdown) {
-            otherDropdown.classList.remove('is-open');
-          }
-        });
-  
-        // Toggle this dropdown
-        dropdown.classList.toggle('is-open');
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+        closeLightbox();
       }
     });
-  });
-  
-  // Close dropdowns when tapping outside them on mobile
-  document.addEventListener('click', function (event) {
-    if (window.matchMedia('(max-width: 800px)').matches) {
-      dropdowns.forEach(function (dropdown) {
-        if (!dropdown.contains(event.target)) {
-          dropdown.classList.remove('is-open');
+
+    const copyLinkButton = document.querySelector('.copy-link-button');
+
+    if (copyLinkButton) {
+      copyLinkButton.addEventListener('click', async function () {
+        const shareUrl = copyLinkButton.dataset.shareUrl;
+
+        try {
+          await navigator.clipboard.writeText(shareUrl);
+          copyLinkButton.textContent = 'Link copied!';
+        } catch (error) {
+          copyLinkButton.textContent = 'Copy failed — try the address bar';
         }
       });
     }
-  });
 
-</script>
+    // Nested navigation dropdowns
+    const navDropdowns = document.querySelectorAll('.site-nav .nav-dropdown');
+
+    navDropdowns.forEach(function (dropdown) {
+      const toggle = dropdown.querySelector(':scope > .nav-dropdown-toggle');
+
+      if (!toggle) return;
+
+      toggle.addEventListener('click', function (event) {
+        if (!window.matchMedia('(max-width: 800px)').matches) return;
+
+        event.preventDefault();
+
+        const parentMenu = dropdown.parentElement;
+        const siblings = Array.from(parentMenu.children).filter(function (item) {
+          return item.classList && item.classList.contains('nav-dropdown');
+        });
+
+        siblings.forEach(function (sibling) {
+          if (sibling !== dropdown) {
+            sibling.classList.remove('is-open');
+            sibling.querySelectorAll('.nav-dropdown.is-open').forEach(function (child) {
+              child.classList.remove('is-open');
+            });
+          }
+        });
+
+        dropdown.classList.toggle('is-open');
+      });
+    });
+
+    // Close all dropdowns when tapping outside the navigation on mobile
+    document.addEventListener('click', function (event) {
+      if (!window.matchMedia('(max-width: 800px)').matches) return;
+      if (event.target.closest('.site-nav')) return;
+
+      navDropdowns.forEach(function (dropdown) {
+        dropdown.classList.remove('is-open');
+      });
+    });
+  </script>
 
 </body>
 </html>
