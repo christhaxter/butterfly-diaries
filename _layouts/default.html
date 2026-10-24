@@ -235,9 +235,6 @@
       toggle.addEventListener('click', function (event) {
         if (!window.matchMedia('(max-width: 800px)').matches) return;
 
-        if (toggle.getAttribute('href').endsWith('/journey/')) {
-          return;
-        }
         event.preventDefault();
 
         const parentMenu = dropdown.parentElement;
