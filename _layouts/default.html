@@ -234,7 +234,15 @@
 
       toggle.addEventListener('click', function (event) {
         if (!window.matchMedia('(max-width: 800px)').matches) return;
-
+        
+        if (
+          toggle.getAttribute('href') &&
+          toggle.getAttribute('href') !== '#' &&
+          !toggle.classList.contains('nav-dropdown-toggle-only')
+        ) {
+          return;
+        }
+        
         event.preventDefault();
 
         const parentMenu = dropdown.parentElement;
