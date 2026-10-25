@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Map
@@ -15,7 +16,7 @@ permalink: /map/
   Footpath overlay: waiting for map…
 </div>
 
-<div id="butterfly-map" style="height: 700px; width: 100%;"></div>
+<div id="butterfly-map" style="height: 600px; width: 100%;"></div>
 
 <link
   rel="stylesheet"
@@ -30,8 +31,6 @@ permalink: /map/
   crossorigin=""
 ></script>
 
-<script src="https://unpkg.com/osmtogeojson@3.0.0/osmtogeojson.js"></script>
-
 <script>
   const butterflyMap = L.map("butterfly-map").setView(
     [54.5, -3.0],
@@ -40,7 +39,6 @@ permalink: /map/
 
   const pathStatus = document.getElementById("path-status");
 
-  // Esri satellite imagery
   const satellite = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     {
@@ -50,7 +48,6 @@ permalink: /map/
     }
   );
 
-  // Roads and transport features
   const roadsOverlay = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}",
     {
@@ -59,7 +56,6 @@ permalink: /map/
     }
   );
 
-  // Place names and boundaries
   const placesOverlay = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
     {
@@ -69,7 +65,6 @@ permalink: /map/
     }
   );
 
-  // OpenStreetMap street map
   const streets = L.tileLayer(
     "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
     {
@@ -79,12 +74,9 @@ permalink: /map/
     }
   );
 
-  // Transparent paths and tracks overlay
   const pathOverlay = L.geoJSON(null, {
     style: function (feature) {
-      const tags = feature.properties.tags || {};
-      const highway = tags.highway;
-
+      const highway = feature.properties.highway;
       let color = "#ffd447";
 
       if (highway === "bridleway") color = "#f08a9b";
@@ -102,13 +94,11 @@ permalink: /map/
     }
   });
 
-  // Default map layers
   satellite.addTo(butterflyMap);
   roadsOverlay.addTo(butterflyMap);
   placesOverlay.addTo(butterflyMap);
   pathOverlay.addTo(butterflyMap);
 
-  // Layer selector
   L.control.layers(
     {
       "Satellite imagery": satellite,
@@ -124,12 +114,8 @@ permalink: /map/
     }
   ).addTo(butterflyMap);
 
-  // Scale bar
-  L.control.scale({
-    imperial: false
-  }).addTo(butterflyMap);
+  L.control.scale({ imperial: false }).addTo(butterflyMap);
 
-  // Path-loading state
   let pathLoadTimer = null;
   let currentRequest = null;
   let requestNumber = 0;
@@ -148,13 +134,11 @@ permalink: /map/
     }
 
     const bounds = butterflyMap.getBounds();
-
     const south = bounds.getSouth();
     const west = bounds.getWest();
     const north = bounds.getNorth();
     const east = bounds.getEast();
 
-    // Avoid querying a large area at once.
     if ((north - south) * (east - west) > 1.5) {
       pathStatus.textContent =
         "Footpath overlay: zoom in further to load a smaller area.";
@@ -167,17 +151,13 @@ permalink: /map/
       '(' + south + ',' + west + ',' + north + ',' + east + ');' +
       'out geom;';
 
-    if (currentRequest) {
-      currentRequest.abort();
-    }
+    if (currentRequest) currentRequest.abort();
 
     const controller = new AbortController();
     currentRequest = controller;
-
     const thisRequest = ++requestNumber;
 
-    pathStatus.textContent =
-      "Footpath overlay: requesting path data…";
+    pathStatus.textContent = "Footpath overlay: requesting path data…";
 
     fetch("https://overpass-api.de/api/interpreter", {
       method: "POST",
@@ -190,33 +170,48 @@ permalink: /map/
     })
       .then(function (response) {
         if (!response.ok) {
-          throw new Error(
-            "Overpass returned HTTP " + response.status
-          );
+          throw new Error("Overpass returned HTTP " + response.status);
         }
-
         return response.json();
       })
       .then(function (data) {
         if (thisRequest !== requestNumber) return;
-        if (!butterflyMap.hasLayer(pathOverlay)) return;
 
-        if (typeof osmtogeojson !== "function") {
-          throw new Error(
-            "The OSM-to-GeoJSON conversion script did not load."
-          );
+        // Convert OSM ways directly into GeoJSON LineString features.
+        const features = [];
+
+        for (const element of data.elements || []) {
+          if (
+            element.type !== "way" ||
+            !element.geometry ||
+            element.geometry.length < 2
+          ) {
+            continue;
+          }
+
+          const coordinates = element.geometry.map(function (point) {
+            return [point.lon, point.lat];
+          });
+
+          features.push({
+            type: "Feature",
+            properties: element.tags || {},
+            geometry: {
+              type: "LineString",
+              coordinates: coordinates
+            }
+          });
         }
 
-        const geojson = osmtogeojson(data);
-
         pathOverlay.clearLayers();
-        pathOverlay.addData(geojson);
-
-        const count = pathOverlay.getLayers().length;
+        pathOverlay.addData({
+          type: "FeatureCollection",
+          features: features
+        });
 
         pathStatus.textContent =
-          "Footpath overlay: loaded " + count +
-          " mapped features.";
+          "Footpath overlay: loaded " + features.length +
+          " mapped ways.";
       })
       .catch(function (error) {
         if (error.name === "AbortError") return;
@@ -224,13 +219,10 @@ permalink: /map/
 
         pathStatus.textContent =
           "Footpath overlay error: " + error.message;
-
         console.error("Footpath overlay error:", error);
       })
       .finally(function () {
-        if (thisRequest === requestNumber) {
-          currentRequest = null;
-        }
+        if (thisRequest === requestNumber) currentRequest = null;
       });
   }
 
@@ -239,34 +231,27 @@ permalink: /map/
     pathLoadTimer = setTimeout(loadPaths, 1000);
   }
 
-  // Load paths after the user moves or zooms the map.
   butterflyMap.on("moveend", schedulePathLoad);
 
-  // Reload when the path overlay is switched on.
   butterflyMap.on("overlayadd", function (event) {
-    if (event.layer === pathOverlay) {
-      schedulePathLoad();
-    }
+    if (event.layer === pathOverlay) schedulePathLoad();
   });
 
-  // Cancel requests and clear paths when switched off.
   butterflyMap.on("overlayremove", function (event) {
-    if (event.layer === pathOverlay) {
-      clearTimeout(pathLoadTimer);
-      requestNumber++;
+    if (event.layer !== pathOverlay) return;
 
-      if (currentRequest) {
-        currentRequest.abort();
-        currentRequest = null;
-      }
+    clearTimeout(pathLoadTimer);
+    requestNumber++;
 
-      pathOverlay.clearLayers();
-      pathStatus.textContent =
-        "Footpath overlay: switched off.";
+    if (currentRequest) {
+      currentRequest.abort();
+      currentRequest = null;
     }
+
+    pathOverlay.clearLayers();
+    pathStatus.textContent = "Footpath overlay: switched off.";
   });
 
-  // Initial status
   pathStatus.textContent =
     "Footpath overlay: zoom in to level 12 or closer.";
 </script>
