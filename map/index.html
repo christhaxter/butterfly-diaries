@@ -188,6 +188,31 @@ permalink: /map/
 
   butterflyMap.addControl(new FullscreenControl());
   
+  // Show coordinates under the mouse cursor
+  const coordinatesControl = L.control({
+    position: "topleft"
+  });
+
+  coordinatesControl.onAdd = function () {
+    this.container = L.DomUtil.create(
+      "div",
+      "map-coordinates"
+    );
+
+    this.container.textContent = "Lat: —, Lon: —";
+    return this.container;
+  };
+
+  coordinatesControl.addTo(butterflyMap);
+
+  butterflyMap.on("mousemove", function (event) {
+    const lat = event.latlng.lat.toFixed(5);
+    const lon = event.latlng.lng.toFixed(5);
+
+    coordinatesControl.getContainer().textContent =
+      "Lat: " + lat + ", Lon: " + lon;
+  });
+  
   // Add site placemarks from _data/sites.yml
   const sites = [
     {% for site in site.data.sites %}
