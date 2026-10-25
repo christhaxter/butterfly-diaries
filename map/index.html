@@ -11,7 +11,7 @@ permalink: /map/
   More map layers and butterfly records will be added here.
 </p>
 
-<div id="butterfly-map" style="height: 600px; width: 100%;"></div>
+<div id="butterfly-map" style="height: 800px; width: 100%;"></div>
 
 <link
   rel="stylesheet"
@@ -51,6 +51,15 @@ permalink: /map/
     }
   );
   
+  const placesOverlay = L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+    {
+      maxZoom: 19,
+      attribution:
+        "Sources: Esri, Garmin, HERE, OpenStreetMap contributors, and the GIS user community"
+    }
+  );
+  
   const streets = L.tileLayer(
     "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
     {
@@ -60,23 +69,27 @@ permalink: /map/
     }
   );
   
-  // Start with satellite imagery and roads/labels.
+  // Start with satellite imagery, roads and place names.
   satellite.addTo(butterflyMap);
   roadsOverlay.addTo(butterflyMap);
+  placesOverlay.addTo(butterflyMap);
   
+  // Basemaps and independently selectable overlays.
   L.control.layers(
     {
       "Satellite imagery": satellite,
       "Street map": streets
     },
     {
-      "Roads and labels": roadsOverlay
+      "Roads": roadsOverlay,
+      "Place names and boundaries": placesOverlay
     },
     {
       collapsed: false
     }
   ).addTo(butterflyMap);
   
+  // Metric scale bar.
   L.control.scale({
     imperial: false
   }).addTo(butterflyMap);
