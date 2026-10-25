@@ -307,7 +307,10 @@ permalink: /map/
       popup.appendChild(message);
     }
 
-    marker.bindPopup(popup);
+    marker.bindPopup(popup, {
+      maxWidth: window.matchMedia("(max-width: 600px)").matches ? 220 : 320,
+      maxHeight: window.matchMedia("(max-width: 600px)").matches ? 250 : 400
+    });
   });
   
 </script>
