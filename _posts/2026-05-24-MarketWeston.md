@@ -11,6 +11,29 @@ tags:
   - Marbled white
   - Market Weston
   - Devil's Dyke
+sites:
+  - name: Market Weston Fen
+    species:
+      - Small heath
+      - Meadow brown
+      - Common blue
+      - Holly blue
+      - Painted lady
+      - Red admiral
+      - Small white
+      - Burnet companion
+      - Cinnabar
+  - name: Devil's Dyke
+    species:
+      - Small heath
+      - Common blue
+      - Brown argus
+      - Adonis blue
+      - Meadow brown
+      - Small skipper
+      - Painted lady
+      - Marbled white
+      - Burnet companion
 ---
 
 <p class="post-date">

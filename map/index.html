@@ -7,8 +7,8 @@ permalink: /map/
 <h1 class="page-title">Explore the map</h1>
 
 <p>
-  Explore the landscape using satellite imagery, roads, place names
-  and countryside mapping.
+  Explore the sites visited! The location markers on the map show the places I have
+  visited in search of butterflies. Click on the markers to discover more.
 </p>
 
 <div id="butterfly-map"></div>
@@ -215,6 +215,18 @@ permalink: /map/
       "Lat: " + lat + ", Lon: " + lon;
   });
   
+  // Journal posts, including site-specific species
+  const posts = [
+    {% for post in site.posts %}
+    {
+      title: {{ post.title | jsonify }},
+      date: {{ post.date | date: "%d %B %Y" | jsonify }},
+      url: {{ post.url | relative_url | jsonify }},
+      sites: {{ post.sites | jsonify | default: "[]" }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
   // Add site placemarks from _data/sites.yml
   const sites = [
     {% for site in site.data.sites %}
@@ -228,12 +240,74 @@ permalink: /map/
   ];
 
   sites.forEach(function (site) {
-    L.marker([site.latitude, site.longitude])
-      .addTo(butterflyMap)
-      .bindPopup(
-        "<strong>" + site.name + "</strong><br>" +
-        site.description
-      );
+    const marker = L.marker([site.latitude, site.longitude])
+      .addTo(butterflyMap);
+
+    const popup = document.createElement("div");
+
+    const heading = document.createElement("strong");
+    heading.textContent = site.name;
+    popup.appendChild(heading);
+
+    const description = document.createElement("p");
+    description.textContent = site.description || "";
+    popup.appendChild(description);
+
+    const matchingPosts = posts
+      .map(function (post) {
+        const siteRecord = (post.sites || []).find(function (entry) {
+          return entry.name === site.name;
+        });
+
+        return siteRecord ? { post: post, siteRecord: siteRecord } : null;
+      })
+      .filter(Boolean);
+
+    matchingPosts.forEach(function (item) {
+      const article = document.createElement("div");
+      article.style.marginTop = "10px";
+
+      const link = document.createElement("a");
+      link.href = item.post.url;
+      link.textContent = item.post.title;
+      article.appendChild(link);
+
+      const date = document.createElement("div");
+      date.textContent = item.post.date;
+      article.appendChild(date);
+
+      const species = item.siteRecord.species || [];
+
+      if (species.length > 0) {
+        const label = document.createElement("strong");
+        label.textContent = "Species recorded";
+        label.style.display = "block";
+        label.style.marginTop = "5px";
+        article.appendChild(label);
+
+        const list = document.createElement("ul");
+        list.style.margin = "4px 0";
+        list.style.paddingLeft = "20px";
+
+        species.forEach(function (name) {
+          const entry = document.createElement("li");
+          entry.textContent = name;
+          list.appendChild(entry);
+        });
+
+        article.appendChild(list);
+      }
+
+      popup.appendChild(article);
+    });
+
+    if (matchingPosts.length === 0) {
+      const message = document.createElement("p");
+      message.textContent = "No linked journal posts yet.";
+      popup.appendChild(message);
+    }
+
+    marker.bindPopup(popup);
   });
   
 </script>
