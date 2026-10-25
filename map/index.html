@@ -188,4 +188,25 @@ permalink: /map/
 
   butterflyMap.addControl(new FullscreenControl());
   
+  // Add site placemarks from _data/sites.yml
+  const sites = [
+    {% for site in site.data.sites %}
+    {
+      name: {{ site.name | jsonify }},
+      latitude: {{ site.latitude | jsonify }},
+      longitude: {{ site.longitude | jsonify }},
+      description: {{ site.description | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  sites.forEach(function (site) {
+    L.marker([site.latitude, site.longitude])
+      .addTo(butterflyMap)
+      .bindPopup(
+        "<strong>" + site.name + "</strong><br>" +
+        site.description
+      );
+  });
+  
 </script>
