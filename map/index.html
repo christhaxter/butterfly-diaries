@@ -131,15 +131,15 @@ permalink: /map/
     options: {
       position: "bottomright"
     },
-  
+
     onAdd: function (map) {
       const container = L.DomUtil.create(
         "div",
         "leaflet-bar leaflet-control"
       );
-  
+
       const button = L.DomUtil.create("a", "", container);
-  
+
       button.href = "#";
       button.title = "Expand map";
       button.setAttribute("role", "button");
@@ -151,17 +151,16 @@ permalink: /map/
       button.style.textAlign = "center";
       button.style.fontWeight = "bold";
       button.textContent = "⛶";
-  
+
       L.DomEvent.disableClickPropagation(container);
-      L.DomEvent.on(button, "click", function (event) {
+
+      function toggleFullscreen(event) {
         L.DomEvent.preventDefault(event);
-  
-        const isFullscreen =
-          document.getElementById("butterfly-map")
-            .classList.contains("map-fullscreen");
-  
+
         const mapElement = document.getElementById("butterfly-map");
-  
+        const isFullscreen =
+          mapElement.classList.contains("map-fullscreen");
+
         if (isFullscreen) {
           mapElement.classList.remove("map-fullscreen");
           document.body.style.overflow = "";
@@ -175,16 +174,18 @@ permalink: /map/
           button.title = "Return to page";
           button.setAttribute("aria-label", "Return to page");
         }
-  
+
         setTimeout(function () {
           map.invalidateSize();
         }, 150);
-      });
-  
+      }
+
+      L.DomEvent.on(button, "click", toggleFullscreen);
+
       return container;
     }
   });
-  
-  butterflyMap.addControl(new FullscreenControl());
 
+  butterflyMap.addControl(new FullscreenControl());
+  
 </script>
