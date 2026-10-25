@@ -69,6 +69,15 @@ permalink: /map/
     }
   );
   
+  const ukFootpaths = L.tileLayer(
+  "https://map.atownsend.org.uk/hot/{z}/{x}/{y}.png",
+  {
+    maxZoom: 19,
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+  }
+  );
+  
   // Start with satellite imagery, roads and place names.
   satellite.addTo(butterflyMap);
   roadsOverlay.addTo(butterflyMap);
@@ -83,6 +92,7 @@ permalink: /map/
     {
       "Roads": roadsOverlay,
       "Place names and boundaries": placesOverlay
+      "UK footpath map": ukFootpaths
     },
     {
       collapsed: false
