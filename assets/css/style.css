@@ -1153,3 +1153,18 @@ a:hover {
   pointer-events: none;
   white-space: nowrap;
 }
+
+/* Keep map popups manageable on mobile */
+@media (max-width: 600px) {
+  .leaflet-popup-content {
+    width: 220px !important;
+    max-width: 65vw;
+    max-height: 45vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .leaflet-popup-content-wrapper {
+    max-width: 75vw;
+  }
+}
