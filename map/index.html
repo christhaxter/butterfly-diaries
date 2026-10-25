@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Map
@@ -7,8 +8,8 @@ permalink: /map/
 <h1 class="page-title">Explore the map</h1>
 
 <p>
-  Explore the landscape using satellite imagery, roads, place names
-  and countryside mapping.
+  Explore satellite imagery with roads, place names and OpenStreetMap
+  footpaths, bridleways and tracks. Zoom in to load path details.
 </p>
 
 <div id="butterfly-map" style="height: 600px; width: 100%;"></div>
@@ -25,6 +26,8 @@ permalink: /map/
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""
 ></script>
+
+<script src="https://unpkg.com/osmtogeojson@3.0.0/osmtogeojson.js"></script>
 
 <script>
   const butterflyMap = L.map("butterfly-map").setView(
@@ -47,8 +50,7 @@ permalink: /map/
     "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}",
     {
       maxZoom: 19,
-      attribution:
-        "Esri, HERE, Garmin, OpenStreetMap contributors"
+      attribution: "Esri, HERE, Garmin, OpenStreetMap contributors"
     }
   );
 
@@ -72,40 +74,161 @@ permalink: /map/
     }
   );
 
-  // Experimental UK countryside map.
-  // This is a separate basemap, not a transparent footpath overlay.
-  const ukFootpaths = L.tileLayer(
-    "https://map.atownsend.org.uk/hot/{z}/{x}/{y}.png",
-    {
-      maxZoom: 19,
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-    }
-  );
+  // Transparent vector overlay for paths and tracks
+  const pathOverlay = L.geoJSON(null, {
+    style: function (feature) {
+      const tags = feature.properties.tags || {};
+      const highway = tags.highway;
 
-  // Default view: satellite imagery with roads and place names.
+      let color = "#ffd447";
+
+      if (highway === "bridleway") color = "#f08a9b";
+      if (highway === "track") color = "#65d6a0";
+      if (highway === "cycleway") color = "#55baff";
+      if (highway === "steps") color = "#ffffff";
+
+      return {
+        color: color,
+        weight: 3,
+        opacity: 0.95,
+        lineCap: "round",
+        lineJoin: "round"
+      };
+    }
+  });
+
+  // Start with satellite imagery, roads and place names.
   satellite.addTo(butterflyMap);
   roadsOverlay.addTo(butterflyMap);
   placesOverlay.addTo(butterflyMap);
+  pathOverlay.addTo(butterflyMap);
 
-  // Layer selector
   L.control.layers(
     {
       "Satellite imagery": satellite,
-      "Street map": streets,
-      "UK countryside map": ukFootpaths
+      "Street map": streets
     },
     {
       "Roads": roadsOverlay,
-      "Place names and boundaries": placesOverlay
+      "Place names and boundaries": placesOverlay,
+      "Footpaths and tracks": pathOverlay
     },
     {
       collapsed: false
     }
   ).addTo(butterflyMap);
 
-  // Metric scale bar
   L.control.scale({
     imperial: false
   }).addTo(butterflyMap);
+
+  // Load paths only when zoomed in enough.
+  // Wait after map movements to avoid repeated requests.
+  let pathLoadTimer = null;
+  let currentRequest = null;
+  let requestNumber = 0;
+
+  function loadPaths() {
+    if (!butterflyMap.hasLayer(pathOverlay)) return;
+
+    if (butterflyMap.getZoom() < 12) {
+      pathOverlay.clearLayers();
+
+      if (currentRequest) {
+        currentRequest.abort();
+        currentRequest = null;
+      }
+
+      return;
+    }
+
+    const bounds = butterflyMap.getBounds();
+
+    const south = bounds.getSouth();
+    const west = bounds.getWest();
+    const north = bounds.getNorth();
+    const east = bounds.getEast();
+
+    // Avoid accidentally requesting an enormous area.
+    if ((north - south) * (east - west) > 1.5) {
+      return;
+    }
+
+    const query =
+      '[out:json][timeout:20];' +
+      'way["highway"~"^(path|footway|bridleway|cycleway|steps|track)$"]' +
+      '(' + south + ',' + west + ',' + north + ',' + east + ');' +
+      'out geom;';
+
+    if (currentRequest) {
+      currentRequest.abort();
+    }
+
+    const controller = new AbortController();
+    currentRequest = controller;
+
+    const thisRequest = ++requestNumber;
+
+    fetch("https://overpass-api.de/api/interpreter", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+      },
+      body: "data=" + encodeURIComponent(query),
+      signal: controller.signal
+    })
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Path service returned HTTP " + response.status);
+        }
+
+        return response.json();
+      })
+      .then(function (data) {
+        if (thisRequest !== requestNumber) return;
+        if (!butterflyMap.hasLayer(pathOverlay)) return;
+
+        const geojson = osmtogeojson(data);
+
+        pathOverlay.clearLayers();
+        pathOverlay.addData(geojson);
+      })
+      .catch(function (error) {
+        if (error.name === "AbortError") return;
+
+        console.warn("Could not load OpenStreetMap paths:", error);
+      })
+      .finally(function () {
+        if (thisRequest === requestNumber) {
+          currentRequest = null;
+        }
+      });
+  }
+
+  function schedulePathLoad() {
+    clearTimeout(pathLoadTimer);
+
+    pathLoadTimer = setTimeout(loadPaths, 1000);
+  }
+
+  butterflyMap.on("moveend", schedulePathLoad);
+  butterflyMap.on("overlayadd", function (event) {
+    if (event.layer === pathOverlay) {
+      schedulePathLoad();
+    }
+  });
+
+  butterflyMap.on("overlayremove", function (event) {
+    if (event.layer === pathOverlay) {
+      clearTimeout(pathLoadTimer);
+      requestNumber++;
+
+      if (currentRequest) {
+        currentRequest.abort();
+        currentRequest = null;
+      }
+
+      pathOverlay.clearLayers();
+    }
+  });
 </script>
