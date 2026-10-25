@@ -27,7 +27,9 @@ permalink: /map/
 ></script>
 
 <script>
-  const butterflyMap = L.map("butterfly-map").setView(
+  const butterflyMap = L.map("butterfly-map", {
+    zoomControl: false
+  }).setView(
     [54.5, -3.0],
     5
   );
