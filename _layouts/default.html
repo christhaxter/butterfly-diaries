@@ -43,37 +43,16 @@
         </div>
         
         <div class="nav-dropdown">
-          <a href="{{ '/journey/' | relative_url }}"
-             class="nav-dropdown-toggle"
+          <a href="#"
+             class="nav-dropdown-toggle nav-dropdown-toggle-only"
              aria-haspopup="true">
             Journey <span aria-hidden="true">▾</span>
           </a>
 
           <div class="nav-dropdown-menu">
-
-            <div class="nav-dropdown">
-              <a href="#"
-                 class="nav-dropdown-toggle nav-dropdown-toggle-only"
-                 aria-haspopup="true">
-                Plans <span aria-hidden="true">▾</span>
-              </a>
-              <div class="nav-dropdown-menu">
-                <a href="{{ '/journey/plans/2026/' | relative_url }}">2026</a>
-                <a href="{{ '/journey/plans/2027/' | relative_url }}">2027</a>
-              </div>
-            </div>
-
-            <div class="nav-dropdown">
-              <a href="#"
-                 class="nav-dropdown-toggle nav-dropdown-toggle-only"
-                 aria-haspopup="true">
-                Results <span aria-hidden="true">▾</span>
-              </a>
-              <div class="nav-dropdown-menu">
-                <a href="{{ '/journey/results/2026/' | relative_url }}">2026</a>
-                <a href="{{ '/journey/results/2027/' | relative_url }}">2027</a>
-              </div>
-            </div>
+            <a href="{{ '/journey/' | relative_url }}">Journey overview</a>
+            <a href="{{ '/journey/plans/' | relative_url }}">Plans</a>
+            <a href="{{ '/journey/results/' | relative_url }}">Results</a>
           </div>
         </div>
 
