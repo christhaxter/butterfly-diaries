@@ -1,0 +1,19 @@
+- name: "Devil's Dyke"
+  latitude: 52.229
+  longitude: 0.415
+  description: "Chalk grassland, Cambridgeshire"
+
+- name: "Market Weston Fen"
+  latitude: 52.371594
+  longitude: 0.912702
+  description: "Fen nature reserve, Suffolk"
+
+- name: "Monkwood"
+  latitude: 52.24413
+  longitude: -2.28848
+  description: "Woodland nature reserve, Worcestershire"
+
+- name: "Totternhoe Knolls"
+  latitude: 51.8886
+  longitude: -0.5784
+  description: "Chalk grassland nature reserve, Bedfordshire"
