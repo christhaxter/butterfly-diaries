@@ -1129,3 +1129,14 @@ a:hover {
   }
 }
 
+/* Full-screen map mode */
+#butterfly-map.map-fullscreen {
+  position: fixed !important;
+  inset: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  max-height: none !important;
+  z-index: 9999 !important;
+  background: #fff;
+}

@@ -125,4 +125,66 @@ permalink: /map/
   L.control.scale({
     imperial: false
   }).addTo(butterflyMap);
+  
+  // Full-screen map toggle
+  const FullscreenControl = L.Control.extend({
+    options: {
+      position: "bottomright"
+    },
+  
+    onAdd: function (map) {
+      const container = L.DomUtil.create(
+        "div",
+        "leaflet-bar leaflet-control"
+      );
+  
+      const button = L.DomUtil.create("a", "", container);
+  
+      button.href = "#";
+      button.title = "Expand map";
+      button.setAttribute("role", "button");
+      button.setAttribute("aria-label", "Expand map");
+      button.style.width = "44px";
+      button.style.height = "44px";
+      button.style.lineHeight = "44px";
+      button.style.fontSize = "24px";
+      button.style.textAlign = "center";
+      button.style.fontWeight = "bold";
+      button.textContent = "⛶";
+  
+      L.DomEvent.disableClickPropagation(container);
+      L.DomEvent.on(button, "click", function (event) {
+        L.DomEvent.preventDefault(event);
+  
+        const isFullscreen =
+          document.getElementById("butterfly-map")
+            .classList.contains("map-fullscreen");
+  
+        const mapElement = document.getElementById("butterfly-map");
+  
+        if (isFullscreen) {
+          mapElement.classList.remove("map-fullscreen");
+          document.body.style.overflow = "";
+          button.textContent = "⛶";
+          button.title = "Expand map";
+          button.setAttribute("aria-label", "Expand map");
+        } else {
+          mapElement.classList.add("map-fullscreen");
+          document.body.style.overflow = "hidden";
+          button.textContent = "×";
+          button.title = "Return to page";
+          button.setAttribute("aria-label", "Return to page");
+        }
+  
+        setTimeout(function () {
+          map.invalidateSize();
+        }, 150);
+      });
+  
+      return container;
+    }
+  });
+  
+  butterflyMap.addControl(new FullscreenControl());
+
 </script>
