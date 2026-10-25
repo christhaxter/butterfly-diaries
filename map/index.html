@@ -7,11 +7,11 @@ permalink: /map/
 <h1 class="page-title">Explore the map</h1>
 
 <p>
-  Explore the landscape using satellite imagery or a street map.
-  More map layers and butterfly records will be added here.
+  Explore the landscape using satellite imagery, roads, place names
+  and countryside mapping.
 </p>
 
-<div id="butterfly-map" style="height: 800px; width: 100%;"></div>
+<div id="butterfly-map" style="height: 600px; width: 100%;"></div>
 
 <link
   rel="stylesheet"
@@ -27,12 +27,12 @@ permalink: /map/
 ></script>
 
 <script>
-  
   const butterflyMap = L.map("butterfly-map").setView(
     [54.5, -3.0],
     5
   );
-  
+
+  // Esri satellite imagery
   const satellite = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     {
@@ -41,7 +41,8 @@ permalink: /map/
         "Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community"
     }
   );
-  
+
+  // Roads and transport features
   const roadsOverlay = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}",
     {
@@ -50,7 +51,8 @@ permalink: /map/
         "Esri, HERE, Garmin, OpenStreetMap contributors"
     }
   );
-  
+
+  // Place names and boundaries
   const placesOverlay = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
     {
@@ -59,7 +61,8 @@ permalink: /map/
         "Sources: Esri, Garmin, HERE, OpenStreetMap contributors, and the GIS user community"
     }
   );
-  
+
+  // OpenStreetMap street map
   const streets = L.tileLayer(
     "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
     {
@@ -68,40 +71,41 @@ permalink: /map/
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
     }
   );
-  
+
+  // Experimental UK countryside map.
+  // This is a separate basemap, not a transparent footpath overlay.
   const ukFootpaths = L.tileLayer(
-  "https://map.atownsend.org.uk/hot/{z}/{x}/{y}.png",
-  {
-    maxZoom: 19,
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-  }
+    "https://map.atownsend.org.uk/hot/{z}/{x}/{y}.png",
+    {
+      maxZoom: 19,
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    }
   );
-  
-  // Start with satellite imagery, roads and place names.
+
+  // Default view: satellite imagery with roads and place names.
   satellite.addTo(butterflyMap);
   roadsOverlay.addTo(butterflyMap);
   placesOverlay.addTo(butterflyMap);
-  
-  // Basemaps and independently selectable overlays.
+
+  // Layer selector
   L.control.layers(
     {
       "Satellite imagery": satellite,
-      "Street map": streets
+      "Street map": streets,
+      "UK countryside map": ukFootpaths
     },
     {
       "Roads": roadsOverlay,
       "Place names and boundaries": placesOverlay
-      "UK footpath map": ukFootpaths
     },
     {
       collapsed: false
     }
   ).addTo(butterflyMap);
-  
-  // Metric scale bar.
+
+  // Metric scale bar
   L.control.scale({
     imperial: false
   }).addTo(butterflyMap);
-
 </script>
