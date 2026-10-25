@@ -7,15 +7,11 @@ permalink: /map/
 <h1 class="page-title">Explore the map</h1>
 
 <p>
-  Explore satellite imagery with roads, place names and mapped footpaths,
-  bridleways and tracks. Zoom in to load path details.
+  Explore the landscape using satellite imagery, roads, place names
+  and countryside mapping.
 </p>
 
-<div id="path-status" style="margin: 8px 0; font-size: 14px;">
-  Footpath overlay: waiting for map…
-</div>
-
-<div id="butterfly-map" style="height: 600px; width: 100%;"></div>
+<div id="butterfly-map" style="height: 700px; width: 100%;"></div>
 
 <link
   rel="stylesheet"
@@ -36,25 +32,27 @@ permalink: /map/
     5
   );
 
-  const pathStatus = document.getElementById("path-status");
-
+  // Satellite imagery (Esri)
   const satellite = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     {
       maxZoom: 19,
       attribution:
-        "Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+        "Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS user community"
     }
   );
 
+  // Roads and transport features (Esri)
   const roadsOverlay = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}",
     {
       maxZoom: 19,
-      attribution: "Esri, HERE, Garmin, OpenStreetMap contributors"
+      attribution:
+        "Esri, HERE, Garmin, OpenStreetMap contributors"
     }
   );
 
+  // Place names and boundaries (Esri)
   const placesOverlay = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
     {
@@ -64,6 +62,7 @@ permalink: /map/
     }
   );
 
+  // OpenStreetMap street map
   const streets = L.tileLayer(
     "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
     {
@@ -73,184 +72,57 @@ permalink: /map/
     }
   );
 
-  const pathOverlay = L.geoJSON(null, {
-    style: function (feature) {
-      const highway = feature.properties.highway;
-      let color = "#ffd447";
-
-      if (highway === "bridleway") color = "#f08a9b";
-      if (highway === "track") color = "#65d6a0";
-      if (highway === "cycleway") color = "#55baff";
-      if (highway === "steps") color = "#ffffff";
-
-      return {
-        color: color,
-        weight: 3,
-        opacity: 0.95,
-        lineCap: "round",
-        lineJoin: "round"
-      };
-    }
-  });
-
+  // Default: satellite imagery with roads and place names.
   satellite.addTo(butterflyMap);
   roadsOverlay.addTo(butterflyMap);
   placesOverlay.addTo(butterflyMap);
-  pathOverlay.addTo(butterflyMap);
 
+  // Layer selector
   L.control.layers(
     {
-      "Satellite imagery": satellite,
-      "Street map": streets
+      "Satellite imagery (Esri)": satellite,
+      "Street map (OpenStreetMap)": streets
     },
     {
-      "Roads": roadsOverlay,
-      "Place names and boundaries": placesOverlay,
-      "Footpaths and tracks": pathOverlay
+      "Roads (Esri)": roadsOverlay,
+      "Place names and boundaries (Esri)": placesOverlay
     },
     {
       collapsed: false
     }
   ).addTo(butterflyMap);
 
-  L.control.scale({ imperial: false }).addTo(butterflyMap);
+  // Remember which Esri overlays the user wants enabled.
+  let roadsEnabled = true;
+  let placesEnabled = true;
 
-  let pathLoadTimer = null;
-  let currentRequest = null;
-  let requestNumber = 0;
-
-  function loadPaths() {
-    if (!butterflyMap.hasLayer(pathOverlay)) {
-      pathStatus.textContent = "Footpath overlay: switched off.";
-      return;
-    }
-
-    if (butterflyMap.getZoom() < 12) {
-      pathOverlay.clearLayers();
-      pathStatus.textContent =
-        "Footpath overlay: zoom in to level 12 or closer.";
-      return;
-    }
-
-    const bounds = butterflyMap.getBounds();
-    const south = bounds.getSouth();
-    const west = bounds.getWest();
-    const north = bounds.getNorth();
-    const east = bounds.getEast();
-
-    if ((north - south) * (east - west) > 1.5) {
-      pathStatus.textContent =
-        "Footpath overlay: zoom in further to load a smaller area.";
-      return;
-    }
-
-    const query =
-      '[out:json][timeout:20];' +
-      'way["highway"~"^(path|footway|bridleway|cycleway|steps|track)$"]' +
-      '(' + south + ',' + west + ',' + north + ',' + east + ');' +
-      'out geom;';
-
-    if (currentRequest) currentRequest.abort();
-
-    const controller = new AbortController();
-    currentRequest = controller;
-    const thisRequest = ++requestNumber;
-
-    pathStatus.textContent = "Footpath overlay: requesting path data…";
-
-    fetch("https://overpass-api.de/api/interpreter", {
-      method: "POST",
-      headers: {
-        "Content-Type":
-          "application/x-www-form-urlencoded;charset=UTF-8"
-      },
-      body: "data=" + encodeURIComponent(query),
-      signal: controller.signal
-    })
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error("Overpass returned HTTP " + response.status);
-        }
-        return response.json();
-      })
-      .then(function (data) {
-        if (thisRequest !== requestNumber) return;
-
-        // Convert OSM ways directly into GeoJSON LineString features.
-        const features = [];
-
-        for (const element of data.elements || []) {
-          if (
-            element.type !== "way" ||
-            !element.geometry ||
-            element.geometry.length < 2
-          ) {
-            continue;
-          }
-
-          const coordinates = element.geometry.map(function (point) {
-            return [point.lon, point.lat];
-          });
-
-          features.push({
-            type: "Feature",
-            properties: element.tags || {},
-            geometry: {
-              type: "LineString",
-              coordinates: coordinates
-            }
-          });
-        }
-
-        pathOverlay.clearLayers();
-        pathOverlay.addData({
-          type: "FeatureCollection",
-          features: features
-        });
-
-        pathStatus.textContent =
-          "Footpath overlay: loaded " + features.length +
-          " mapped ways.";
-      })
-      .catch(function (error) {
-        if (error.name === "AbortError") return;
-        if (thisRequest !== requestNumber) return;
-
-        pathStatus.textContent =
-          "Footpath overlay error: " + error.message;
-        console.error("Footpath overlay error:", error);
-      })
-      .finally(function () {
-        if (thisRequest === requestNumber) currentRequest = null;
-      });
-  }
-
-  function schedulePathLoad() {
-    clearTimeout(pathLoadTimer);
-    pathLoadTimer = setTimeout(loadPaths, 1000);
-  }
-
-  butterflyMap.on("moveend", schedulePathLoad);
-
+  // Track manual overlay changes.
   butterflyMap.on("overlayadd", function (event) {
-    if (event.layer === pathOverlay) schedulePathLoad();
+    if (event.layer === roadsOverlay) roadsEnabled = true;
+    if (event.layer === placesOverlay) placesEnabled = true;
   });
 
   butterflyMap.on("overlayremove", function (event) {
-    if (event.layer !== pathOverlay) return;
-
-    clearTimeout(pathLoadTimer);
-    requestNumber++;
-
-    if (currentRequest) {
-      currentRequest.abort();
-      currentRequest = null;
-    }
-
-    pathOverlay.clearLayers();
-    pathStatus.textContent = "Footpath overlay: switched off.";
+    if (event.layer === roadsOverlay) roadsEnabled = false;
+    if (event.layer === placesOverlay) placesEnabled = false;
   });
 
-  pathStatus.textContent =
-    "Footpath overlay: zoom in to level 12 or closer.";
+  // Switching to OpenStreetMap removes the Esri overlays.
+  butterflyMap.on("baselayerchange", function (event) {
+    if (event.layer === streets) {
+      butterflyMap.removeLayer(roadsOverlay);
+      butterflyMap.removeLayer(placesOverlay);
+    }
+
+    // Switching back to satellite restores the selected overlays.
+    if (event.layer === satellite) {
+      if (roadsEnabled) roadsOverlay.addTo(butterflyMap);
+      if (placesEnabled) placesOverlay.addTo(butterflyMap);
+    }
+  });
+
+  // Metric scale bar
+  L.control.scale({
+    imperial: false
+  }).addTo(butterflyMap);
 </script>
