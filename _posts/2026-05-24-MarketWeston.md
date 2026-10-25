@@ -14,7 +14,7 @@ tags:
 ---
 
 <p class="post-date">
-  05 June 2026 · Ely, UK
+  05 June 2026 · Market Weston, Suffolk &amp; Devil’s Dyke, Suffolk
 </p>
 
 <div class="post-content" markdown="1">
