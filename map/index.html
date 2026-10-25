@@ -127,7 +127,7 @@ permalink: /map/
   L.control.scale({
     imperial: false
   }).addTo(butterflyMap);
-  
+
   // Full-screen map toggle
   const FullscreenControl = L.Control.extend({
     options: {
@@ -189,7 +189,7 @@ permalink: /map/
   });
 
   butterflyMap.addControl(new FullscreenControl());
-  
+
   // Show coordinates under the mouse cursor
   const coordinatesControl = L.control({
     position: "topleft"
@@ -214,15 +214,15 @@ permalink: /map/
     coordinatesControl.getContainer().textContent =
       "Lat: " + lat + ", Lon: " + lon;
   });
-  
-  // Journal posts, including site-specific species
+
+  // Journal posts, including site-specific species and images
   const posts = [
     {% for post in site.posts %}
     {
       title: {{ post.title | jsonify }},
       date: {{ post.date | date: "%d %B %Y" | jsonify }},
       url: {{ post.url | relative_url | jsonify }},
-      image: {{ post.image | relative_url | jsonify }},
+      image: {{ post.image | jsonify }},
       image_alt: {{ post.image_alt | default: post.title | jsonify }},
       sites: {{ post.sites | jsonify | default: "[]" }}
     }{% unless forloop.last %},{% endunless %}
@@ -255,13 +255,16 @@ permalink: /map/
     description.textContent = site.description || "";
     popup.appendChild(description);
 
+    // Find posts that include this site.
     const matchingPosts = posts
       .map(function (post) {
         const siteRecord = (post.sites || []).find(function (entry) {
           return entry.name === site.name;
         });
 
-        return siteRecord ? { post: post, siteRecord: siteRecord } : null;
+        return siteRecord
+          ? { post: post, siteRecord: siteRecord }
+          : null;
       })
       .filter(Boolean);
 
@@ -269,43 +272,45 @@ permalink: /map/
       const article = document.createElement("div");
       article.style.marginTop = "10px";
 
+      // Post thumbnail, linked to the journal entry.
+      if (item.post.image) {
+        const imageLink = document.createElement("a");
+        imageLink.href = item.post.url;
+
+        const thumbnail = document.createElement("img");
+        thumbnail.src = item.post.image;
+        thumbnail.alt = item.post.image_alt || item.post.title;
+        thumbnail.style.display = "block";
+        thumbnail.style.width = "100%";
+        thumbnail.style.maxHeight = "100px";
+        thumbnail.style.objectFit = "cover";
+        thumbnail.style.borderRadius = "4px";
+        thumbnail.style.marginBottom = "6px";
+
+        imageLink.appendChild(thumbnail);
+        article.appendChild(imageLink);
+      }
+
+      // Journal post link.
       const link = document.createElement("a");
       link.href = item.post.url;
       link.textContent = item.post.title;
       article.appendChild(link);
 
+      // Post date.
       const date = document.createElement("div");
       date.textContent = item.post.date;
       article.appendChild(date);
 
+      // Species recorded at this particular site.
       const species = item.siteRecord.species || [];
 
       if (species.length > 0) {
-        const article = document.createElement("div");
-        article.style.marginTop = "10px";
-  
-        if (item.post.image) {
-          const imageLink = document.createElement("a");
-          imageLink.href = item.post.url;
-  
-          const thumbnail = document.createElement("img");
-          thumbnail.src = item.post.image;
-          thumbnail.alt = item.post.image_alt || item.post.title;
-          thumbnail.style.display = "block";
-          thumbnail.style.width = "100%";
-          thumbnail.style.maxHeight = "100px";
-          thumbnail.style.objectFit = "cover";
-          thumbnail.style.borderRadius = "4px";
-          thumbnail.style.marginBottom = "6px";
-  
-          imageLink.appendChild(thumbnail);
-          article.appendChild(imageLink);
-        }
-  
-        const link = document.createElement("a");
-        link.href = item.post.url;
-        link.textContent = item.post.title;
-        article.appendChild(link);
+        const label = document.createElement("strong");
+        label.textContent = "Species recorded";
+        label.style.display = "block";
+        label.style.marginTop = "5px";
+        article.appendChild(label);
 
         const list = document.createElement("ul");
         list.style.margin = "4px 0";
@@ -329,10 +334,10 @@ permalink: /map/
       popup.appendChild(message);
     }
 
+    // Keep popups compact on mobile.
     marker.bindPopup(popup, {
       maxWidth: window.matchMedia("(max-width: 600px)").matches ? 220 : 320,
       maxHeight: window.matchMedia("(max-width: 600px)").matches ? 250 : 400
     });
   });
-  
 </script>
