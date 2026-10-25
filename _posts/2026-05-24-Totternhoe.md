@@ -33,7 +33,7 @@ sites:
 ---
 
 <p class="post-date">
-  24 May 2026 · Ely, UK
+  24 May 2026 · Totternhoe, Bedfordshire
 </p>
 
 <div class="post-content" markdown="1">
