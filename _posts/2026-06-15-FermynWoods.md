@@ -285,8 +285,8 @@ hairstreak, which at the time of writing I had yet to photograph.
 I also logged a few other commoner species in the way back, like, common blue, comma and painted 
 lady. There were already beginning to be a lot of painted ladies around this year.
 
-<figure class=".report-photo-trio">
-  <div class=".report-photo-trio-images">
+<figure class="report-photo-trio">
+  <div class="report-photo-trio-images">
     <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Common_blue.JPG"
          alt="Common blue">
     <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Comma.JPG"
