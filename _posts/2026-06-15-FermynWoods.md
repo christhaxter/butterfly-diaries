@@ -3,7 +3,7 @@ layout: default
 title: "Betting on black at Fermyn Woods Country Park"
 date: 2026-06-15
 location: "Fermyn Woods Country Park, Northamptonshire"
-image: "/assets/images/FermynWoods/2026_06_15/Black_hairstreak_5.JPG"
+image: "/assets/images/Fermyn_Woods/2026_06_15/Black_hairstreak_5.JPG"
 image_alt: "Black hairstreak"
 excerpt_text: "A summer visit to the Norfolk Broads in search of the spectacular Swallowtail, paired with a second site on route home for something else special"
 tags:
@@ -36,7 +36,7 @@ sites:
 ### Fermyn Woods, Northamptonshire
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Black_hairstreak_5.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Black_hairstreak_5.JPG"
        alt="Black hairstreak">
 </figure>
 
@@ -67,7 +67,7 @@ to the blackthorns via a quick check of the recent sightings board, noting with 
 hairstreak sightings!
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Sightings_board.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Sightings_board.jpg"
        alt="Initial noticeboard">
   <figcaption>Recent sightings board, note the hairstreaks, albeit quite a few days prior</figcaption>
 </figure>
@@ -75,7 +75,7 @@ hairstreak sightings!
 Along the way, many other things tempted me, with marbled whites a highlight.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Marbled_white.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Marbled_white.JPG"
        alt="Marbled white nectaring on bramble">
   <figcaption>Marbled white nectaring on bramble</figcaption>
 </figure>
@@ -84,7 +84,7 @@ There are notice boards aplenty and this is a great educational tool to tell you
 site and the species there, this one being for butterflies.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Butterfly_sign.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Butterfly_sign.jpg"
        alt="Marbled white nectaring on bramble">
   <figcaption>Board displaying the butterfly species of Fermyn</figcaption>
 </figure>
@@ -102,7 +102,7 @@ clearly not what I was after. Then more drizzle arrived. Even though I could see
 I starred out from a vantage point and admired the wonderful views as I contemplated my next move.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/View_top.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/View_top.jpg"
        alt="Vantage point">
   <figcaption>One of many vantage points from the thicket edge at Fermyn</figcaption>
 </figure>
@@ -129,7 +129,7 @@ I spent a good long while here, searching flowers, sitting on benches to rest le
 my coffee.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Pond_area.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Pond_area.jpg"
        alt="A nice spot by one of the ponds">
   <figcaption>A nice spot by one of the ponds</figcaption>
 </figure>
@@ -138,7 +138,7 @@ A ringlet raised my spirits. But still no hairstreak had shown itself. I was als
 one around, so perhaps this was all a bit unlikely.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Ringlet.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Ringlet.JPG"
        alt="Ringlet, nice">
   <figcaption>Ringlet, nice</figcaption>
 </figure>
@@ -152,13 +152,13 @@ straws, and it was never going to be the place where they were, but it was a nic
 frequented.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Large_skipper.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Large_skipper.JPG"
        alt="Large skipper in field margins bordering the woodland">
   <figcaption>Large skipper in field margins bordering the woodland</figcaption>
 </figure>
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Field_view.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Field_view.jpg"
        alt="View back into farmland from the woodland edge">
   <figcaption>View back into farmland from the woodland edge</figcaption>
 </figure>
@@ -185,7 +185,7 @@ nearby one of the glade areas I had earmarked originally as promising, with load
 blackthorn nearby, with some younger blackthorn too.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/The_glade.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/The_glade.jpg"
        alt="Inviting glade">
   <figcaption>The glade in the blackthorns that looked promising</figcaption>
 </figure>
@@ -193,7 +193,7 @@ blackthorn nearby, with some younger blackthorn too.
 I then spotted a dragonfly basking, a female broad-bodied chaser. It was still and quite sunny here.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Broad_bodied_chaser.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Broad_bodied_chaser.jpg"
        alt="Female broad-bodied chaser dragonfly">
   <figcaption>Female broad-bodied chaser dragonfly</figcaption>
 </figure>
@@ -205,7 +205,7 @@ and I was viewing it from an angle below. Could it be? (Re-living this always se
 down my spine).
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Black_hairstreak_1.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Black_hairstreak_1.JPG"
        alt="First view of a black hairstreak">
   <figcaption>First view of a black hairstreak</figcaption>
 </figure>
@@ -219,11 +219,11 @@ butterfly. It was missing its hind wing ‘tail’ and a bit tattered but I rota
 further and got some further diagnostic ID shots.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/Black_hairstreak_2.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/Black_hairstreak_2.JPG"
        alt="Black hairstreak">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/Black_hairstreak_3.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/Black_hairstreak_3.JPG"
        alt="Black hairstreak">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/Black_hairstreak_5.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/Black_hairstreak_5.JPG"
        alt="Black hairstreak">
   <figcaption>Further partial views of the black hairstreak</figcaption>
 </figure>
@@ -253,7 +253,7 @@ incursions of unwanted things; a very knowledgeable chap. A large red damselfly 
 as well as a fly species I forgot the name of, but both were talking points.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Large_red_damselfly.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Large_red_damselfly.JPG"
        alt="Large red damselfly">
   <figcaption>Large red damselfly</figcaption>
 </figure>
@@ -265,7 +265,7 @@ meadow area as well, that has a nice lizard monument, and I had also seen a liza
 on my travels on one of the paths basking in the sun – not the only below though.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/Lizard_sculpture.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Lizard_sculpture.jpg"
        alt="Lizard sculpture at Fermyn Country Park">
   <figcaption>Lizard sculpture at Fermyn Country Park</figcaption>
 </figure>
@@ -277,7 +277,7 @@ one for the future to complement our recent experience at Tottenhoe, and also ha
 hairstreak, which at the time of writing I had yet to photograph.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/FermynWoods/2026_06_15/BirdSign.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/BirdSign.jpg"
        alt="Flora and fauna of Fermyn Country Park">
   <figcaption>Flora and fauna of Fermyn Country Park</figcaption>
 </figure>
@@ -287,11 +287,11 @@ lady. There were already beginning to be a lot of painted ladies around this yea
 
 <figure class=".report-photo-trio">
   <div class=".report-photo-trio-images">
-    <img src="/butterfly-diaries/assets/images/HicklingBroad_BuxtonHeath/Common_blue.JPG"
+    <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Common_blue.JPG"
          alt="Common blue">
-    <img src="/butterfly-diaries/assets/images/HicklingBroad_BuxtonHeath/Comma.JPG"
+    <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Comma.JPG"
          alt="Comma">
-    <img src="/butterfly-diaries/assets/images/HicklingBroad_BuxtonHeath/Painted_lady.JPG"
+    <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Painted_lady.JPG"
          alt="Painted lady">
   </div>
   <figcaption>Selection of other butterflies encountered on route back</figcaption>
