@@ -18,3 +18,14 @@
   latitude: 51.89171
   longitude: -0.56775
   description: "Chalk grassland nature reserve, Bedfordshire"
+
+- name: "Hickling Broad"
+  latitude: 52.74086
+  longitude: 1.59617
+  description: "Open water, reedbeds and woodland scrub, Norfolk"
+
+- name: "Buxton Heath"
+  latitude: 52.76717
+  longitude: 1.20087
+  description: "Dry acidic heathland, Norfolk"
+  image: "/assets/images/HicklingBroad_BuxtonHeath/SSB_money_2.JPG"
