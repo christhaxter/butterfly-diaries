@@ -219,11 +219,11 @@ butterfly. It was missing its hind wing ‘tail’ and a bit tattered but I rota
 further and got some further diagnostic ID shots.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/Black_hairstreak_2.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Black_hairstreak_2.JPG"
        alt="Black hairstreak">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/Black_hairstreak_3.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Black_hairstreak_3.JPG"
        alt="Black hairstreak">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/Black_hairstreak_5.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_06_15/Black_hairstreak_5.JPG"
        alt="Black hairstreak">
   <figcaption>Further partial views of the black hairstreak</figcaption>
 </figure>
