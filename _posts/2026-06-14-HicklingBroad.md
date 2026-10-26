@@ -4,7 +4,7 @@ title: "A tail to tell from Hickling Broad & Buxton Heath"
 date: 2026-06-14
 location: "Hickling Broad, Norfolk and Buxton Heath, Norfolk"
 image: "/assets/images/HicklingBroad_BuxtonHeath/Swallowtail_money_shot.jpg"
-image_alt: "Wood white"
+image_alt: "Swallowtail"
 excerpt_text: "A summer visit to the Norfolk Broads in search of the spectacular Swallowtail, paired with a second site on route home for something else special"
 tags:
   - Swallowtail
