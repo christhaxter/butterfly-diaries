@@ -156,9 +156,9 @@ But they were generally favouring the brambles.
 
 <figure class="report-photo-stack">
   <img src="/butterfly-diaries/assets/images/HicklingBroad_BuxtonHeath/Swallowtail_4.jpg"
-       alt="Adonis blue">
+       alt="Swallowtail">
   <img src="/butterfly-diaries/assets/images/HicklingBroad_BuxtonHeath/Swallowtail_5.JPG"
-       alt="Adonis blue">
+       alt="Swallowtail">
   <figcaption>Swallowtail on bramble</figcaption>
 </figure>
 

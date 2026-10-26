@@ -688,6 +688,39 @@ a:hover {
   }
 }
 
+/* Three photographs with one shared caption */
+.report-photo-trio {
+  margin: 24px 0 28px;
+}
+
+.report-photo-trio-images {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.report-photo-trio-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.report-photo-trio figcaption {
+  margin-top: 4px;
+  color: #777;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Stack triplet photographs on small screens */
+@media (max-width: 600px) {
+  .report-photo-trio-images {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
 
 /* Stacked photographs with one shared caption */
 .report-photo-stack {
