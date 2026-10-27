@@ -29,3 +29,9 @@
   longitude: 1.21257
   description: "Dry acidic heathland, Norfolk"
   image: "/assets/images/HicklingBroad_BuxtonHeath/SSB_money_2.JPG"
+  
+- name: "Fermyn Woods"
+  latitude: 52.45588
+  longitude: -0.59429
+  description: "Ancient woodland and blackthorn thicket"
+  image: "/assets/images/Fermyn_Woods/2026_06_15/Black_hairstreak_5.JPG"
