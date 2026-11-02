@@ -11,7 +11,7 @@ tags:
   - Silver-washed fritillary
   - White admiral
 sites:
-  - name: Fermyn Woods
+  - name: Hockley Woods
     species:
       - Holly blue
       - Ringlet
