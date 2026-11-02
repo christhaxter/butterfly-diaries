@@ -200,7 +200,7 @@ were still coming and going. There were loads of the fritillaries in this one sp
 There were some matings taking place too.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Hockley_Woods/2026_06_15/Heath_fritillary_pair.JPG"
+  <img src="/butterfly-diaries/assets/images/Hockley_Woods/Heath_fritillary_pair.JPG"
        alt="Mating heath fritillaries">
   <figcaption>Mating heath fritillaries</figcaption>
 </figure>
