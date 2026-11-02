@@ -35,3 +35,9 @@
   longitude: -0.59429
   description: "Ancient woodland and blackthorn thicket"
   image: "/assets/images/Fermyn_Woods/2026_06_15/Black_hairstreak_5.JPG"
+
+- name: "Hockley Woods"
+  latitude: 51.59496
+  longitude: 0.64660
+  description: "Largest remaining ancient wildwood in Essex"
+  image: "/assets/images/Hockley_Woods/Heath_fritillary_3.JPG"
