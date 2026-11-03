@@ -59,7 +59,7 @@ The initial slopes were buzzing with life, with a nice little moth that I hadn�
 a common heath, that I had to descend a little lower to get nearere for a picture.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Common_heath.jpg"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Common_heath.JPG"
        alt="Common heath">
   <figcaption>Common heath</figcaption>
 </figure>
@@ -68,7 +68,7 @@ Back up on the top main chalk path, and looking back down the slope, marbled whi
 in fact they were everywhere,  matings too – this was obviously a peak time for them.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Marbled_whites.jpg"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Marbled_whites.JPG"
        alt="Marbled whites mating">
   <figcaption>Marbled whites mating</figcaption>
 </figure>
@@ -81,7 +81,7 @@ was checking the thistles, and to be honest, it could’ve been a fritillary, bu
 comma just moments later made be err on the side of caution.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Comma.jpg"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Comma.JPG"
        alt="A comma pretending to be a fritillary">
   <figcaption>A comma pretending to be a fritillary</figcaption>
 </figure>
@@ -113,9 +113,9 @@ few made the cut.
   <div class="report-photo-trio-images">
     <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Dark_green_fritillary_trio_1.JPG"
          alt="Heath fritillary">
-    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Dark_green_fritillary_trio_2.jpg"
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Dark_green_fritillary_trio_2.JPG"
          alt="Heath fritillary">
-    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Dark_green_fritillary_trio_3.jpg"
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Dark_green_fritillary_trio_3.JPG"
          alt="Heath fritillary">
   </div>
   <figcaption>Initial attempts at in flight photography of dark green fritillaries</figcaption>
@@ -126,7 +126,7 @@ This gets technical, so apologies for the camera talk, but I realised I was stil
 to muscle in.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Common_blue.jpg"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Common_blue.JPG"
        alt="Common blue making an appearance">
   <figcaption>Common blue making an appearance</figcaption>
 </figure>
@@ -134,7 +134,7 @@ to muscle in.
 Why would the fritillaries not settle like a marbled white? 😉
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Marbled_white.jpg"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Marbled_white.JPG"
        alt="Underside of a marbled white on ox-eye daisy">
   <figcaption>Underside of a marbled white on ox-eye daisy</figcaption>
 </figure>
@@ -165,7 +165,7 @@ patrolling over there among various flowers in the meadow. I got a tiny bit clos
          alt="Heath fritillary">
     <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Dark_green_fritillary_trio_5.jpg"
          alt="Heath fritillary">
-    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Dark_green_fritillary_trio_6.jpg"
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Dark_green_fritillary_trio_6.JPG"
          alt="Heath fritillary">
   </div>
   <figcaption>More on-the-wing shots</figcaption>
@@ -175,7 +175,7 @@ Getting better though. And then probably my favourite shot, although still with 
 (although I had no idea how any of these turned out until review later):
   
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Dark_green_fritillary_best.jpg"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Dark_green_fritillary_best.JPG"
        alt="Probably the best shot of the day">
   <figcaption>Probably the best shot of the day</figcaption>
 </figure>
@@ -196,7 +196,7 @@ bring my spare. I had to sadly drag myself away.
 A quick brimstone popped up too.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Brimstone.jpg"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Brimstone.JPG"
        alt="Brimstone hiding amongst the sainfoin">
   <figcaption>Brimstone hiding amongst the sainfoin</figcaption>
 </figure>

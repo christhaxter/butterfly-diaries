@@ -17,6 +17,7 @@ sites:
       - Ringlet
       - Meadow brown
       - Ringlet
+      - Large skipper
       - Silver-washed fritillary
       - Heath fritillary
       - Speckled wood
@@ -282,7 +283,7 @@ wall metal ornaments that I put up, decorating a seating area with this year’s
 ## Species tally (11)
 
 Holly blue (2), ringlet (5), meadow brown (12), silver-washed fritillary (3), 
-heath fritillary (15), speckled wood (3), white admiral (2), comma (8), painted lady (1), 
+heath fritillary (15), large skipper (2), speckled wood (3), white admiral (2), comma (8), painted lady (1), 
 small white (10), large white (2)
 
 ## Stats
