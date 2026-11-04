@@ -167,7 +167,7 @@ were manning a scope trained on an osprey nest.
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Foulshaw_Moss/Osprey.JPG"
-       alt="Distant view of one of the osprey nests>
+       alt="Distant view of one of the osprey nests">
   <figcaption>Distant view of one of the osprey nests</figcaption>
 </figure>
 
