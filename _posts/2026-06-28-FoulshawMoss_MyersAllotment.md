@@ -190,7 +190,7 @@ Back at the hotel, I was tired and had a nap before switching from ecologist mod
 that evening and the following day. I was hoping, but not certain, that we still may have time 
 for another butterfly visit somewhere.
 
-## Myers Allotment Sunday 29 June
+## Myers Allotment Sunday 28 June
 
 It had been a busy but enjoyable Saturday with the family. It had involved taking the scenic route 
 from Lancaster to the southern Lakes, a Lake Windermere car ferry, a visit to Hawkshead, lunch, 
