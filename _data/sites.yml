@@ -41,3 +41,16 @@
   longitude: 0.64660
   description: "Largest remaining ancient wildwood in Essex"
   image: "/assets/images/Hockley_Woods/Heath_fritillary_3.JPG"
+  
+- name: "Foulshaw Moss"
+  latitude: 54.23621
+  longitude: -2.83240
+  description: "Cumbrian raised bog of pools, peatland and cotton grass"
+  image: "/assets/images/Foulshaw_Moss/Large_heath.JPG"
+  
+- name: "Myers Allotment"
+  latitude: 54.16823
+  longitude: -2.80706
+  description: "Silverdale limestone pavement, with flower-rich grasslands and woodland glades"
+  image: "/assets/images/Myers_Allotment/Northern_brown_argus1.JPG"
+  
