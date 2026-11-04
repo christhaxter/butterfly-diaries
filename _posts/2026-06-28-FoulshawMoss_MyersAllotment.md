@@ -198,11 +198,11 @@ a swing back by Windermere to visit relatives and a return back to Lancaster via
 
 <figure class="report-photo-trio">
   <div class="report-photo-trio-images">
-    <img src="/butterfly-diaries/assets/images/Foulshaw_Moss/WindermereFerry.jpg"
+    <img src="/butterfly-diaries/assets/images/Myers_Allotment/WindermereFerry.jpg"
          alt="Lakes views">
-    <img src="/butterfly-diaries/assets/images/Foulshaw_Moss/Hawkshead.jpg"
+    <img src="/butterfly-diaries/assets/images/Myers_Allotment/Hawkshead.jpg"
          alt="Lakes views">
-    <img src="/butterfly-diaries/assets/images/Foulshaw_Moss/Morecambe.jpg"
+    <img src="/butterfly-diaries/assets/images/Myers_Allotment/Morecambe.jpg"
          alt="Lakes views">
   </div>
   <figcaption>Scenic highlights from the Lakes</figcaption>
@@ -262,7 +262,7 @@ on orange butterfly alert. Commas however were the only ones willing to show the
 at least three painted ladies were on the wing.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Foulshaw_Moss/Painted_lady.JPG"
+  <img src="/butterfly-diaries/assets/images/Myers_Allotment/Painted_lady.JPG"
        alt="Painted lady strikes a pose">
   <figcaption>Painted lady strikes a pose</figcaption>
 </figure>
@@ -279,7 +279,7 @@ butterfly. Could this be?
 Yes!
   
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Foulshaw_Moss/Northern_brown_argus1.JPG"
+  <img src="/butterfly-diaries/assets/images/Myers_Allotment/Northern_brown_argus1.JPG"
        alt="First view of northern brown argus">
   <figcaption>First view of northern brown argus</figcaption>
 </figure>
@@ -292,7 +292,7 @@ steady. I like this one of the three-quarter wing pose the best. A stem partiall
 view, but I think that adds a bit of character.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Foulshaw_Moss/Northern_brown_argus2.JPG"
+  <img src="/butterfly-diaries/assets/images/Myers_Allotment/Northern_brown_argus2.JPG"
        alt="Northern brown argus">
   <figcaption>Northern brown argus</figcaption>
 </figure>
@@ -302,7 +302,7 @@ and by now, we felt had to get down the hill. A pair of mating green-veiled whit
 good to see. This place was seriously buzzing – the insect density just felt very high.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Foulshaw_Moss/Green_veined_whites.JPG"
+  <img src="/butterfly-diaries/assets/images/Myers_Allotment/Green_veined_whites.JPG"
        alt="Mating green-veined whites">
   <figcaption>Mating green-veined whites</figcaption>
 </figure>
