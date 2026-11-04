@@ -44,8 +44,8 @@ sites:
 
 This chalk escarpment had much more to offer with further species coming through at different 
 stages of the season. After the early species had done their thing, including the first brood 
-of adonis blue, it was time to look for dark green fritillary. With the season running quite 
-ahead thia year, I felt my timing was about right for this one.
+of Adonis blue, it was time to look for dark green fritillary. With the season running quite 
+ahead this year, I felt my timing was about right for this one.
 
 These orange missiles are known to fly over the open grassland as males defend patches and search 
 for females. It would be amazing to come across them.
@@ -56,7 +56,7 @@ the same first meadow slopes dotted with patches of scrub that I was now quite f
 This was a nicer day too than last time, with sunny spells and less wind.
 
 The initial slopes were buzzing with life, with a nice little moth that I hadn’t seen before, 
-a common heath, that I had to descend a little lower to get nearere for a picture.
+a common heath, that I had to descend a little lower to get nearer for a picture.
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Common_heath.JPG"
@@ -65,7 +65,7 @@ a common heath, that I had to descend a little lower to get nearere for a pictur
 </figure>
 
 Back up on the top main chalk path, and looking back down the slope, marbled whites were aplenty, 
-in fact they were everywhere,  matings too – this was obviously a peak time for them.
+in fact they were everywhere, matings too – this was obviously a peak time for them.
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_06_21/Marbled_whites.JPG"
