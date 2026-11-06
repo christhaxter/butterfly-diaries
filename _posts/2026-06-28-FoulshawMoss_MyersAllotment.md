@@ -156,8 +156,8 @@ able to assign the ID – you can see the dark black circles on the hindwing jus
 The temperatures at this point were now quite unbearable in the sun. Another chap passed us on 
 the boardwalk, coming from out in the middle of the heath, which I wondered to myself how he 
 wasn’t melting. We had actually walked further onto the boardwalk but had turned back. We 
-instead headed back down the track that led to car park, literally covering prob 200 and 
-feeling like it was 200 miles.
+instead headed back down the track that led to car park, covering probably only 200 
+metres and feeling like it was 200 miles in this heat.
 
 We did, however, have just enough energy in the tank to visit the ospreys. The Wildlife Trusts 
 chap had showed us the route to one of the fixed cameras, not a long walk, so we headed there 

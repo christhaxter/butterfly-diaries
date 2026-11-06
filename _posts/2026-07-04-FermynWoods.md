@@ -98,7 +98,7 @@ spotted a purple….hairstreak. it was nectaring on I think hedge bedstraw. It w
 cooperate for a photo but that was a cool find.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Purple_hairstreak_1.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Purple_hairstreak_1.JPG"
        alt="Purple hairstreak one hedge bedstraw">
   <figcaption>Purple hairstreak on hedge bedstraw</figcaption>
 </figure>
@@ -106,7 +106,7 @@ cooperate for a photo but that was a cool find.
 Large skippers too were vying for attention.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Large_skipper.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Large_skipper.JPG"
        alt="Large skipper in a sunny clearing">
   <figcaption>Large skipper in a sunny clearing</figcaption>
 </figure>
@@ -133,7 +133,7 @@ calling me back, she found a purple hairstreak and it posed so well on a rye gra
 Although upside down, so I reversed the image. This was the best hairstreak shot of the day.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Purple_hairstreak_best.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Purple_hairstreak_best.JPG"
        alt="Purple hairstreak posing on rye grass">
   <figcaption>Purple hairstreak posing on rye grass</figcaption>
 </figure>
@@ -185,7 +185,7 @@ Out of the wind right at the neck of the woodland here though, things improved. 
 other side of the path, there was a flash of orange, it was a silver-washed fritillary!
   
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Silver_washed_fritillary_1.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Silver_washed_fritillary_1.JPG"
        alt="Silver-washed fritillary">
   <figcaption>Silver-washed fritillary</figcaption>
 </figure>
@@ -246,7 +246,7 @@ Fair enough. Something then dashed up into the lower branches above, but this wa
 I had a feeling of anticipation and was on high alert.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Comma_2.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Comma_2.JPG"
        alt="Comma in camouflage mode">
   <figcaption>Comma in camouflage mode</figcaption>
 </figure>
@@ -254,7 +254,7 @@ I had a feeling of anticipation and was on high alert.
 Another tattered silver-washed fritillary was a treat.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Silver_washed_fritillary_2.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Silver_washed_fritillary_2.JPG"
        alt="Another silver-washed fritillary">
   <figcaption>Another silver-washed fritillary</figcaption>
 </figure>
@@ -282,7 +282,7 @@ emperor at the time so I was elated, and so relaxed a bit here. But later examin
 pictures, revealed…
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/White_admiral_2.jpg"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/White_admiral_2.JPG"
        alt="White admiral down on the deck">
   <figcaption>White admiral down on the deck</figcaption>
 </figure>
@@ -296,7 +296,7 @@ Then…seconds later…another butterfly on some dung on the left! Could this be
 It was!!
   
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Purple_emperor_1.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Purple_emperor_1.jpg"
        alt="First glimpse of a purple emperor">
   <figcaption>First glimpse of a purple emperor 💜</figcaption>
 </figure>
@@ -436,7 +436,7 @@ the logs, by the clearing, and found and took the path coming off the access roa
 us back in the direction of where we started. This was nice as it was out of the sun a bit more.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Sunny_side_path_again.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Sunny_side_path_again.jpg"
        alt="Heading back down the same paths">
   <figcaption>Heading back down the same paths</figcaption>
 </figure>   
@@ -448,7 +448,7 @@ fair to at least photo some of the lovely gatekeepers. They were so abundant.
   <div class="report-photo-pair-images">
     <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Gatekeeper.JPG"
        alt="Gatekeeper ab. excessa">
-    <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Gatekeepers.JPG"
+    <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Gatekeepers.jpg"
        alt="Gatekeeper pair">
   </div>
   <figcaption>Gatekeepers, left one likely ab. excessa</figcaption>
@@ -498,7 +498,7 @@ the area. We headed back down the same paths I had trodden weeks earlier in my b
 adventures.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Fermyn_Country_Park_board.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Fermyn_Country_Park_board.jpg"
        alt="Noticeboard at Fermyn Country Park">
   <figcaption>Noticeboard at Fermyn Country Park</figcaption>
 </figure>   
@@ -507,7 +507,7 @@ We did a quick 15 minute loop coming across marbled whites and browns. Familiar 
 view like the meadow area and the lizard sculpture.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Lizard_sculpture.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Lizard_sculpture.jpg"
        alt="Back at the lizard sculpture">
   <figcaption>Back at the lizard sculpture</figcaption>
 </figure>   
@@ -515,7 +515,7 @@ view like the meadow area and the lizard sculpture.
 Time just enough for a quick check of the sightings board.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Sightings_board.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Sightings_board.jpg"
        alt="Sighting board for the day at Fermyn Country Park">
   <figcaption>Sighting board for the day at Fermyn Country Park</figcaption>
 </figure>   
@@ -524,7 +524,7 @@ We headed back after an incredibly successful day. You never know if you are goi
 out of get lucky and I was so glad it was latter on this occasion.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Happy_days.JPG"
+  <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Happy_days.jpg"
        alt="Happy days">
   <figcaption>Happy days</figcaption>
 </figure>
