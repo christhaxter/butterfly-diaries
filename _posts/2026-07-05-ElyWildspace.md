@@ -143,7 +143,7 @@ Not to forget the whites too, as they always provide a backdrop to the show, lik
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Ely_Common_Meadow/2026_07_05/Small_white.jpg"
-       alt=Small white">
+       alt="Small white">
   <figcaption>Small white</figcaption>
 </figure> 
 
