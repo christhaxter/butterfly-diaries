@@ -10,7 +10,7 @@ tags:
   - Essex skipper
   - Marbled white
 sites:
-  - name: Ely
+  - name: Ely Common Meadow
     species:
       - Common blue
       - Meadow brown
