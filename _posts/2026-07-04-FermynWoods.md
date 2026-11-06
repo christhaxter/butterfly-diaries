@@ -234,7 +234,7 @@ But…this turned out to be a red admiral and a comma. Close but no cigar.
 
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
-    <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Red_admiral.JPG"
+    <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Red_admiral_1.JPG"
        alt="Red admiral">
     <img src="/butterfly-diaries/assets/images/Fermyn_Woods/2026_07_04/Comma_1.JPG"
        alt="Comma">
