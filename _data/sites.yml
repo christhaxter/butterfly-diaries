@@ -31,10 +31,9 @@
   image: "/assets/images/HicklingBroad_BuxtonHeath/SSB_money_2.JPG"
   
 - name: "Fermyn Woods"
-  latitude: 52.45588
-  longitude: -0.59429
+  latitude: 52.45708
+  longitude: -0.58955
   description: "Ancient woodland and blackthorn thicket"
-  image: "/assets/images/Fermyn_Woods/2026_06_15/Black_hairstreak_5.JPG"
 
 - name: "Hockley Woods"
   latitude: 51.59496
