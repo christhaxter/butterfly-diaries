@@ -52,3 +52,8 @@
   longitude: -2.80706
   description: "Silverdale limestone pavement, with flower-rich grasslands and woodland glades"
   image: "/assets/images/Myers_Allotment/Northern_brown_argus1.JPG"
+
+- name: "Ely Common Meadow"
+  latitude: 52.40351
+  longitude: 0.28134
+  description: "Traditional grasslands and wildflower meadows alongside Roswell Pits, Cambridgeshire."
