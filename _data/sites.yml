@@ -57,3 +57,14 @@
   latitude: 52.40351
   longitude: 0.28134
   description: "Traditional grasslands and wildflower meadows alongside Roswell Pits, Cambridgeshire."
+
+- name: "Euston Drove"
+  latitude: 52.34957
+  longitude: 0.73880
+  description: "A simple bridleway off a main road lined with trees including elms, Norfolk."
+  
+- name: "Green Lane"
+  latitude: 52.42215
+  longitude: 0.77129
+  description: "A path lined with elm trees hidden behind a superstore, Norfolk"
+  image: "/assets/images/EustonDrove_GreenLane/White_letter_hairstreak_maxzoom.JPG"
