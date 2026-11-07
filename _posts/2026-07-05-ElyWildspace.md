@@ -72,10 +72,10 @@ confusion with black-tailed skimmer, but they seem to like hanging around this s
 </figure>
 
 It was 11:30 by now, and generally it was quite cloudy, but the sun was punching through at times. 
-Everything lept to life across the meadow each time the brightness increased. I continued on my 
+Everything leapt to life across the meadow each time the brightness increased. I continued on my 
 route, which headed as if you are going in the direction of the Environment Agency buildings, 
 and the main entrance to Roswell Pits. This passes by the main wildflower area. It was a little 
-dry and gone over from its heyday earlier in the year but was still providing a faurly decent 
+dry and gone over from its heyday earlier in the year but was still providing a fairly decent 
 banquet.
 
 Then to my right nearer the main road I had just left, by the brambles, I spotted a moth, a 
@@ -114,7 +114,7 @@ I have seen those here before, and even one year had one in my garden. But they 
 quite well in this meadow.
 
 One other butterfly group that was abundant today were the skippers. I must’ve seen maybe ten 
-individuals. I naively assumed at forat glance that they would be small skippers, as I do see 
+individuals. I naively assumed at first glance that they would be small skippers, as I do see 
 them a lot around the area, in the fields just outside Ely, as well as in my garden too. These 
 however, on closer inspection, were Essex skippers, with the straight male line on the forewing 
 and diagnostic tips of the antenna ‘dipped in ink’!
@@ -148,7 +148,7 @@ Not to forget the whites too, as they always provide a backdrop to the show, lik
 </figure> 
 
 By this point, I had made my way around the meadow, and had doubled back on a looping route by 
-the trees nearer the lake, and I was also half scanning maybe for white letter hairstreak, 
+the trees nearer the lake, and I was also half scanning maybe for white-letter hairstreak, 
 although I don’t think I saw any Elms here. Wishful thinking, although I had an eye on a trip 
 very soon to target them.
 
