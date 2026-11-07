@@ -369,16 +369,17 @@ a:hover {
     flex-direction: column;
     gap: 12px;
   }
-
-  .journal-list .journal-entry-text {
-    order: 1;
-  }
-
+  
   .journal-list .journal-entry-image {
     order: 2;
     flex: none;
     width: 100%;
     max-width: 100%;
+  }
+  
+  .journal-list .journal-entry-text {
+    order: 1;
+    width: 100%;
   }
 
   .journal-list .journal-entry-title {
