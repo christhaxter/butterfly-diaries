@@ -347,6 +347,10 @@ a:hover {
 
 /* Smaller screens */
 
+.journal-list .mobile-title {
+  display: none;
+}
+
 @media (max-width: 650px) {
   .journal-layout {
     grid-template-columns: 1fr;
@@ -365,29 +369,30 @@ a:hover {
   }
 
   .journal-list .journal-entry {
-    gap: 14px;
+    display: block;
+    padding: 22px 0;
+    border-bottom: 1px solid #e5e5e5;
   }
 
-  .journal-list .journal-entry-image {
-    flex-basis: 115px;
-    width: 115px;
-    max-width: 115px;
-  }
-
-  .journal-list .journal-entry-title {
+  .journal-list .mobile-title {
+    display: block;
+    margin: 0 0 12px;
     font-size: 1.05rem;
   }
-}
 
-@media (max-width: 400px) {
-  .journal-list .journal-entry {
-    display: block;
+  .journal-list .desktop-title {
+    display: none;
   }
 
   .journal-list .journal-entry-image {
+    display: block;
     width: 100%;
     max-width: 100%;
     margin-bottom: 12px;
+  }
+
+  .journal-list .journal-entry-text {
+    display: block;
   }
 }
 
