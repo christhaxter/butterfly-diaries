@@ -468,32 +468,6 @@ a:hover {
   }
 }
 
-/* Journal title position: mobile only */
-
-.journal-list .mobile-title {
-  display: none;
-}
-
-@media (max-width: 650px) {
-  .journal-list .journal-entry {
-    display: block;
-  }
-
-  .journal-list .mobile-title {
-    display: block;
-    margin: 0 0 12px;
-  }
-
-  .journal-list .desktop-title {
-    display: none;
-  }
-
-  .journal-list .journal-entry-image {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 12px;
-  }
-}
 /* Site-wide photographic banner */
 
 .site-banner {
