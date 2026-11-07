@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "It’s written in the Elms at Euston Drove, Barnham, and Green Lane, Thetford"
+title: "It’s written in the Elms at Euston Drove and Green Lane"
 date: 2026-07-07
 location: "Euston Drove, Barnham, and Green Lane, Thetford, Norfolk"
 image: "/assets/images/EustonDrove_GreenLane/White_letter_hairstreak_best2.JPG"
