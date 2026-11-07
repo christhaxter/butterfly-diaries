@@ -456,17 +456,6 @@ a:hover {
   }
 }
 
-@media (max-width: 400px) {
-  .home-latest .journal-entry {
-    display: block;
-  }
-
-  .home-latest .journal-entry-image {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 12px;
-  }
-}
 
 /* Site-wide photographic banner */
 
