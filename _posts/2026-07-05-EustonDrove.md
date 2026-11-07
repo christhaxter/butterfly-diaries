@@ -20,7 +20,6 @@ sites:
       - Comma
       - Speckled wood
       - Small skipper
-sites:
   - name: Green Lane
     species:
       - Holly blue
