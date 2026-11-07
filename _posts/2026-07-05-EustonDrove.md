@@ -36,7 +36,7 @@ sites:
 <div class="post-content" markdown="1">
 
 ## It’s written in the Elms at Euston Drove, Barnham, and Green Lane, Thetford
-### Ely Common Meadow, Cambridgeshire
+### Euston Drove, Barnham, and Green Lane, Thetford, Norfolk
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/EustonDrove_GreenLane/White_letter_hairstreak_best2.JPG"
