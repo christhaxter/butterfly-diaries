@@ -62,7 +62,8 @@
   latitude: 52.34957
   longitude: 0.73880
   description: "A simple bridleway off a main road lined with trees including elms, Norfolk."
-  
+  image: "/assets/images/EustonDrove_GreenLane/White_letter_hairstreak_best2.JPG"
+   
 - name: "Green Lane"
   latitude: 52.42215
   longitude: 0.77129
