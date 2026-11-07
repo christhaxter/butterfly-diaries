@@ -381,13 +381,20 @@ a:hover {
 
 @media (max-width: 400px) {
   .journal-list .journal-entry {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .journal-list .journal-entry-text {
+    order: 1;
   }
 
   .journal-list .journal-entry-image {
+    order: 2;
+    flex: none;
     width: 100%;
     max-width: 100%;
-    margin-bottom: 12px;
   }
 }
 
