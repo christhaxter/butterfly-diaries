@@ -347,8 +347,6 @@ a:hover {
 
 /* Smaller screens */
 
-/* Smaller screens */
-
 @media (max-width: 650px) {
   .journal-layout {
     grid-template-columns: 1fr;
@@ -366,60 +364,45 @@ a:hover {
     margin-top: 18px;
   }
 
+  /* Stack each journal entry on mobile */
   .journal-list .journal-entry {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
 
-  .journal-list .journal-entry-text {
-    display: contents;
-  }
-
-  .journal-list .journal-entry-title {
+  /* Show the mobile title, hide the desktop title */
+  .journal-list .mobile-journal-title {
+    display: block;
     order: 1;
     font-size: 1.05rem;
     margin: 0;
   }
 
+  .journal-list .desktop-journal-title {
+    display: none;
+  }
+
+  /* Image comes immediately after the title */
   .journal-list .journal-entry-image {
     order: 2;
     flex: none;
     width: 100%;
     max-width: 100%;
+  }
+
+  /* Date and description remain together below the image */
+  .journal-list .journal-entry-text {
+    order: 3;
+    display: block;
   }
 
   .journal-list .journal-entry-date {
-    order: 3;
-    margin: 0;
+    margin: 0 0 12px;
   }
 
   .journal-list .journal-entry-excerpt {
-    order: 4;
-    margin: 0;
-  }
-
-  .journal-list .journal-entry .read-more {
-    order: 5;
-  }
-}
-
-@media (max-width: 400px) {
-  .journal-list .journal-entry {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .journal-list .journal-entry-text {
-    order: 1;
-  }
-
-  .journal-list .journal-entry-image {
-    order: 2;
-    flex: none;
-    width: 100%;
-    max-width: 100%;
+    margin: 0 0 12px;
   }
 }
 
