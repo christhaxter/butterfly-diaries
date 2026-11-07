@@ -36,18 +36,21 @@ permalink: /journal/
                  alt="{{ post.image_alt | default: post.title | escape }}">
           </a>
         {% endif %}
-
+      
+        <h2 class="journal-entry-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+      
         <div class="journal-entry-text">
           <p class="journal-entry-date">
             {{ post.date | date: "%-d %B %Y" }}
             {% if post.location %} · {{ post.location }}{% endif %}
           </p>
-          <h2 class="journal-entry-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h2>
+      
           <p class="journal-entry-excerpt">
             {{ post.excerpt_text | default: post.excerpt | strip_html | truncate: 180 }}
           </p>
+      
           <a class="read-more" href="{{ post.url | relative_url }}">Read report →</a>
         </div>
       </article>
