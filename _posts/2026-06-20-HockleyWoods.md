@@ -10,6 +10,8 @@ tags:
   - Heath fritillary
   - Silver-washed fritillary
   - White admiral
+  - Field trips
+  - Hockley Woods
 sites:
   - name: Hockley Woods
     species:

@@ -9,6 +9,9 @@ excerpt_text: "A summer visit to the Norfolk Broads in search of the spectacular
 tags:
   - Swallowtail
   - Silver-studded blue
+  - Field trips
+  - Hickling Broad
+  - Buxton Heath
 sites:
   - name: Hickling Broad
     species:

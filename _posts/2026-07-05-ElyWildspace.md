@@ -9,6 +9,8 @@ excerpt_text: "A quiet corner of Ely, where even a small meadow has some special
 tags:
   - Essex skipper
   - Marbled white
+  - Field trips
+  - Ely Common Meadow
 sites:
   - name: Ely Common Meadow
     species:

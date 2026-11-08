@@ -13,6 +13,8 @@ tags:
   - White admiral
   - Silver-washed fritillary
   - Marbled white
+  - Field trips
+  - Fermyn Woods
 sites:
   - name: Fermyn Woods
     species:

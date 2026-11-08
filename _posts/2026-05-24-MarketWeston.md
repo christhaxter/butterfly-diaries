@@ -11,6 +11,7 @@ tags:
   - Marbled white
   - Market Weston
   - Devil's Dyke
+  - Field trips
 sites:
   - name: Market Weston Fen
     species:

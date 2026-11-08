@@ -9,6 +9,8 @@ excerpt_text: "A return visit to this linear chalk escarpment in search of anoth
 tags:
   - Dark green fritillary
   - Marbled white
+  - Field trips
+  - Devil's Dyke
 sites:
   - name: Devil's Dyke
     species:

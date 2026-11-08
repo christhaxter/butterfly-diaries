@@ -10,6 +10,8 @@ tags:
   - Black hairstreak
   - Marbled white
   - Large skipper
+  - Field trips
+  - Fermyn Woods
 sites:
   - name: Fermyn Woods
     species:

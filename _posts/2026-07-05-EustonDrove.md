@@ -8,6 +8,9 @@ image_alt: "White-letter hairstreak"
 excerpt_text: "Following the elms hoping to find a treasure written in white."
 tags:
   - White-letter hairstreak
+  - Field trips
+  - Euston Drove
+  - Green Lane
 sites:
   - name: Euston Drove
     species:

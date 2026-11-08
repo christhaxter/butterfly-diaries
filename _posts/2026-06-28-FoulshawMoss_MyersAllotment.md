@@ -10,6 +10,9 @@ tags:
   - Large heath
   - Northern brown argus
   - Large skipper
+  - Field trips
+  - Foulshaw Moss
+  - Myers Allotment
 sites:
   - name: Foulshaw Moss
     species:
