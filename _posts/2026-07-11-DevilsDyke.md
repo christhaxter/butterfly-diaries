@@ -505,7 +505,7 @@ peacock seen through the bushes was nice.
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
     <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_12/Brimstone.JPG"
-       alt=Brimstone">
+       alt="Brimstone">
     <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_12/Peacock.JPG"
        alt="Peacock">
   </div>
