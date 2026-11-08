@@ -92,7 +92,7 @@ elevates you quite high up, possibly one of the highest parts on the escarpment.
 In the pictures the right one was taken a bit later as I came back, but this shows how the clouds broke when I was there from about 9:30 to 13:00. Bordered by farmland, this was a great initial view.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_11/Notice_board.JPG"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_11/Notice_board.jpg"
        alt="Information board">
   <figcaption>Information board</figcaption>
 </figure>
@@ -504,19 +504,14 @@ peacock seen through the bushes was nice.
 
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
-    <figure>
-      <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_12/Brimstone.JPG"
-           alt="Brimstone">
-      <figcaption>Brimstone</figcaption>
-    </figure>
-    <figure>
-      <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_12/Peacock.JPG"
-           alt="Peacock">
-      <figcaption>Peacock</figcaption>
-    </figure>
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_12/Brimstone.JPG"
+       alt=Brimstone">
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_12/Peacock.JPG"
+       alt="Peacock">
   </div>
+  <figcaption>Brimstone and peacock</figcaption>
 </figure>
- 
+
 After that, I headed back, contented. It had been another amazing day with the chalk hill blues 
 and rounded off a full weekend. I would definitely be coming back here, more to survey the 
 phenology of the species here, which I had become increasingly fascinated by.
