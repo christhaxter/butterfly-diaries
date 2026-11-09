@@ -3,7 +3,7 @@ layout: default
 title: "An early chance for Brown hairstreak at Beddington Farmlands"
 date: 2026-07-18
 location: "Beddington Farmlands, Greater London"
-image: "/assets/images/Beddington_Farmlands/Brown_hairstreak_3.JPG"
+image: "/assets/images/Beddington_Farmlands/Brown_hairstreak_3a.JPG"
 image_alt: "Brown hairstreak"
 excerpt_text: "Early doors for a rendezvous with brown hairstreak."
 tags:
@@ -41,7 +41,7 @@ sites:
 ## An early chance for Brown hairstreak at Beddington Farmlands, Greater London
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/Brown_hairstreak_3.JPG"
+  <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/Brown_hairstreak_3a.JPG"
        alt="Brown hairstreak">
 </figure>
 
@@ -374,7 +374,7 @@ Bridge to Embankment and the South Bank for some early Limin’ dinner.
 </figure>
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
-    <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/London_3.jpg"
+    <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/London_3a.jpg"
        alt="Image 3">
     <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/Limmin_meal.jpg"
        alt="Image 4">
