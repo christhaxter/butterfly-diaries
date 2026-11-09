@@ -36,7 +36,7 @@ sites:
 ---
 
 <p class="post-date">
-  21 June 2026 · Devil's Dyke, Suffolk
+  11 July 2026 · Devil's Dyke, Suffolk
 </p>
 
 <div class="post-content" markdown="1">
