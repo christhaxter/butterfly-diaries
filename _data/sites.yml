@@ -69,3 +69,8 @@
   longitude: 0.77129
   description: "A path lined with elm trees hidden behind a superstore, Norfolk"
   image: "/assets/images/EustonDrove_GreenLane/White_letter_hairstreak_maxzoom.JPG"
+
+- name: "Beddington Farmlands"
+  latitude: 51.38476
+  longitude: -0.15183
+  description: "Urban wetlands, scrub and open farmland, alive with wildlife on London's southern edge"
