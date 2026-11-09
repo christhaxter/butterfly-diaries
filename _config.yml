@@ -7,6 +7,9 @@ description: "A collection of butterfly and nature adventures on a quest to see 
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
+plugins:
+  - jekyll-sitemap
+
 defaults:
   - scope:
       path: ""
