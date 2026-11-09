@@ -374,7 +374,7 @@ Bridge to Embankment and the South Bank for some early Limin’ dinner.
 </figure>
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
-    <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/London_3a.jpg"
+    <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/London_3.jpg"
        alt="Image 3">
     <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/Limmin_meal.jpg"
        alt="Image 4">
