@@ -3,7 +3,7 @@ layout: default
 title: "An early chance for Brown hairstreak at Beddington Farmlands"
 date: 2026-07-18
 location: "Beddington Farmlands, Greater London"
-image: "/assets/images/Beddington_Farmlands/Brown_hairstreak_3a.JPG"
+image: "/assets/images/Beddington_Farmlands/Brown_hairstreak_3b.JPG"
 image_alt: "Brown hairstreak"
 excerpt_text: "Early doors for a rendezvous with brown hairstreak."
 tags:
@@ -41,7 +41,7 @@ sites:
 ## An early chance for Brown hairstreak at Beddington Farmlands, Greater London
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/Brown_hairstreak_3a.JPG"
+  <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/Brown_hairstreak_3b.JPG"
        alt="Brown hairstreak">
 </figure>
 
@@ -228,7 +228,7 @@ relied on heavy cropped images. But it got better as I got the close up setting 
 Z50 working to try and focus on the tiny area I needed.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/Brown_hairstreak_3.JPG"
+  <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/Brown_hairstreak_3b.JPG"
        alt="First photograph">
 
   <img src="/butterfly-diaries/assets/images/Beddington_Farmlands/Brown_hairstreak_4.JPG"
