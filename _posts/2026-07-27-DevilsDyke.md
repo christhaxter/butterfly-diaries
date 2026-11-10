@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Back with the blues at Devil's Dyke"
-date: 2026-07-11
+date: 2026-07-27
 location: "Devil's Dyke, Suffolk"
 image: "/assets/images/Devils_Dyke/2026_07_27/Chalk_hill_blue_4.jpg"
 image_alt: "Chalk hill blue"
@@ -139,7 +139,7 @@ shrubs there. A moth showed well that I presumed was a lattice heath at the time
 IDs suggested this was more likely a common heath. Nice.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_27/Common_heath.jpg"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_27/Common_heath.JPG"
        alt="Probable common heath">
   <figcaption>Probable common heath</figcaption>
 </figure>
