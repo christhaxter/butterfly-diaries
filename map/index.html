@@ -219,6 +219,7 @@ permalink: /map/
     {
       title: {{ post.title | jsonify }},
       date: {{ post.date | date: "%d %B %Y" | jsonify }},
+      sortDate: {{ post.date | date: "%Y-%m-%d" | jsonify }},
       url: {{ post.url | relative_url | jsonify }},
       image: {{ post.image | prepend: site.baseurl | jsonify }},
       image_alt: {{ post.image_alt | default: post.title | jsonify }},
@@ -248,16 +249,6 @@ permalink: /map/
     const marker = L.marker([site.latitude, site.longitude])
       .addTo(butterflyMap);
 
-    const popup = document.createElement("div");
-
-    const heading = document.createElement("strong");
-    heading.textContent = site.name;
-    popup.appendChild(heading);
-
-    const description = document.createElement("p");
-    description.textContent = site.description || "";
-    popup.appendChild(description);
-
     // Find posts that include this site.
     const matchingPosts = posts
       .map(function (post) {
@@ -269,11 +260,43 @@ permalink: /map/
           ? { post: post, siteRecord: siteRecord }
           : null;
       })
-      .filter(Boolean);
+      .filter(Boolean)
+      .sort(function (a, b) {
+        // Sort chronologically using the dates in the post data.
+        return new Date(a.post.sortDate) - new Date(b.post.sortDate);
+      });
 
-    matchingPosts.forEach(function (item) {
+    const popup = document.createElement("div");
+
+    const heading = document.createElement("strong");
+    heading.textContent = site.name;
+    popup.appendChild(heading);
+
+    const description = document.createElement("p");
+    description.textContent = site.description || "";
+    popup.appendChild(description);
+
+    // Build the detail view for an individual visit.
+    function buildVisitView(item, onBack) {
       const article = document.createElement("div");
       article.style.marginTop = "10px";
+
+      // Back button, only shown when there are multiple visits.
+      if (onBack) {
+        const backButton = document.createElement("button");
+        backButton.type = "button";
+        backButton.textContent = "← All visits";
+        backButton.style.display = "block";
+        backButton.style.marginBottom = "10px";
+        backButton.style.padding = "4px 0";
+        backButton.style.border = "none";
+        backButton.style.background = "none";
+        backButton.style.color = "#2673a6";
+        backButton.style.cursor = "pointer";
+
+        backButton.addEventListener("click", onBack);
+        article.appendChild(backButton);
+      }
 
       // Prefer the site's custom image; otherwise use the post image.
       const thumbnailImage = site.image || item.post.image;
@@ -333,13 +356,58 @@ permalink: /map/
         article.appendChild(list);
       }
 
-      popup.appendChild(article);
-    });
+      return article;
+    }
 
     if (matchingPosts.length === 0) {
       const message = document.createElement("p");
       message.textContent = "No linked journal posts yet.";
       popup.appendChild(message);
+
+    } else if (matchingPosts.length === 1) {
+      // One visit: retain the existing direct-detail behaviour.
+      popup.appendChild(buildVisitView(matchingPosts[0]));
+
+    } else {
+      // Multiple visits: show a visit selector.
+      const visitList = document.createElement("div");
+      visitList.style.marginTop = "10px";
+
+      const visitHeading = document.createElement("strong");
+      visitHeading.textContent = "Visits";
+      visitHeading.style.display = "block";
+      visitHeading.style.marginBottom = "6px";
+      visitList.appendChild(visitHeading);
+
+      matchingPosts.forEach(function (item) {
+        const visitButton = document.createElement("button");
+        visitButton.type = "button";
+        visitButton.textContent =
+          item.post.date + " — " + item.post.title;
+
+        visitButton.style.display = "block";
+        visitButton.style.width = "100%";
+        visitButton.style.textAlign = "left";
+        visitButton.style.padding = "7px 0";
+        visitButton.style.border = "none";
+        visitButton.style.borderTop = "1px solid #ddd";
+        visitButton.style.background = "none";
+        visitButton.style.cursor = "pointer";
+        visitButton.style.color = "#2673a6";
+
+        visitButton.addEventListener("click", function () {
+          popup.replaceChild(
+            buildVisitView(item, function () {
+              popup.replaceChild(visitList, article);
+            }),
+            visitList
+          );
+        });
+
+        visitList.appendChild(visitButton);
+      });
+
+      popup.appendChild(visitList);
     }
 
     // Keep popups compact on mobile.
