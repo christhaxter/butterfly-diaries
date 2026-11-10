@@ -219,7 +219,6 @@ permalink: /map/
     {
       title: {{ post.title | jsonify }},
       date: {{ post.date | date: "%d %B %Y" | jsonify }},
-      sortDate: {{ post.date | date: "%Y-%m-%d" | jsonify }},
       url: {{ post.url | relative_url | jsonify }},
       image: {{ post.image | prepend: site.baseurl | jsonify }},
       image_alt: {{ post.image_alt | default: post.title | jsonify }},
@@ -249,6 +248,16 @@ permalink: /map/
     const marker = L.marker([site.latitude, site.longitude])
       .addTo(butterflyMap);
 
+    const popup = document.createElement("div");
+
+    const heading = document.createElement("strong");
+    heading.textContent = site.name;
+    popup.appendChild(heading);
+
+    const description = document.createElement("p");
+    description.textContent = site.description || "";
+    popup.appendChild(description);
+
     // Find posts that include this site.
     const matchingPosts = posts
       .map(function (post) {
@@ -260,82 +269,11 @@ permalink: /map/
           ? { post: post, siteRecord: siteRecord }
           : null;
       })
-      .filter(Boolean)
-      .sort(function (a, b) {
-        return new Date(a.post.sortDate) - new Date(b.post.sortDate);
-      });
+      .filter(Boolean);
 
-    // Create the persistent popup container.
-    const popup = document.createElement("div");
-
-    const heading = document.createElement("strong");
-    heading.textContent = site.name;
-    popup.appendChild(heading);
-
-    const description = document.createElement("p");
-    description.textContent = site.description || "";
-    popup.appendChild(description);
-
-    // Build the visit-selection view.
-    function buildVisitList() {
-      const container = document.createElement("div");
-      container.style.marginTop = "10px";
-
-      const visitHeading = document.createElement("strong");
-      visitHeading.textContent = "Visits";
-      visitHeading.style.display = "block";
-      visitHeading.style.marginBottom = "6px";
-      container.appendChild(visitHeading);
-
-      matchingPosts.forEach(function (item) {
-        const button = document.createElement("button");
-        button.type = "button";
-        button.textContent = item.post.date + " — " + item.post.title;
-
-        button.style.display = "block";
-        button.style.width = "100%";
-        button.style.textAlign = "left";
-        button.style.padding = "7px 0";
-        button.style.border = "none";
-        button.style.borderTop = "1px solid #ddd";
-        button.style.background = "none";
-        button.style.cursor = "pointer";
-        button.style.color = "#2673a6";
-
-        button.addEventListener("click", function (event) {
-          L.DomEvent.stopPropagation(event);
-          marker.getPopup().setContent(buildVisitDetail(item));
-        });
-
-        container.appendChild(button);
-      });
-
-      return container;
-    }
-
-    // Build the detail view for an individual visit.
-    function buildVisitDetail(item) {
+    matchingPosts.forEach(function (item) {
       const article = document.createElement("div");
       article.style.marginTop = "10px";
-
-      // Return to the visit list.
-      const backButton = document.createElement("button");
-      backButton.type = "button";
-      backButton.textContent = "← All visits";
-      backButton.style.display = "block";
-      backButton.style.marginBottom = "10px";
-      backButton.style.padding = "4px 0";
-      backButton.style.border = "none";
-      backButton.style.background = "none";
-      backButton.style.color = "#2673a6";
-      backButton.style.cursor = "pointer";
-
-      backButton.addEventListener("click", function (event) {
-        L.DomEvent.stopPropagation(event);
-        marker.getPopup().setContent(buildPopupContent());
-      });
-
-      article.appendChild(backButton);
 
       // Prefer the site's custom image; otherwise use the post image.
       const thumbnailImage = site.image || item.post.image;
@@ -395,113 +333,19 @@ permalink: /map/
         article.appendChild(list);
       }
 
-      return article;
+      popup.appendChild(article);
+    });
+
+    if (matchingPosts.length === 0) {
+      const message = document.createElement("p");
+      message.textContent = "No linked journal posts yet.";
+      popup.appendChild(message);
     }
 
-    // Assemble the popup's main content.
-    function buildPopupContent() {
-      const content = document.createElement("div");
-
-      const heading = document.createElement("strong");
-      heading.textContent = site.name;
-      content.appendChild(heading);
-
-      const description = document.createElement("p");
-      description.textContent = site.description || "";
-      content.appendChild(description);
-
-      if (matchingPosts.length === 0) {
-        const message = document.createElement("p");
-        message.textContent = "No linked journal posts yet.";
-        content.appendChild(message);
-
-      } else if (matchingPosts.length === 1) {
-        // One visit: show its details directly, as before.
-        content.appendChild(buildVisitDetailWithoutBack(matchingPosts[0]));
-
-      } else {
-        content.appendChild(buildVisitList());
-      }
-
-      return content;
-    }
-
-    // Single-visit detail view, without a back button.
-    function buildVisitDetailWithoutBack(item) {
-      const article = document.createElement("div");
-      article.style.marginTop = "10px";
-
-      const thumbnailImage = site.image || item.post.image;
-
-      if (thumbnailImage) {
-        const imageLink = document.createElement("a");
-        imageLink.href = item.post.url;
-
-        const thumbnail = document.createElement("img");
-        thumbnail.src = thumbnailImage;
-        thumbnail.alt = site.image
-          ? (site.image_alt || site.name)
-          : (item.post.image_alt || item.post.title);
-
-        thumbnail.style.display = "block";
-        thumbnail.style.width = "100%";
-        thumbnail.style.maxHeight = "160px";
-        thumbnail.style.objectFit = "cover";
-        thumbnail.style.borderRadius = "4px";
-        thumbnail.style.marginBottom = "6px";
-
-        imageLink.appendChild(thumbnail);
-        article.appendChild(imageLink);
-      }
-
-      const link = document.createElement("a");
-      link.href = item.post.url;
-      link.textContent = item.post.title;
-      article.appendChild(link);
-
-      const date = document.createElement("div");
-      date.textContent = item.post.date;
-      article.appendChild(date);
-
-      const species = item.siteRecord.species || [];
-
-      if (species.length > 0) {
-        const label = document.createElement("strong");
-        label.textContent = "Species recorded";
-        label.style.display = "block";
-        label.style.marginTop = "5px";
-        article.appendChild(label);
-
-        const list = document.createElement("ul");
-        list.style.margin = "4px 0";
-        list.style.paddingLeft = "20px";
-
-        species.forEach(function (name) {
-          const entry = document.createElement("li");
-          entry.textContent = name;
-          list.appendChild(entry);
-        });
-
-        article.appendChild(list);
-      }
-
-      return article;
-    }
-
-    // Bind the popup and reset multi-visit sites to the list on every opening.
-    marker.bindPopup(buildPopupContent(), {
+    // Keep popups compact on mobile.
+    marker.bindPopup(popup, {
       maxWidth: window.matchMedia("(max-width: 600px)").matches ? 220 : 320,
       maxHeight: window.matchMedia("(max-width: 600px)").matches ? 250 : 400
-    });
-
-    marker.on("popupopen", function () {
-      if (matchingPosts.length > 1) {
-        marker.getPopup().setContent(buildPopupContent());
-      }
-    });
-
-    marker.on("popupopen", function (event) {
-      L.DomEvent.disableClickPropagation(event.popup.getElement());
     });
   });
 </script>
