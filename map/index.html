@@ -294,7 +294,9 @@ permalink: /map/
         backButton.style.color = "#2673a6";
         backButton.style.cursor = "pointer";
 
-        backButton.addEventListener("click", onBack);
+        backButton.addEventListener("click", function (event) {
+          onBack(event);
+        });
         article.appendChild(backButton);
       }
 
@@ -395,13 +397,15 @@ permalink: /map/
         visitButton.style.cursor = "pointer";
         visitButton.style.color = "#2673a6";
 
-        visitButton.addEventListener("click", function () {
-          popup.replaceChild(
-            buildVisitView(item, function () {
-              popup.replaceChild(visitList, article);
-            }),
-            visitList
-          );
+        visitButton.addEventListener("click", function (event) {
+          L.DomEvent.stopPropagation(event);
+        
+          const article = buildVisitView(item, function (event) {
+            L.DomEvent.stopPropagation(event);
+            popup.replaceChild(visitList, article);
+          });
+        
+          popup.replaceChild(article, visitList);
         });
 
         visitList.appendChild(visitButton);
