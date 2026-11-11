@@ -1203,5 +1203,8 @@ a:hover {
 }
 
 .leaflet-popup-content {
-  overflow-y: auto !important;
+  max-height: 60vh !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
