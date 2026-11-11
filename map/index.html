@@ -219,6 +219,7 @@ permalink: /map/
     {
       title: {{ post.title | jsonify }},
       date: {{ post.date | date: "%d %B %Y" | jsonify }},
+      sortDate: {{ post.date | date: "%Y-%m-%d" | jsonify }},
       url: {{ post.url | relative_url | jsonify }},
       image: {{ post.image | prepend: site.baseurl | jsonify }},
       image_alt: {{ post.image_alt | default: post.title | jsonify }},
@@ -248,17 +249,7 @@ permalink: /map/
     const marker = L.marker([site.latitude, site.longitude])
       .addTo(butterflyMap);
 
-    const popup = document.createElement("div");
-
-    const heading = document.createElement("strong");
-    heading.textContent = site.name;
-    popup.appendChild(heading);
-
-    const description = document.createElement("p");
-    description.textContent = site.description || "";
-    popup.appendChild(description);
-
-    // Find posts that include this site.
+    // Find posts that include this site, and sort them chronologically.
     const matchingPosts = posts
       .map(function (post) {
         const siteRecord = (post.sites || []).find(function (entry) {
@@ -269,48 +260,95 @@ permalink: /map/
           ? { post: post, siteRecord: siteRecord }
           : null;
       })
-      .filter(Boolean);
+      .filter(Boolean)
+      .sort(function (a, b) {
+        return a.post.sortDate.localeCompare(b.post.sortDate);
+      });
 
-    matchingPosts.forEach(function (item) {
+    const popup = document.createElement("div");
+
+    const heading = document.createElement("strong");
+    heading.textContent = site.name;
+    popup.appendChild(heading);
+
+    const description = document.createElement("p");
+    description.textContent = site.description || "";
+    popup.appendChild(description);
+
+    // Add the photograph for a visit.
+    function addVisitImage(article, item) {
+      const thumbnailImage = site.image || item.post.image;
+
+      if (!thumbnailImage) return;
+
+      const thumbnail = document.createElement("img");
+      thumbnail.src = thumbnailImage;
+      thumbnail.alt = site.image
+        ? (site.image_alt || site.name)
+        : (item.post.image_alt || item.post.title);
+
+      thumbnail.style.display = "block";
+      thumbnail.style.width = "100%";
+      thumbnail.style.maxHeight = "160px";
+      thumbnail.style.objectFit = "cover";
+      thumbnail.style.borderRadius = "4px";
+      thumbnail.style.marginBottom = "6px";
+
+      article.appendChild(thumbnail);
+    }
+
+    // Add the journal link and site-specific species.
+    function addVisitDetails(article, item) {
+      const link = document.createElement("a");
+      link.href = item.post.url;
+      link.textContent = "Open journal post";
+      article.appendChild(link);
+
+      const species = item.siteRecord.species || [];
+
+      if (species.length > 0) {
+        const label = document.createElement("strong");
+        label.textContent = "Species recorded";
+        label.style.display = "block";
+        label.style.marginTop = "5px";
+        article.appendChild(label);
+
+        const list = document.createElement("ul");
+        list.style.margin = "4px 0";
+        list.style.paddingLeft = "20px";
+
+        species.forEach(function (name) {
+          const entry = document.createElement("li");
+          entry.textContent = name;
+          list.appendChild(entry);
+        });
+
+        article.appendChild(list);
+      }
+    }
+
+    if (matchingPosts.length === 0) {
+      const message = document.createElement("p");
+      message.textContent = "No linked journal posts yet.";
+      popup.appendChild(message);
+
+    } else if (matchingPosts.length === 1) {
+      // One post: retain the original layout.
+      const item = matchingPosts[0];
       const article = document.createElement("div");
       article.style.marginTop = "10px";
 
-      // Prefer the site's custom image; otherwise use the post image.
-      const thumbnailImage = site.image || item.post.image;
+      addVisitImage(article, item);
 
-      if (thumbnailImage) {
-        const imageLink = document.createElement("a");
-        imageLink.href = item.post.url;
-
-        const thumbnail = document.createElement("img");
-        thumbnail.src = thumbnailImage;
-        thumbnail.alt = site.image
-          ? (site.image_alt || site.name)
-          : (item.post.image_alt || item.post.title);
-
-        thumbnail.style.display = "block";
-        thumbnail.style.width = "100%";
-        thumbnail.style.maxHeight = "160px";
-        thumbnail.style.objectFit = "cover";
-        thumbnail.style.borderRadius = "4px";
-        thumbnail.style.marginBottom = "6px";
-
-        imageLink.appendChild(thumbnail);
-        article.appendChild(imageLink);
-      }
-
-      // Journal post link.
       const link = document.createElement("a");
       link.href = item.post.url;
       link.textContent = item.post.title;
       article.appendChild(link);
 
-      // Post date.
       const date = document.createElement("div");
       date.textContent = item.post.date;
       article.appendChild(date);
 
-      // Species recorded at this particular site.
       const species = item.siteRecord.species || [];
 
       if (species.length > 0) {
@@ -334,12 +372,42 @@ permalink: /map/
       }
 
       popup.appendChild(article);
-    });
 
-    if (matchingPosts.length === 0) {
-      const message = document.createElement("p");
-      message.textContent = "No linked journal posts yet.";
-      popup.appendChild(message);
+    } else {
+      // Multiple posts: create one expandable section per visit.
+      matchingPosts.forEach(function (item) {
+        const details = document.createElement("details");
+        details.style.marginTop = "10px";
+        details.style.borderTop = "1px solid #ddd";
+        details.style.paddingTop = "7px";
+
+        const summary = document.createElement("summary");
+        summary.style.cursor = "pointer";
+        summary.style.fontWeight = "bold";
+
+        const title = document.createElement("span");
+        title.textContent = item.post.title;
+        summary.appendChild(title);
+
+        const date = document.createElement("span");
+        date.textContent = item.post.date;
+        date.style.display = "block";
+        date.style.fontWeight = "normal";
+        date.style.fontSize = "0.9em";
+        date.style.marginTop = "3px";
+        summary.appendChild(date);
+
+        details.appendChild(summary);
+
+        const article = document.createElement("div");
+        article.style.marginTop = "8px";
+
+        addVisitImage(article, item);
+        addVisitDetails(article, item);
+
+        details.appendChild(article);
+        popup.appendChild(details);
+      });
     }
 
     // Keep popups compact on mobile.
@@ -348,4 +416,5 @@ permalink: /map/
       maxHeight: window.matchMedia("(max-width: 600px)").matches ? 250 : 400
     });
   });
+
 </script>
