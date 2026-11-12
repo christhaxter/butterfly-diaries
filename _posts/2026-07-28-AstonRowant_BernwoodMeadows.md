@@ -10,6 +10,8 @@ tags:
   - Silver-spotted skipper
   - Chalk hill blue
   - Purple hairstreak
+  - Brown hairstreak
+  - Adonis blue
   - Small copper
   - Field trips
   - Aston Rowant
