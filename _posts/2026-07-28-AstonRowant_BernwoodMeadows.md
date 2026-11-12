@@ -220,8 +220,8 @@ assumed it was just a field cricket.
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/AstonRowant_BernwoodMeadows/Grasshopper.jpg"
-       alt="*Chorthippus bigguttulus-group*, bow-winged grasshopper">
-  <figcaption>*Chorthippus bigguttulus-group*, bow-winged grasshopper</figcaption>
+       alt="<em>Chorthippus bigguttulus-group</em>, bow-winged grasshopper">
+  <figcaption><em>Chorthippus bigguttulus-group</em>, bow-winged grasshopper</figcaption>
 </figure>
 
 
