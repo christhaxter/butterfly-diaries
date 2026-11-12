@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Silver spots and hairstreak hopes in Oxfordshire"
-date: 2026-07-27
+date: 2026-07-28
 location: "Aston Rowant and Bernwood Meadows, Oxfordshire"
 image: "/assets/images/AstonRowant_BernwoodMeadows/Silver_spotted_skipper_3.JPG"
 image_alt: "Silver-spotted skipper"
@@ -50,7 +50,7 @@ sites:
 ---
 
 <p class="post-date">
-  27 July 2026 · Aston Rowant &amp; Bernwood Meadows, Oxfordshire
+  28 July 2026 · Aston Rowant &amp; Bernwood Meadows, Oxfordshire
 </p>
 
 <div class="post-content" markdown="1">
