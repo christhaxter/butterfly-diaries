@@ -73,4 +73,16 @@
 - name: "Beddington Farmlands"
   latitude: 51.38476
   longitude: -0.15183
-  description: "Urban wetlands, scrub and open farmland, alive with wildlife on London's southern edge"
+  description: "Urban wetlands, scrub and open farmland, alive with wildlife on London's southern edge."
+
+- name: "Aston Rowant"
+  latitude: 51.65679
+  longitude: -0.95497
+  description: "A flower-rich chalk grassland reserve on the Chiltern escarpment, with sweeping views across Oxfordshire."
+
+- name: "Bernwood Meadows"
+  latitude: 51.79512
+  longitude: -1.12239
+  description: "Ancient hay meadow in Oxfordshire bordered by blackthorns and rich in wildflowers."
+  image: "/assets/images/AstonRowant_BernwoodMeadows/Small_copper.JPG"
+  
