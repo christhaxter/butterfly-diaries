@@ -288,7 +288,7 @@ the male sex bands on the inner wings.
 <figure class="report-photo-stack">
   <img src="/butterfly-diaries/assets/images/AstonRowant_BernwoodMeadows/Silver_spotted_skipper_5.jpg"
        alt="Silver-spotted skipper pair">
-  <img src="/butterfly-diaries/assets/images/AstonRowant_BernwoodMeadows/Silver_spotted_skipper_7.JPG"
+  <img src="/butterfly-diaries/assets/images/AstonRowant_BernwoodMeadows/Silver_spotted_skipper_7.jpg"
        alt="Silver-spotted skipper pair">
   <figcaption>Pairs of silver-spotted skippers</figcaption>
 </figure>
