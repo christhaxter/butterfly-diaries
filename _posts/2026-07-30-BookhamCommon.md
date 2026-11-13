@@ -9,6 +9,7 @@ excerpt_text: "A July visit to Bookham Commons, exploring its network of woodlan
 tags:
   - Brown hairstreak
   - Small copper
+  - Jersey tiger
   - Field trips
   - Bookham Commons
 sites:

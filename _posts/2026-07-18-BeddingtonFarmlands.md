@@ -9,6 +9,7 @@ excerpt_text: "Early doors for a rendezvous with brown hairstreak."
 tags:
   - Brown hairstreak
   - Clouded yellow
+  - Jersey tiger
   - Field trips
   - Beddington Farmlands
 sites:
