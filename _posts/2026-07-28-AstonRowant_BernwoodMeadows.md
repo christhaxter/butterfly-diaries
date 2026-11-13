@@ -61,7 +61,7 @@ sites:
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/AstonRowant_BernwoodMeadows/Silver_spotted_skipper_3.JPG"
-       alt="Dark green fritillary">
+       alt="Silver-spotted skipper">
 </figure>
 
 I had taken the week off work to get some downtime and to start to close out the 2026 

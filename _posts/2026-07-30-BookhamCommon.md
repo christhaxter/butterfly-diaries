@@ -159,7 +159,7 @@ and some bramble and hemp.
 He pointed out a jersey tiger moth! Great! Just like the Beddington ones.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/BookhamCommon/Tiger_moth.jpg"
+  <img src="/butterfly-diaries/assets/images/BookhamCommon/Tiger_moth.JPG"
        alt="A beautiful Jersey tiger moth">
   <figcaption>A beautiful Jersey tiger moth</figcaption>
 </figure>
