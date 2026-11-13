@@ -2,17 +2,17 @@
 layout: default
 title: "Another quest for brown hairstreak among the blackthorns of Surrey"
 date: 2026-07-30
-location: "Bookham Common, Surrey"
+location: "Bookham Commons, Surrey"
 image: "/assets/images/BookhamCommon/Tiger_moth.JPG"
 image_alt: "Jersey tiger moth"
-excerpt_text: "A July visit to Bookham Common, exploring its network of woodland paths and blackthorn-rich edges, with brown hairstreak very much in mind."
+excerpt_text: "A July visit to Bookham Commons, exploring its network of woodland paths and blackthorn-rich edges, with brown hairstreak very much in mind."
 tags:
   - Brown hairstreak
   - Small copper
   - Field trips
-  - Bookham Common
+  - Bookham Commons
 sites:
-  - name: Bookham Common
+  - name: Bookham Commons
     species:
       - Small heath
       - Common blue
@@ -28,7 +28,7 @@ sites:
 ---
 
 <p class="post-date">
-  30 July 2026 · Bookham Common, Surrey
+  30 July 2026 · Bookham Commons, Surrey
 </p>
 
 <div class="post-content" markdown="1">
@@ -40,7 +40,7 @@ sites:
        alt="Jersey tiger">
 </figure>
 
-I had planned a trip to Bookham Common down in Surrey to have a bit of a butterfly jolly. This 
+I had planned a trip to Bookham Commons down in Surrey to have a bit of a butterfly jolly. This 
 site, managed by the National Trust is a large expanse of oak woodland, Commons and grass plains, 
 with lots of blackthorns. Brown hairstreak are well recorded here, so this was well worth a punt. 
 I had seen some folks posting on forums that they had seen them.
