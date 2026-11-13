@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "An early chance for Brown hairstreak at Beddington Farmlands"
+title: "An early chance for brown hairstreak at Beddington Farmlands"
 date: 2026-07-18
 location: "Beddington Farmlands, Greater London"
 image: "/assets/images/Beddington_Farmlands/Brown_hairstreak_3b.JPG"
