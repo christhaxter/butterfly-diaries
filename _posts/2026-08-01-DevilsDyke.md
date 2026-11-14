@@ -24,7 +24,7 @@ sites:
       - Red admiral
       - Small white
       - Large white
-      - Humingbird hawkmoth
+      - Hummingbird hawkmoth
 ---
 
 <p class="post-date">
