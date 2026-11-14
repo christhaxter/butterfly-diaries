@@ -10,7 +10,7 @@ tags:
   - Small copper
   - Chalk hill blue
   - Field trips
-  - Devil’s Dyke
+  - Devil's Dyke
 sites:
   - name: Devil's Dyke
     species:
