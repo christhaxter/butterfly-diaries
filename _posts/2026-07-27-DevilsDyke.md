@@ -180,7 +180,7 @@ Moving on, a brown argus raised my spirits, and the chalk hills continued to flu
     <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_07_27/Chalk_hill_blue_6.JPG"
        alt="Chalk hill female 2">
   </div>
-  <figcaption>Chalkhill blue female blocking my path</figcaption>
+  <figcaption>Chalk hill blue female blocking my path</figcaption>
 </figure>
 
 Back at the first slope by now, and realising I had actually left my water in the car, relying 
