@@ -12,7 +12,7 @@ tags:
   - Field trips
   - Devil’s Dyke
 sites:
-  - name: Devil’s Dyke
+  - name: "Devil's Dyke"
     species:
       - Small heath
       - Common blue
