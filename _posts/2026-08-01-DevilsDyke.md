@@ -73,7 +73,7 @@ from me for the races.
   <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_01/View_1.jpg"
        alt="View 1">
 
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_01/View_2.JPG"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_01/View_2.jpg"
        alt="View 2">
 
   <figcaption>Not a cloud in the sky</figcaption>
