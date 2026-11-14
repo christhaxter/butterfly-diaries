@@ -79,8 +79,6 @@ drifting over the slope. And then another. They were still here, just much fewer
 saw some females, territorial battles, and matings further along. Ok fine, that was more in line 
 with what I had expected.
 
-re about too.
-
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
     <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Chalk_hill_blue_1.JPG"
@@ -288,7 +286,7 @@ Another small copper snuck in, as did a brown argus.
   <div class="report-photo-pair-images">
     <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Brown_argus.JPG"
        alt="Brown argus">
-    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Small_copper_3.JPG"
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Small_copper_3.jpg"
        alt="Small copper">
   </div>
   <figcaption>Brown argus and small copper in the mix</figcaption>
