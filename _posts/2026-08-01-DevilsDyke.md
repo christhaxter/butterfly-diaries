@@ -3,7 +3,7 @@ layout: default
 title: "Devil’s Dyke (the fifth): A search for a different shade of blue turned to copper"
 date: 2026-08-01
 location: "Devil's Dyke, Suffolk"
-image: "/assets/images/DevilsDyke/2026_08_01/Small_heath.JPG"
+image: "/assets/images/Devils_Dyke/2026_08_01/Small_heath.JPG"
 image_alt: "Small heath"
 excerpt_text: "Another gentle stroll over Devil’s Dyke, with second brood Adonis blue in mind, but don't get your hopes up just yet."
 tags:
@@ -36,7 +36,7 @@ sites:
 ## Devil’s Dyke (the fifth): A search for a different shade of blue turned to copper
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/DevilsDyke/2026_08_01/Small_heath.JPG"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_01/Small_heath.JPG"
        alt="Small heath">
 </figure>
 
