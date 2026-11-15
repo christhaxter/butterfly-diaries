@@ -175,7 +175,7 @@ I moved down the path a little, and there were some blues around. I tried to tra
 as I could to see if any may be an Adonis.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_16/Common_blue_1.JPG"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_16/Common_blue.JPG"
        alt="First of a glut of common blues">
   <figcaption>First of a glut of common blues</figcaption>
 </figure>
@@ -242,9 +242,9 @@ a bonus chalk hill blue also sharing that spot.
 
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
-    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Small_copper_3.JPG"
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_16/Small_copper_3.JPG"
        alt="Small copper">
-    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Chalk_hill_blue_6.JPG"
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_16/Chalk_hill_blue_6.JPG"
        alt="Chalk hill blue">
   </div>
   <figcaption>Small copper and chalk hill blue agree on a nectar choice</figcaption>
