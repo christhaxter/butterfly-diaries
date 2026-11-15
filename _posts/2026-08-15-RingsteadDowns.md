@@ -177,7 +177,7 @@ A nice brown argus showed, as did common blues, small heath and lots of whites.
   <div class="report-photo-pair-images">
     <img src="/butterfly-diaries/assets/images/Ringstead_Downs/Brown_argus_neat.JPG"
        alt="Brown argus">
-    <img src="/butterfly-diaries/assets/images/Ringstead_Downs/Small_white_2.jpg"
+    <img src="/butterfly-diaries/assets/images/Ringstead_Downs/Small_white_2.JPG"
        alt="Small white">
   </div>
 </figure>
