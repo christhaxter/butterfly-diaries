@@ -449,20 +449,18 @@ what an amazing walk this had been though through the Norfolk countryside.
 
 ## Appendix (FOMO)
 
-The QOSF continued to be reported down in Hampshire up to around 25 August, at Monk Sherbourne 
-north of Basingstoke. This was quite amazing and the reports seemed to indicate some fresh-looking 
-individuals, maybe suggesting an emergence of a local UK homegrown population.
+A glut of QOSF sightings had been reported down in Hampshire, at Monk Sherbourne 
+north of Basingstoke during summer 2026. This was quite amazing and the reports seemed to 
+indicate some fresh-looking individuals, maybe suggesting an emergence of a 
+local UK homegrown population. The photos I saw from fellow lepidopterists were incredible. 
 
-I had a massive urge to twitch them in Hampshire and FOMO, but then this was offset with green 
-guilt, and general logistics. I kind of set a rule that I will only chance a real rarity of the 
-transient kind, if it is more ‘local’ and feasible, like Ringstead here in this post. Hampshire 
-would have been a 3.5 h+ journey each way, and in this case was not quite as easy to achieve by 
-being greener on the trains.
-
-Part of me felt hypocritical. I have set off on some longer excursions. However, for the good of 
-conservation. I was trying therefore to balance a few variables – the MASSIVE urge I had after 
-seeing Facebook reports to go for it, vs the hobby overall, and general logistics. I am sure we 
-all wrestle with these aspects.
+I too had an urge to twitch them, but for me this was offset with green 
+guilt, and general logistics. A visit down to Hampshire would have been a 3.5 h+ journey 
+for me each way, and in this case was not quite as easy to achieve by being greener on the trains
+for the very last leg of the journey. Part of me a little hypocritical as I have set off on 
+some longer excursions of my own. However, I was trying therefore to balance a few variables 
+here – the urge, vs the hobby overall and conservation interest vs general logistics. 
+I am sure we all wrestle with these aspects.
 
 However…it turns out that I got another bite at the cherry anyway, as an opportunity then arose 
 down in Essex – see my later post on that.
