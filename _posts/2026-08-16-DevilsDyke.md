@@ -175,7 +175,7 @@ I moved down the path a little, and there were some blues around. I tried to tra
 as I could to see if any may be an Adonis.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_16/Common_blue.JPG"
+  <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_16/Common_blue_1.JPG"
        alt="First of a glut of common blues">
   <figcaption>First of a glut of common blues</figcaption>
 </figure>
@@ -202,10 +202,10 @@ There were plenty of common blues here.
 
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
-    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Common_blue_2.JPG"
-       alt="Common blue 1">
-    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Common_blue_3.JPG"
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Common_blue_2.jpg"
        alt="Common blue 2">
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Common_blue_3.JPG"
+       alt="Common blue 3">
   </div>
 </figure>
 <figure class="report-figure">
