@@ -9,6 +9,7 @@ excerpt_text: "Same place, different day and another return to Devil's Dyke. A l
 tags:
   - Small copper
   - Chalk hill blue
+  - Adonis blue
   - Field trips
   - Devil's Dyke
 sites:
