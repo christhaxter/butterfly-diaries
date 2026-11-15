@@ -187,7 +187,7 @@ A nice brown argus showed, as did common blues, small heath and lots of whites.
   <figcaption>Brown argus, small white and green-veined white</figcaption>
 </figure>
 
-I passed a some other folks mainly couples and dog walkers. Near the end of this stretch the 
+I passed some other folks mainly couples and dog walkers. Near the end of this stretch the 
 path opens out again leaving woods behind. And just before here a butterfly was on the path, 
 medium sized, in dappled sun distracted my view of colour, but I flushed it high and headed 
 canopy height.
