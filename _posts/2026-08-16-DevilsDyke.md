@@ -202,9 +202,9 @@ There were plenty of common blues here.
 
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
-    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Common_blue_2.JPG"
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_16/Common_blue_2.JPG"
        alt="Common blue 2">
-    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_09/Common_blue_3.JPG"
+    <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_16/Common_blue_3.JPG"
        alt="Common blue 3">
   </div>
 </figure>
