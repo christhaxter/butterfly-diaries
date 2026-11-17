@@ -530,16 +530,16 @@ number, with a queen red-tailed bumblebee also making a buzz.
 At around 13:20, I was just about done, and looped back down the central spine path back towards 
 the sailing club and then onto home. A large white showed also on the way back, the first I 
 recall seeing today, as did another peacock. One other species was absent until I got back 
-to our buddleia at the front of our house – a humingbird hawkmoth.
+to our buddleia at the front of our house – a hummingbird hawkmoth.
 
 <figure class="report-photo-pair">
   <div class="report-photo-pair-images">
     <img src="/butterfly-diaries/assets/images/Ely_Common_Meadow/2026_08_23/Hummingbird_hawkmoth_1.jpg"
-       alt="Humingbird hawkmoth 1 ">
+       alt="Hummingbird hawkmoth 1 ">
     <img src="/butterfly-diaries/assets/images/Ely_Common_Meadow/2026_08_23/Hummingbird_hawkmoth_2.JPG"
-       alt="Humingbird hawkmoth 2">
+       alt="Hummingbird hawkmoth 2">
   </div>
- <figcaption>Humingbird hawkmoth</figcaption>
+ <figcaption>Hummingbird hawkmoth</figcaption>
 </figure>
 
 And a large white showed well.
