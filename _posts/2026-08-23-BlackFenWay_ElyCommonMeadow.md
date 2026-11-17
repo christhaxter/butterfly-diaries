@@ -546,11 +546,11 @@ And a large white showed well.
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Ely_Common_Meadow/2026_08_23/Large_white_2.JPG"
-       alt="Queen red-tailed bumblebee">
-  <figcaption>Queen red-tailed bumblebee</figcaption>
+       alt="Large white">
+  <figcaption>Large white</figcaption>
 </figure>
 
-This season has been exceptional for humingbird hawkmoth being very frequently recorded. It is 
+This season has been exceptional for hummingbird hawkmoth being very frequently recorded. It is 
 unusual if a day goes by without me seeing at least one around our house.
 
 Today had been great. This was almost like three jaunts in one, with Black Fen Way, Prickwillow 
