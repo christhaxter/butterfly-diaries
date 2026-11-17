@@ -40,6 +40,7 @@ sites:
       - Large white
       - Red admiral
       - Speckled wood
+      - Hummingbird hawkmoth
 ---
 
 <p class="post-date">
@@ -565,7 +566,7 @@ need a rarity to make a trip this much fun.
 Small copper (6), brown argus (22), common blue (10), holly blue (1), small heath (10), 
 red admiral (5), peacock (4), painted lady (1), meadow brown (4), small white (26`*`), 
 green-veined white (4`*`), large white (1), clouded yellow (1), speckled wood (2), 
-humingbird hawk moth (1)
+hummingbird hawk moth (1)
 
 Numbers are approximate for brown argus, and small white
 
