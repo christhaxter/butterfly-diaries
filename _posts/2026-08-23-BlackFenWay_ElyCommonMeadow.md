@@ -109,9 +109,8 @@ I reached the start of the Black Fen Way trail just after 11 am.
 
 The Black Fen Way is also known as the Black Fen Waterways Trail and is a local route of public
 bridleways and walkways that take you from the outskirts of Ely out towards the river Great Ouse,
-linking up with the wider network of riverine paths, making up the Fen Rivers Way Way and wider network
-of route. The route can also link up Ely to Chettisham, but I did not take that trail. 
-There are a network of paths to take and you can lose yourself along the river stretches, 
+linking up with the wider network of riverine paths and the Fen Rivers Way. 
+There are a few different paths to take and you can easily meander along the river stretches, 
 helping to de-stress with a good dose of vitamin G. Whatever the route, it is all good, 
 and takes you over some proper fen soil.
 
