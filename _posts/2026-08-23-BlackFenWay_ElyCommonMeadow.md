@@ -143,13 +143,13 @@ intensely! Some of these shots from distance came out better than I thought.
 </figure>
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Black_Fen_Way/Red_kite_hobby_1.JPG"
+  <img src="/butterfly-diaries/assets/images/Black_Fen_Way/Red_kite_hobby_2.JPG"
        alt="A hobby has other ideas">
   <figcaption>A hobby has other ideas</figcaption>
 </figure>
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Black_Fen_Way/Red_kite_hobby_2.JPG"
+  <img src="/butterfly-diaries/assets/images/Black_Fen_Way/Red_kite_hobby_1.JPG"
        alt="Shaping for a dive bomb! Red kite on high alert">
   <figcaption>Shaping for a dive bomb! Red kite on high alert</figcaption>
 </figure>
