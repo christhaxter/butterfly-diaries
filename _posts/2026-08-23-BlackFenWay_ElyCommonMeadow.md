@@ -302,7 +302,7 @@ had on this occasion perched on a wire.
 </figure>
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Black_Fen_Way/View_8.jpg"
+  <img src="/butterfly-diaries/assets/images/Black_Fen_Way/View_9.jpg"
        alt="View leading back to Ely across the fields">
   <figcaption>View leading back to Ely across the fields</figcaption>
 </figure>
