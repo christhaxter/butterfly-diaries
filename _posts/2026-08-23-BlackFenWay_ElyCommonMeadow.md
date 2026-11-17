@@ -66,7 +66,7 @@ it started, or with an option to go through Queen Adelaide and over to Roswell P
 combination route today, and essentially split the hike into two (or three!) parts. So, Black Fen 
 Way first.
 
-Starting out very local, even before reaching the Black Fen route, the view over the local green 
+Starting out very local, even before reaching the Black Fen Way route, the view over the local green 
 by the back of the houses was parched from the recent heatwaves. About 10:50, I was a bit late 
 setting off. Today was not that hot, very pleasant, about 22 degrees, very sunny with some clouds 
 building later, and light winds.
@@ -99,7 +99,7 @@ A red admiral also jumped out from a buddleia too.
   <figcaption>Red admiral</figcaption>
 </figure>
 
-I reached the start of the Black Fen Way trail just after 11 am.
+I reached the start of the Black Fen Way trail just after 11 am. 
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Black_Fen_Way/View_2.jpg"
@@ -107,11 +107,13 @@ I reached the start of the Black Fen Way trail just after 11 am.
   <figcaption>View of the bridleway out on the Black Fen Way trail from Ely/Queen Adelaide</figcaption>
 </figure>
 
-This route is part of a larger trail called the Black Fen Waterways Trail and takes in part of 
-the larger Fen Rivers Way network (I hope I am getting these names right). The Black Fen route 
-can also link up Ely to Chettisham, but I did not take that trail. There are a network of paths 
-to take and you can lose yourself along the river stretches, helping to de-stress with a good 
-dose of vitimin G. Whatever the route, it is all good, and takes you over some proper fen soil.
+The Black Fen Way is also known as the Black Fen Waterways Trail and is a local route of public
+bridleways and walkways that take you from the outskirts of Ely out towards the river Great Ouse,
+linking up with the wider network of riverine paths, making up the Fen Rivers Way Way and wider network
+of route. The route can also link up Ely to Chettisham, but I did not take that trail. 
+There are a network of paths to take and you can lose yourself along the river stretches, 
+helping to de-stress with a good dose of vitamin G. Whatever the route, it is all good, 
+and takes you over some proper fen soil.
 
 The path here (in the image above) runs between fields, one of which is being developed for houses 
 now, and also has a nice small reed bed section to the left as you head out. I’ve heard water rail 
