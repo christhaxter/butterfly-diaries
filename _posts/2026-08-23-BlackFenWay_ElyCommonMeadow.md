@@ -295,7 +295,7 @@ in the height of summer, corn buntings and yellow wagtails can be seen well. A l
 had on this occasion perched on a wire.
 
 <figure class="report-figure">
-  <img src="/butterfly-diaries/assets/images/Black_Fen_Way/Linnet.jpg"
+  <img src="/butterfly-diaries/assets/images/Black_Fen_Way/Linnet.JPG"
        alt="Linnet on a wire">
   <figcaption>Linnet on a wire</figcaption>
 </figure>
