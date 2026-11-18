@@ -81,7 +81,7 @@ cloudy and very windy. But, glass half full, it was lovely to be out!
 After spooking a green woodpecker, again, as I do on every visit here, I then immediately saw a 
 flash of blue just at the top of E2…
 
-Yes an adonis blue!
+Yes an Adonis blue!
   
 OK that turned around pretty quick after nearly quitting the trip a few moments ago.
 
@@ -99,7 +99,7 @@ OK that turned around pretty quick after nearly quitting the trip a few moments 
  <figcaption>Adonis blue #1</figcaption>
 </figure>
 
-Just look at the blue in the top one, probably my best adonis pic of the whole season. It was a 
+Just look at the blue in the top one, probably my best Adonis pic of the whole season. It was a 
 bit more worn around the fringes and had silvering on the underside; perhaps the wear ‘n tear 
 reflected the fact it had been a good two weeks since I was last here, giving enough time for 
 some abrasion of the edges of wings. It was more than happy to show off its blue though 💙.
@@ -108,8 +108,8 @@ And then, just a bit further along….another one! They do like these carline th
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_31/Adonis_blue_3.JPG"
-       alt="A tatty adonis blue #2">
-  <figcaption>A tatty adonis blue #2</figcaption>
+       alt="A tatty Adonis blue #2">
+  <figcaption>A tatty Adonis blue #2</figcaption>
 </figure>
 
 This one was very tattered. However, if you had to ask for a bit of wing removal so you can see 
@@ -149,11 +149,11 @@ giddy heights of the days when they were dancing around my feet.
 
 I had reached the end of the second embankment. Climbing up to the third, I passed a family 
 and got talking to them. They were visiting from further north and were interested in what I 
-had seen. I told them about the adonis blues and in return they regailed me with a sighting of 
+had seen. I told them about the Adonis blues and in return they regailed me with a sighting of 
 an emperor moth they had in their garden. Very cool indeed – I was not sure that I had ever seen 
 one before. We parted ways and I pushed onto the third section.
 
-Then, another adonis!
+Then, another Adonis!
   
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_31/Adonis_blue_4.JPG"
@@ -162,9 +162,9 @@ Then, another adonis!
 </figure>
 
 Outstanding. This one was just basking. It was also beginning to match the other sightings I had 
-read of higher numbers of adonis – I had only really seen them in the tail of the 1st brood, 
+read of higher numbers of Adonis – I had only really seen them in the tail of the 1st brood, 
 recording singles in dramatic last ditch fashion, in what was clearly the start of the 2nd brood 
-a couple of weeks back. At this point on the walk I had seen more adonis than common blues.
+a couple of weeks back. At this point on the walk I had seen more Adonis than common blues.
 
 That started to change though with a common blue then showing well towards the end of the third 
 embankment.
@@ -181,7 +181,7 @@ on the tops, whilst I peered down scanning the carline thisles and other nectar 
 dark cloud had also drifted over threatening rain, but stepping down out of the brisk wind 
 blowing off the tops of E3, I came across the spot I mentioned in previous posts where the 
 ground flattens and transitions to a chalk grassy section before E4. This location is where 
-I had an adonis blue some weeks back.
+I had an Adonis blue some weeks back.
 
 At first, it was quiet, without any sign of activity. Moving through this section, two male 
 common blues then battled in flight, their more purple blue very likely not adonis. But then 
@@ -190,7 +190,7 @@ and the male had quite a bright blue I noticed.
 
 And there they were…
 
-A mating pair of adonis!
+A mating pair of Adonis!
   
 <figure class="report-photo-stack">
   <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_31/Adonis_mating_1.JPG"
@@ -206,11 +206,11 @@ A mating pair of adonis!
 </figure>
 
 The male here was a bit ‘common’, looking though, but the black lunules on the wing edges are 
-there. The female is as clear as day. This was not a pair of chalkhill blues from the flash of 
+there. The female is as clear as day. This was not a pair of chalk hill blues from the flash of 
 blue of the male had shown, and also being too small. AI agreed. It was quite amazing to find 
-them, and actually my first female adonis too.
+them, and actually my first female Adonis too.
 
-A quick scan around this area revealed no immediate signs of other adonis blues, but there were 
+A quick scan around this area revealed no immediate signs of other Adonis blues, but there were 
 common blues and finally a brown argus.
 
 <figure class="report-figure">
@@ -223,7 +223,7 @@ The weather felt against me at this point so I chose not to go to E4 this time. 
 reached E3 again to return climb, but first had spotted another blue cruise by. Tracking it to 
 my right, I found it again.
 
-Yep, it was another male adonis!
+Yep, it was another male Adonis!
   
 <figure class="report-photo-stack">
   <img src="/butterfly-diaries/assets/images/Devils_Dyke/2026_08_31/Adonis_blue_5.JPG"
@@ -236,7 +236,7 @@ Yep, it was another male adonis!
 </figure>
 
 Again the chequering and lunules were slight but they are a bit clearer in the second shot at 
-the base of the hindwing. Clearly that blue was eeking to pop out too. I also saw another adonis 
+the base of the hindwing. Clearly that blue was eeking to pop out too. I also saw another Adonis 
 shortly after this but failed to photograph it making that seven so far. I also couldn’t help 
 snapping a frame of one of the many grass veneer moths that join the crickets in launching from 
 grass stem to stem.
@@ -312,7 +312,7 @@ Then also, I noticed a small copper was nectaring here. That was my first one to
 </figure>
 
 At the start of E3, before approaching E2, I also spotted lots of common blues and brown argus 
-down by the side of the racecourse, again checking for any adonis but none were here. However, 
+down by the side of the racecourse, again checking for any Adonis but none were here. However, 
 one did show briefly again on E2, but again it flew on by after it had paused. It could have 
 been one I already had seen but I counted it as #8.
 
@@ -323,10 +323,10 @@ been one I already had seen but I counted it as #8.
 </figure>
 
 On the home stretch though I pushed on over to E1, having skipped it at the start. I was 
-confident I could find another adonis there too. The sun had come out a bit more too, so this 
+confident I could find another Adonis there too. The sun had come out a bit more too, so this 
 felt like a good opportunity.
 
-However, after scouring the slopes, I had come up dry at E1 this time – no adonis were here, 
+However, after scouring the slopes, I had come up dry at E1 this time – no Adonis were here, 
 well perhaps they were just hiding. I found another couple of brown argus and common blue nearer 
 the start.
 
@@ -347,7 +347,7 @@ decided at this point as it was quite windy still, it was time to call it a day 
 
 This trip had been somewhat unorthodox. It had been an uncertain start, nearly quitting before 
 even beginning, and the conditions had been imperfect. But actually, if you had said, I would 
-see eight adonis and an osprey, wow, yes I would have taken it. Also, with the conditions today, 
+see eight Adonis and an osprey, wow, yes I would have taken it. Also, with the conditions today, 
 I wouldn’t be suprised if there were quite a few more adonis blues around.
 
 On the list of things not seen today, the most obvious one was chalk hill blue. Sadly any 
@@ -360,7 +360,7 @@ this one up as a success.
 
 ### Butterflies (10)
 
-Small heath (10), brown argus (15), common blue (10), adonis blue (8), small copper (1), 
+Small heath (10), brown argus (15), common blue (10), Adonis blue (8), small copper (1), 
 red admiral (1), peacock (1), small white (10`*`), large white (1), green-veined white (1`*`)
 
 `*`not fully separated all
