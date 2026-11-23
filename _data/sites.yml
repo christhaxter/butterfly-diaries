@@ -105,3 +105,8 @@
   latitude: 51.86480
   longitude: 1.28827
   description: "A coastal wildlife hotspot, with dunes, beach, wetland, grassland, scrub and clifftop habitats."
+
+- name: "East Tilbury"
+  latitude: 51.48550
+  longitude: 0.41402
+  description: "Open farmland, rough grassland and scrub within the Thames Estuary providing a varied landscape for wildlife."
