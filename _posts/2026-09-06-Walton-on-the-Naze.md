@@ -82,7 +82,7 @@ Tall. My new 100-400 mm camera lens was also deployed poised to snap away. 😋 
 of information signs dotted around.
 
 <figure class="report-photo-stack">
-  <img src="/butterfly-diaries/assets/images/Walton-on-the-Naze/Visitor_board_1.jpg"
+  <img src="/butterfly-diaries/assets/images/Walton-on-the-Naze/Visitor_board.jpg"
        alt="Image 1">
 
   <img src="/butterfly-diaries/assets/images/Walton-on-the-Naze/Visitor_board_3.jpg"
