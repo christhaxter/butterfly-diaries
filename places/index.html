@@ -12,7 +12,7 @@ description: Butterfly habitats and destinations explored on field trips around 
 </p>
 
 <details class="places-index" id="places-index">
-  <summary>Browse places (13)</summary>
+  <summary>Browse places (<span id="place-count"></span>)</summary>
 
   <ul>
     <li><a href="#aston-rowant">Aston Rowant</a></li>
@@ -408,3 +408,8 @@ description: Butterfly habitats and destinations explored on field trips around 
   </section>
   
 </div>
+
+<script>
+  document.getElementById("place-count").textContent =
+    document.querySelectorAll(".place-card").length;
+</script>
