@@ -1288,27 +1288,6 @@ details.places-index a:hover {
   text-decoration: underline;
 }
 
-/* Species and reports link box under places page */
-
 .species-link {
-  margin: -1.5rem 0 2.5rem;
-  padding: 0.8rem 1.25rem;
-  background: #f7f7f7;
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
-
-.species-link a {
-  text-decoration: none;
-}
-
-.species-link a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .species-link {
-    padding: 0.7rem 1rem;
-    font-size: 0.85rem;
-  }
+  margin-top: -1.5rem;
 }
