@@ -1252,3 +1252,19 @@ a:hover {
     columns: 1;
   }
 }
+
+/* Styling for back to top link in places page */
+.back-to-places {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+.back-to-places a {
+  text-decoration: none;
+  color: #777;
+}
+
+.back-to-places a:hover {
+  text-decoration: underline;
+}
