@@ -1209,64 +1209,70 @@ a:hover {
   box-sizing: border-box;
 }
 
-/* Places index */
+/* Places page index */
 
-.places-index {
+details.places-index {
   margin: 1.5rem 0 2.5rem;
   padding: 1rem 1.25rem;
   background: #f7f7f7;
   border-radius: 6px;
 }
 
-.places-index summary {
+details.places-index summary {
   cursor: pointer;
   font-weight: 500;
 }
 
-.places-index nav {
+details.places-index nav {
   margin-top: 1rem;
 }
 
-.places-index ul {
+details.places-index ul {
   columns: 2;
-  column-gap: 1.5rem;
+  column-gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.places-index li {
-  margin-bottom: 0.4rem;
+details.places-index li {
+  margin-bottom: 0.45rem;
   break-inside: avoid;
 }
 
-.places-index a {
+details.places-index a {
   text-decoration: none;
-  font-size: 0.9rem;
 }
 
-.places-index a:hover {
+details.places-index a:hover {
   text-decoration: underline;
 }
 
-/* Mobile */
+/* Smaller text and spacing on mobile */
 
 @media (max-width: 600px) {
-  .places-index {
+  details.places-index {
     padding: 0.8rem 1rem;
   }
 
-  .places-index ul {
+  details.places-index ul {
     columns: 2;
     column-gap: 1rem;
   }
 
-  .places-index a {
-    font-size: 0.82rem;
+  details.places-index a {
+    font-size: 0.8rem;
   }
 }
 
+/* Leave a little space above headings when jumping to them */
+
+.place-card {
+  scroll-margin-top: 1.5rem;
+}
+
 /* Styling for back to top link in places page */
+
 .back-to-places {
   margin-top: 1rem;
   margin-bottom: 0;
