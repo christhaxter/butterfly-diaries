@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "A Queen’s gambit: nobody expects the Spanish Inquisition in Essex"
-date: 2026-09-06
+date: 2026-09-12
 location: "East Tilbury, Essex"
 image: "/assets/images/QOSF.JPG"
 image_alt: "Queen of Spain firtillary"
