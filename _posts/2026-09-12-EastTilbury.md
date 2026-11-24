@@ -4,7 +4,7 @@ title: "A Queen’s gambit: nobody expects the Spanish Inquisition in Essex"
 date: 2026-09-12
 location: "East Tilbury, Essex"
 image: "/assets/images/QOSF.JPG"
-image_alt: "Queen of Spain firtillary"
+image_alt: "Queen of Spain fritillary"
 excerpt_text: "A trip to the Essex coastal countryside in pursuit of a rather exotic visitor."
 tags:
   - Queen of Spain fritillary
