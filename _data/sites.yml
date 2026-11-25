@@ -110,3 +110,16 @@
   latitude: 51.48550
   longitude: 0.41402
   description: "Open farmland, rough grassland and scrub within the Thames Estuary providing a varied landscape for wildlife."
+
+- name: "Walberswick"
+  latitude: 52.30988
+  longitude: 1.66358
+  description: "A patchwork of coastal reedbeds, saltmarsh and tidal waterways"
+  image: "/assets/images/Walberswick_SuttonHoo/Grayling_2.JPG"
+
+- name: "Sutton Hoo"
+  latitude: 52.09442
+  longitude: 1.34094
+  description: "An Anglo-Saxon archaeological site with mosaic of open grassland, heathland and woodland edges"
+  image: "/assets/images/Walberswick_SuttonHoo/Grayling_4.jpg"
+

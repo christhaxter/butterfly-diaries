@@ -184,7 +184,7 @@ it was probably in there somewhere 😊.
   <figcaption>Zitting Cisticola, habitat</figcaption>
 </figure>
 
-A wall brown had also breezed by which i failed to get a picture of. That was cool.
+A wall brown had also breezed by which I failed to get a picture of. That was cool.
 After that we headed back along the same path to the Cliff Field car park, and tucked into a 
 bit of much needed lunch.
 
@@ -267,14 +267,14 @@ of a tree! (Not an actual "tree grayling", which is a different species not nati
 
 It was a bout 15:15 by now and other birds had showed well along our route back
 such as migrants such as whitethroats, and other species such as buzzards, red kites and 
-in the coniferous areas, coal tits and gold crests. We stopped 
-for refreshments at the local cafe and sat on some outside benches. The cafe here was really 
+in the coniferous areas, coal tits and goldcrests. We stopped 
+for refreshments at the local cafe and sat on the outside benches. The cafe here was really 
 quite nice here and could have stayed much longer - we will have to come back. 
 We had a quick browse in the visitor centre too before we left. 
 
-This had been a great day. We had packed quite a lot in and quite tired by now, we made our way back
-with a big highlight for me seeing the graylings. Although the skies had started grey, they certainly
-brightened with the grayling!
+We had packed quite a lot in and quite tired by now, we made our way back.
+That evening, we also decided to watch the film about Sutton Hoo on Netflix, which fully rounded off the day.
+This had been a great day. Although the skies had started grey, they certainly brightened with the grayling! 
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Walberswick_SuttonHoo/Over_out.jpg"
