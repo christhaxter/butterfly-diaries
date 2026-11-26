@@ -2,7 +2,7 @@
 layout: default
 title: "A gray gay in the east: Sands, Saxons and sunshine"
 date: 2025-08-22
-location: "East Tilbury, Essex"
+location: "Walberswick and Sutton Hoo, Suffolk"
 image: "/assets/images/Walberswick_SuttonHoo/Grayling_2.JPG"
 image_alt: "Grayling"
 excerpt_text: "A trip to the Essex coastal countryside in pursuit of a rather exotic visitor."
