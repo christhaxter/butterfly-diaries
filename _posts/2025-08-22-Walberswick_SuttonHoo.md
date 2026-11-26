@@ -5,7 +5,7 @@ date: 2025-08-22
 location: "Walberswick and Sutton Hoo, Suffolk"
 image: "/assets/images/Walberswick_SuttonHoo/Grayling_2.JPG"
 image_alt: "Grayling"
-excerpt_text: "A trip to the Essex coastal countryside in pursuit of a rather exotic visitor."
+excerpt_text: "A Suffolk adventure, from shingle paths to Saxon burial mounds, with a gray surprise."
 tags:
   - Grayling
   - Wall brown
