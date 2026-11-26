@@ -51,7 +51,7 @@ sites:
 As an initial disclaimer - this trip predates the "quest" part of this journal. I have made various
 other jaunts out prior to 2026, before I got hooked with the idea to try and see as many of the UK 
 butterfly species as I could. This trip therefore takes us back to 2025, on a Friday in August, when I had 
-taken the day off work for a trip over to the east coast. 
+taken the day off work aiming to head over to the east coast. 
 
 Not that it is of interest, but the reason for this excursion was because I needed 
 to collect some equipment from some colleagues over near to Orford. As part of my day job, we had been busy 
