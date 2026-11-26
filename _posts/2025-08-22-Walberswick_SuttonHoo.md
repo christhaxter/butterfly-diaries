@@ -169,8 +169,8 @@ feeding - a really smart bird.
   <figcaption>Avocet</figcaption>
 </figure>
 
-We had also passed some folks coming back the other way on the path, and just a bit further along we
-spied some other people a short distance ahead gazing back into the marsh within scopes and binoculars. 
+We had also passed some folks coming back the other way on the path. Just a bit further along we
+then spied some other people a short distance ahead gazing back into the marsh with scopes and binoculars. 
 This was where the sightings of the zisticola were likely to be, as the spot that I had researched 
 beforehand matched this exact description. We cautiously approached the small group, 
 of about six or seven people, and joined the party. 
