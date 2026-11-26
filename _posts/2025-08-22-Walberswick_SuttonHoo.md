@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "A Gray Day in the East: Sands, Saxons and sunshine"
+title: "A gray gay in the east: Sands, Saxons and sunshine"
 date: 2025-08-22
 location: "East Tilbury, Essex"
 image: "/assets/images/Walberswick_SuttonHoo/Grayling_2.JPG"
@@ -38,7 +38,7 @@ sites:
 
 <div class="post-content" markdown="1">
 
-## A Gray Day in the East: Sands, Saxons and Sunshine
+## A gray day in the east: Sands, Saxons and sunshine
 
 <figure class="report-figure">
   <img src="/butterfly-diaries/assets/images/Walberswick_SuttonHoo/Grayling_2.JPG"
