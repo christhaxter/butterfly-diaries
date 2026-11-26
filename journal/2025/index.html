@@ -1,0 +1,80 @@
+---
+layout: default
+title: 2025 Diary
+description: Butterfly field trips and wildlife encounters from 2025.
+archive_year: "2025"
+permalink: /journal/2025/
+---
+
+<div class="journal-layout">
+
+  <aside class="journal-sidebar">
+    <h2>Explore</h2>
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/journal/' | relative_url }}">All field trips</a></li>
+    </ul>
+
+    <h3>Browse by year</h3>
+    <ul>
+      {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+      {% for year in years %}
+        <li>
+          <a href="{{ '/journal/' | relative_url }}{{ year.name }}/">{{ year.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <h3>Browse by species or location</h3>
+    <p>
+      <a href="{{ '/tags/' | relative_url }}">
+      Browse diary entries by tag →
+      </a>
+    </p>
+  </aside>
+
+  <section class="journal-list">
+    <h1 class="page-title">Field trips in 2025</h1>
+    <p class="page-intro">
+      Butterfly encounters, field notes and photographs from 2025, newest first.
+    </p>
+
+    {% assign archive_year = "2025" %}
+
+    {% for post in site.posts %}
+      {% assign post_year = post.date | date: "%Y" %}
+      {% if post_year == archive_year %}
+
+        <article class="journal-entry">
+          {% if post.image %}
+            <a href="{{ post.url | relative_url }}" class="journal-entry-image">
+              <img
+                src="{{ post.image | relative_url }}"
+                alt="{{ post.image_alt | default: post.title | escape }}">
+            </a>
+          {% endif %}
+
+          <div class="journal-entry-text">
+            <p class="journal-entry-date">
+              {{ post.date | date: "%-d %B %Y" }}
+              {% if post.location %} · {{ post.location }}{% endif %}
+            </p>
+
+            <h2 class="journal-entry-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+
+            <p class="journal-entry-excerpt">
+              {{ post.excerpt_text | default: post.excerpt | strip_html | truncate: 180 }}
+            </p>
+
+            <a class="read-more" href="{{ post.url | relative_url }}">Read report →</a>
+          </div>
+        </article>
+
+      {% endif %}
+    {% endfor %}
+
+  </section>
+
+</div>
