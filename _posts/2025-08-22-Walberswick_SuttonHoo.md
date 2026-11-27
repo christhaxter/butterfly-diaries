@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "A gray gay in the east: Sands, Saxons and sunshine"
+title: "A gray day in the east: Sands, Saxons and sunshine"
 date: 2025-08-22
 location: "Walberswick and Sutton Hoo, Suffolk"
 image: "/assets/images/Walberswick_SuttonHoo/Grayling_2.JPG"
